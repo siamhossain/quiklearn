@@ -1,0 +1,306 @@
+// ===========================
+//	Placeholders
+// ===========================
+
+%clearfix {
+	content: " ";
+	display: table;
+}
+
+%box-sizing {
+	box-sizing: border-box;
+}
+
+%transition {
+	transition: all 0.3s;
+}
+
+%d-flex {
+	display: flex;
+}
+
+%flex-wrap {
+	flex-wrap: wrap;
+}
+
+%justify-content-center {
+	justify-content: center;
+}
+
+%align-items-center {
+	align-items: center;
+}
+
+%static-content {
+	position: static;
+}
+
+%relative-content {
+	position: relative;
+}
+
+%rt-z-index-1 {
+	z-index: 1;
+}
+
+%absolute-content {
+	position: absolute;
+}
+
+%default-gutter {
+	margin-bottom: $default-gutter;
+}
+
+%bottom-half-gutter {
+	margin-bottom: calc($default-gutter / 2);
+}
+
+%top-half-gutter {
+	margin-top: calc($default-gutter / 2);
+}
+
+%gutter-half {
+	margin-top: calc($default-gutter / 2);
+	margin-bottom: calc($default-gutter / 2);
+}
+
+%primary-color {
+	color: $color-primary;
+}
+
+%primary-color-bg {
+	background-color: $color-primary;
+}
+
+%secondary-color {
+	color: $color-secondary;
+}
+
+%secondary-color-bg {
+	background: $color-secondary;
+}
+
+%color-gray-bg {
+	background-color: $color-gray5;
+}
+
+%white-color {
+	color: $color-white;
+}
+
+%title-color {
+	color: $color-title;
+}
+
+%white-color-bg {
+	background-color: $color-white;
+}
+
+%black-color {
+	color: $color-black;
+}
+
+%black-color-bg {
+	background-color: $color-black;
+}
+
+%text-center {
+	text-align: center;
+}
+
+%mb-0 {
+	margin-bottom: 0;
+}
+
+%column-default {
+	position: relative;
+	width: 100%;
+	min-height: 1px;
+	padding-right: calc($default-gutter / 2);
+	padding-left: calc($default-gutter / 2);
+}
+// --
+
+%color-bg {
+	background: $color-bg;
+}
+
+%color-lemon-bg {
+	background: $bg-color2;
+}
+
+
+%color-shade4 {
+	color: $color-shade4;
+	&:hover {
+        color: $color-shade4;
+    }
+}
+%color-shade15 {
+	color: $color-shade15;
+	&:hover {
+        color: $color-shade15;
+    }
+}
+%color-shade16 {
+	color: $color-shade16;
+	&:hover {
+        color: $color-shade16;
+    }
+}
+
+%color-shade20 {
+	color: $color-shade20;
+	&:hover {
+        color: $color-shade20;
+    }
+}
+%color-shade30 {
+	color: $color-shade30;
+	&:hover {
+        color: $color-shade30;
+    }
+}
+%color-shade21 {
+	color: $color-shade21;
+}
+%color-shade22 {
+	color: $color-shade22;
+}
+%color-shade23 {
+	color: $color-shade23;
+}
+
+//bg
+%color-shade2-bg {
+	background: $color-shade2;
+}
+%color-shade14-bg {
+	background: $color-shade14;
+}
+%color-shade12-bg {
+	background: $color-shade12;
+}
+%color-shade15-bg {
+	background: $color-shade15;
+}
+%color-shade16-bg {
+	background: $color-shade16;
+}
+%color-shade17-bg {
+	background: $color-shade17;
+}
+%color-shade5-bg {
+	background: $color-gray5;
+}
+%color-shade18-bg {
+	background: $color-shade18;
+}
+%color-shade19-bg {
+	background: $color-shade19;
+}
+%color-shade20-bg {
+	background: $color-shade20;
+}
+%color-shade21-bg {
+	background: $color-shade21;
+}
+%color-shade22-bg {
+	background: $color-shade22;
+}
+%color-shade23-bg {
+	background: $color-shade23;
+}
+
+%color-shade24-bg {
+	background: $color-shade24;
+}
+%color-shade25-bg {
+	background: $color-shade25;
+}
+%color-shade26-bg {
+	background: $color-shade26;
+}
+%color-shade27-bg {
+	background: $color-shade27;
+}
+%color-shade28-bg {
+	background: $color-shade28;
+}
+%color-shade29-bg {
+	background: $color-shade29;
+}
+
+%pseudo-none {
+	&::before {
+		display: none;
+	}
+	&::after {
+		display: none;
+	}
+}
+
+%violet-bg-with-shadow {
+	background: $color-shade1;
+	box-shadow: 4px 4px 32px rgba(38, 37, 102, 0.15);
+}
+
+%green-bg-with-shadow {
+	background: $color-primary;
+	box-shadow: 4px 4px 32px rgba(0, 174, 112, 0.15);
+}
+%orange-bg-with-shadow {
+	background: $color-shade3;
+	box-shadow: 4px 4px 32px rgba(242, 160, 0, 0.15);
+}
+
+%testimonial-card-box-shadow {
+	box-shadow: $testimonial-card-box-shadow;
+}
+
+
+
+%secondary-bg-with-shadow {
+	background: $color-secondary;
+	box-shadow: 4px 4px 32px rgba(38, 37, 102, 0.15);
+}
+%shade2-bg-with-shadow {
+	background: $color-shade2;
+	box-shadow: 4px 4px 32px rgba(0, 174, 112, 0.15);
+}
+%shade3-bg-with-shadow {
+	background: $color-shade3;
+	box-shadow: 4px 4px 32px rgba(242, 160, 0, 0.15);
+}
+%shade21-bg-with-shadow {
+	background: $color-shade21;
+	box-shadow: 4px 4px 32px rgba(237, 99, 210, 0.15);
+}
+%shade20-bg-with-shadow {
+	background: $color-shade20;
+	box-shadow: 4px 4px 32px rgba(255, 125, 81, 0.15);
+}
+%shade22-bg-with-shadow {
+	background: $color-shade22;
+	box-shadow: 4px 4px 32px rgba(109, 49, 230, 0.15);
+}
+%shade23-bg-with-shadow {
+	background: $color-shade23;
+	box-shadow: 4px 4px 32px rgba(109, 49, 230, 0.15);
+}
+
+
+
+// custom margin
+
+%mb-30 {
+	margin-bottom: 30px;
+}
+
+%negative-margin-top-150 {
+	margin-top: -150px;
+}
+
+%negative-margin-bottom-150 {
+	margin-bottom: -150px;
+}

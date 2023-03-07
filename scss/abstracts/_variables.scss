@@ -1,0 +1,141 @@
+// ===========================
+//	Variables
+// ===========================
+
+// Fonts
+
+$font-body: var(--font-body);
+$font-awesome: var(--font-awesome);
+
+$font-outfit: var(--font-outfit);
+$title-font: var(--title-font);
+$text-font: var(--text-font);
+
+// Colors
+$color-primary: var(--color-primary);;
+$color-secondary: var(--color-secondary);;
+
+$color-white: var(--color-white);;
+$color-black: var(--color-black);;
+$colorOverlay: var(--colorOverlay);
+
+$color-hero-title: var(--color-hero-title);;
+$color-title: var(--color-title);;
+$footer-bg: var(--footer-bg);;
+$footer-text-color: var(--footer-text-color);;
+$color-line: var(--color-line);
+$color-text: var(--color-text);;
+$color-meta: var(--color-meta);
+// $footer-text-color: $color-gray2;;
+
+$color-gray1: var(--color-gray1);
+$color-gray2: var(--color-gray2);;
+$color-gray3: var(--color-gray3);
+$color-gray4: var(--color-gray4);
+$color-gray5: var(--color-gray5);;
+$color-gray6: var(--color-gray6);
+$color-gray7: var(--color-gray7);
+$color-gray8: var(--color-gray8);
+$color-gray9: var(--color-gray9);
+$color-gray10: var(--color-gray10);
+$color-gray11: var(--color-gray11);
+$color-gray12: var(--color-gray12);
+
+$color-bg: var(--color-bg);
+$bg-color2: var(--bg-color2);
+
+$color-rating: var(--color-rating);
+
+$color-shade1: var(--color-shade1);;
+$color-shade2: var(--color-shade2);;
+$color-shade3: var(--color-shade3);;
+$color-shade4: var(--color-shade4);;
+$color-shade5: var(--color-shade5);;
+$color-shade6: var(--color-shade6);
+$color-shade7: var(--color-shade7);
+$color-shade8: var(--color-shade8);
+$color-shade9: var(--color-shade9);
+$color-shade10: var(--color-shade10);
+$color-shade11: var(--color-shade11);
+$color-shade12: var(--color-shade12);
+$color-shade13: var(--color-shade13);
+$color-shade14: var(--color-shade14); 
+$color-shade15: var(--color-shade15);
+$color-shade16: var(--color-shade16);
+$color-shade17: var(--color-shade17);
+$color-shade18: var(--color-shade18); 
+$color-shade19: var(--color-shade19); 
+$color-shade20: var(--color-shade20); 
+$color-shade21: var(--color-shade21); 
+$color-shade22: var(--color-shade22); 
+$color-shade23: var(--color-shade23); 
+
+$color-shade24: var(--color-shade24);
+$color-shade25: var(--color-shade25);
+$color-shade26: var(--color-shade26);
+$color-shade27: var(--color-shade27);
+$color-shade28: var(--color-shade28);
+$color-shade29: var(--color-shade29);
+$color-shade30: var(--color-shade30);
+
+//gradient color
+
+$color-gradient-1: var(--color-gradient-1);
+$color-gradient-2: var(--color-gradient-2);
+$color-gradient-3: var(--color-gradient-3);
+$color-gradient-4: var(--color-gradient-4);
+$color-gradient-5: var(--color-gradient-5);
+$color-gradient-6: var(--color-gradient-6);
+
+//border-radius
+$border-radius-xs: var(--border-radius-xs);
+$border-radius-sm: var(--border-radius-sm);
+$border-radius-md: var(--border-radius-md);
+$border-radius-lg: var(--border-radius-lg);
+$border-radius-xl: var(--border-radius-xl);
+$border-radius-none: var(--border-radius-none);
+
+$button-radius1 : var(--button-radius1);
+$card-radius: var(--card-radius);
+
+//border-colors
+$border-color: var(--border-color);
+
+//box shadows
+$box-shadow: var(--box-shadow);
+
+$card-box-shadow1: var(--card-box-shadow1);
+$card-box-shadow2: var(--card-box-shadow2);
+$card-box-shadow3: var(--card-box-shadow3);
+
+$testimonial-card-box-shadow: var(--testimonial-card-box-shadow);
+
+
+// Breakpoints
+$breakpoints: (
+  "xs": (max-width: 575px,
+  ),
+  "sm": (max-width: 767px,
+  ),
+  "md": (max-width: 991px,
+  ),
+  "lg": (max-width: 1199px,
+  ),
+  ) !default;
+
+// $heading-font-size: (h1: 56/16,
+//     h2: 36/16,
+//     h3: 22/16,
+//     h4: 24/16,
+//     h5: 20/16,
+//     h6: 16/16,
+// );
+
+$breakpoint: (
+  "xs": 576px,
+  "sm": 768px,
+  "md": 992px,
+  "lg": 1200px,
+  ) !default;
+
+$default-gutter: 30px;

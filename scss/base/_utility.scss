@@ -1,0 +1,295 @@
+/*===========================
+//	Utility CSS.
+===========================*/
+
+ .rt-d-flex {
+	@extend %d-flex;
+}
+
+.rt-flex-wrap {
+	@extend %flex-wrap;
+}
+
+.rt-justify-content-center {
+	@extend %justify-content-center;
+}
+
+.rt-align-items-center {
+	@extend %align-items-center;
+}
+
+.rt-primary-color {
+	@extend %primary-color;
+}
+
+.rt-primary-color-bg {
+	@extend %primary-color-bg;
+}
+
+.rt-secondary-color {
+	@extend %secondary-color;
+}
+
+.rt-secondary-color-bg {
+	@extend %secondary-color-bg;
+}
+
+.rt-color-gray-bg {
+	@extend %color-gray-bg;
+}
+
+.rt-white-color {
+	@extend %white-color;
+}
+
+.rt-title-color {
+  @extend %title-color;
+}
+
+.rt-white-color-bg {
+	@extend %white-color-bg;
+}
+.rt-black-color {
+	@extend %black-color;
+}
+
+.rt-black-color-bg {
+	@extend %black-color-bg;
+}
+
+.rt-default-gutter {
+	@extend %default-gutter;
+}
+
+.rt-gutter-half {
+	@extend %gutter-half;
+}
+
+.rt-mb-0 {
+	@extend %mb-0;
+}
+
+.rt-static-content {
+	@extend %relative-content;
+}
+
+.rt-relative-content {
+	@extend %relative-content;
+}
+
+.rt-z-index-1 {
+	@extend %rt-z-index-1;
+}
+
+.rt-absolute-content {
+	@extend %relative-content;
+}
+
+//--
+.rt-color-bg {
+	@extend %color-bg;
+}
+
+.rt-color-lemon-bg {
+	@extend %color-lemon-bg;
+}
+
+.rt-color-shade4 {
+    @extend %color-shade4;
+}
+.rt-color-shade20 {
+    @extend %color-shade20;
+}
+.rt-color-shade30 {
+    @extend %color-shade30;
+}
+.rt-color-shade21 {
+    @extend %color-shade21;
+}
+.rt-color-shade22 {
+    @extend %color-shade22;
+}
+.rt-color-shade23 {
+    @extend %color-shade23;
+}
+
+.rt-color-shade2-bg {
+    @extend %color-shade2-bg;
+}
+.rt-color-shade14-bg {
+    @extend %color-shade14-bg;
+}
+.rt-color-shade12-bg {
+    @extend %color-shade12-bg;
+}
+.rt-color-shade15-bg {
+    @extend %color-shade15-bg;
+}
+.rt-color-shade16-bg {
+    @extend %color-shade16-bg;
+}
+.rt-color-shade17-bg {
+    @extend %color-shade17-bg;
+}
+.rt-color-shade5-bg {
+    @extend %color-shade5-bg;
+}
+.rt-color-shade18-bg {
+    @extend %color-shade18-bg;
+}
+.rt-color-shade19-bg {
+    @extend %color-shade19-bg;
+}
+.rt-color-shade20-bg {
+    @extend %color-shade20-bg;
+}
+.rt-color-shade21-bg {
+    @extend %color-shade21-bg;
+}
+.rt-color-shade22-bg {
+    @extend %color-shade22-bg;
+}
+.rt-color-shade23-bg {
+    @extend %color-shade23-bg;
+}
+.rt-color-shade24-bg {
+    @extend %color-shade24-bg;
+}
+.rt-color-shade25-bg {
+    @extend %color-shade25-bg;
+}
+.rt-color-shade26-bg {
+    @extend %color-shade26-bg;
+}
+.rt-color-shade27-bg {
+    @extend %color-shade27-bg;
+}
+.rt-color-shade28-bg {
+    @extend %color-shade28-bg;
+}
+.rt-color-shade29-bg {
+    @extend %color-shade29-bg;
+}
+
+.rt-seudo-none {
+	@extend %pseudo-none;
+}
+
+.rt-violet-bg-with-shadow {
+    @extend %violet-bg-with-shadow;
+}
+
+.rt-green-bg-with-shadow {
+    @extend %green-bg-with-shadow;
+}
+
+.rt-orange-bg-with-shadow {
+    @extend %orange-bg-with-shadow;
+}
+
+.rt-testimonial-card-box-shadow {
+    @extend %testimonial-card-box-shadow;
+}
+
+
+
+.rt-secondary-bg-with-shadow {
+    @extend %secondary-bg-with-shadow;
+}
+
+.rt-shade2-bg-with-shadow {
+    @extend %shade2-bg-with-shadow;
+}
+
+.rt-shade3-bg-with-shadow {
+    @extend %shade3-bg-with-shadow;
+}
+
+.rt-shade21-bg-with-shadow {
+    @extend %shade21-bg-with-shadow;
+}
+
+.rt-shade20-bg-with-shadow {
+    @extend %shade20-bg-with-shadow;
+}
+
+.rt-shade22-bg-with-shadow {
+    @extend %shade22-bg-with-shadow;
+}
+.rt-shade23-bg-with-shadow {
+    @extend %shade23-bg-with-shadow;
+}
+
+
+
+// helper classes
+
+.section-padding {
+    padding: 120px 0;
+
+    @include breakpoint("md") {
+        padding: 90px 0;
+    }
+
+    @include breakpoint("sm") {
+        padding: 70px 0;
+    }
+}
+
+
+.section-padding--two {
+    padding: 130px 0;
+
+    @include breakpoint("sm") {
+        padding: 100px 0;
+    }
+}
+
+
+//custom margin
+
+.rt-mb-30 {
+    @extend %mb-30;
+}
+
+.rt-negative-margin-top-150 {
+    @extend %negative-margin-top-150;
+}
+.rt-negative-margin-bottom-150 {
+    @extend %negative-margin-bottom-150;
+}
+
+  
+  /*================================
+  // para-text/normal text style
+  =================================*/
+  
+  .para-text {
+      font-family: $text-font;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+      color: #696969;
+  }
+  //end
+
+  .circle-radius {
+    border-radius: 50%;
+  }
+  
+
+
+/*======================================
+// pre-loader
+=====================================*/
+
+#preloader {
+    background: url("../preloader.gif") rgba(255, 255, 255, 0.99) no-repeat scroll center center;
+    height: 100%;
+    left: 0;
+    overflow: visible;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999999;
+  }

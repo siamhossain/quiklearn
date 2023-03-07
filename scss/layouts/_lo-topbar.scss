@@ -1,0 +1,29 @@
+.header-topbar {
+
+    padding: 46px 0 40px 0;
+
+    &--style-1 {
+        .header-topbar-wrapper {
+            .header-logo {
+                margin-top: -25px;
+            }        
+            .action-button-area {
+                gap: 10px;
+                .button {
+                    border: 1px solid #CBCBCB;
+                    color: #100E19;
+                    &:hover {
+                        background: $color-secondary;
+                        color: $color-white;
+                    }
+                }
+                .login-btn {
+
+                }
+                .signUp-btn {
+
+                }
+            }
+        }
+    }
+}
