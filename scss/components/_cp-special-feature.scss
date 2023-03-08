@@ -1,0 +1,22 @@
+.feature-item {
+    position: relative;
+    gap: 25px;
+    .feature-text-content {
+        flex: 1;
+        .title {
+            margin-bottom: 4px;
+            .title-link {
+                font-family: $font-outfit;
+                font-weight: 600;
+                @include toRem(font-size, 22);
+                line-height: 24px;
+                text-transform: capitalize;
+                color: $color-white;
+            }
+        }
+        .para-text {
+            color: #9D9CAE;
+        }
+    }
+    
+}

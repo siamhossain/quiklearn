@@ -33,44 +33,11 @@
     position: relative;
     overflow: hidden;
     z-index: 1;
-
     svg {
         transition: all 0.3s ease;
     }
-
-    &::after {
-        background: $color-white;
-        content: "";
-        height: 155px;
-        left: -75px;
-        opacity: .2;
-        position: absolute;
-        top: -50px;
-        transform: rotate(35deg);
-        transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
-        width: 50px;
-        z-index: -10;
-        visibility: hidden;
-    }
-
     &:hover {
         color: $color-white;
-        background: #01905d;
-
-        svg {
-            transform: rotate(45deg);
-        }
-
-        &:after {
-            left: 120%;
-            transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
-            visibility: visible;
-        }
-    }
-
-    &:hover {
-        // color: $color-white;
-        // background: #172263;
     }
 }
 

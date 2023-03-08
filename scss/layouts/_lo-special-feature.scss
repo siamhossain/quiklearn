@@ -1,0 +1,43 @@
+.special-feature-section {
+    position: relative;
+    padding: 76px 0;
+    .parent {
+        .child {
+            position: relative;
+            &::after {
+                content: "";
+                position: absolute;
+                width: 1px;
+                height: 59px;
+                right: -24%;
+                background: $color-shade2;
+                top: 20px;
+                
+            }
+            &:last-child {
+                &::after {
+                    display: none;
+                }
+            }
+        }
+    }
+    .shapes {
+        ul {
+            li {
+                position: absolute;
+                &:nth-child(1) {
+                    bottom: 43px;
+                    left: 40px;
+                }
+                &:nth-child(2) {
+                    top: 11px;
+                    right: 68px;
+                }
+                &:nth-child(3) {
+                    bottom: 47px;
+                    right: 96px;
+                }
+            }
+        }
+    }
+}

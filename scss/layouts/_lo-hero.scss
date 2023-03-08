@@ -1,0 +1,63 @@
+
+.rt-hero-section {
+    &-content-wrapper {
+        .section-text-content {
+            .section-name {
+                color: $color-shade1;
+                margin-bottom: 4px;
+            }
+            .section-heading {
+                position: relative;
+                font-size: 60px;
+                line-height: 76px;
+                color: $color-title;
+                svg {
+                    vertical-align: sub;
+                }
+                margin-bottom: 25px;
+                &::before {
+                    content: url("../images/hero-section/shapes/hero-shape-5.svg");
+                    position: absolute;
+                    top: 30px;
+                    right: 0;
+                }
+            }
+            .para-text {
+                margin-bottom: 30px;
+            }
+        }
+    }
+    &-banner-img {
+        position: relative;
+        padding: 50px 25px 65px 0;
+        z-index: 0;
+        .shapes {
+            ul {
+                li {
+                    position: absolute;
+                    &:nth-child(1) {
+                        top: 190px;
+                        left: 132px;
+                    }
+                    &:nth-child(2) {
+                        top: 45px;
+                        left: 250px;
+                    }
+                    &:nth-child(3) {
+                        top: 47px;
+                        right: 120px;
+                    }
+                    &:nth-child(4) {
+                        bottom: 268px;
+                        right: 0;
+                    }
+                }
+            }
+        }
+    }
+
+
+    &--style {
+
+    }
+}

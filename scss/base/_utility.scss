@@ -221,11 +221,35 @@
 }
 
 
+//gradient background
+
+.rt-gradient-bg-1 {
+    @extend %gradient-bg-1;
+}
+.rt-gradient-bg-2 {
+    @extend %gradient-bg-2;
+}
+.rt-gradient-bg-3 {
+    @extend %gradient-bg-3;
+}
+.rt-gradient-bg-4 {
+    @extend %gradient-bg-4;
+}
+.rt-gradient-bg-5 {
+    @extend %gradient-bg-5;
+}
+.rt-gradient-bg-6 {
+    @extend %gradient-bg-6;
+}
+.rt-gradient-bg-7 {
+    @extend %gradient-bg-7;
+}
+
 
 // helper classes
 
 .section-padding {
-    padding: 120px 0;
+    padding: 140px 0;
 
     @include breakpoint("md") {
         padding: 90px 0;
@@ -264,13 +288,13 @@
   // para-text/normal text style
   =================================*/
   
-  .para-text {
-      font-family: $text-font;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 28px;
-      color: #696969;
-  }
+//   .para-text {
+//       font-family: $text-font;
+//       font-weight: 400;
+//       font-size: 16px;
+//       line-height: 28px;
+//       color: #696969;
+//   }
   //end
 
   .circle-radius {
