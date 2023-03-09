@@ -1,0 +1,20 @@
+.course-category-section {
+    .section-text-content {
+        .section-name {
+            
+        }
+        .section-heading {
+            position: relative;
+            margin-bottom: 42px;
+            &::before {
+                content: url("../images/hero-section/shapes/hero-shape-5.svg");
+                position: absolute;
+                top: 24px;
+                left: 138px;
+            }
+        }
+        .para-text {
+
+        }
+    }
+}

@@ -399,9 +399,6 @@
     });
     wow.init();
 
-  
-
-
     // $("#main-menu ul a")    
     // .click(function(e) {
     //     var link = $(this);
@@ -430,5 +427,23 @@
     //         return false;
     //     }
     // });
+
+    // init Isotope
+    $('.course-category-items').isotope({
+        itemSelector: '.item',
+        layoutMode: 'fitRows'
+      });
+    
+      $('.course-category-menu ul li').click(function(){
+        $('.course-category-menu ul li').removeClass('active');
+        $(this).addClass('active');
+    
+        var selector = $(this).attr('data-filter');
+        $('.course-category-items').isotope({
+          filter: selector
+        });
+        return false;
+      });
+  
 
 })(jQuery);

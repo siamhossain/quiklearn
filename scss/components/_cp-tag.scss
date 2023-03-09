@@ -1,0 +1,21 @@
+.tag {
+    display: inline-block;
+    position: absolute;
+    span {
+        font-family: $font-outfit;
+        font-weight: 400;
+        @include toRem(font-size, 14);
+        line-height: 0px;
+        text-transform: capitalize;
+        border-radius: 5px;
+        padding: 3px 12px;
+    }
+    &--style-1 {
+        top: 12px;
+        left: 12px;
+        span {
+            color: $color-shade1;
+            background: $color-white;
+        }
+    }
+}

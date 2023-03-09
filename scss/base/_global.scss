@@ -38,6 +38,8 @@
     --color-gray10: #E7E7E7;
     --color-gray11: #BDBABB;
     --color-gray12: #9D9CAE;
+    --color-gray13: #F8F8F8;
+    --color-gray14: #DCDBE6;
 
     --color-bg: #FAF9F6;
 
@@ -48,12 +50,12 @@
     --color-shade1: #4F536C;
     --color-shade2: #392A56; 
     --color-shade3: #B1A8FF;
-    --color-shade4: ;
-    --color-shade5: ;
-    --color-shade6: ;
-    --color-shade7: ;
-    --color-shade8: ;
-    --color-shade9: ;
+    --color-shade4: #FF9D95;
+    --color-shade5: #6CE1DC;
+    --color-shade6: #FBA3E3;
+    --color-shade7: #98DF76;
+    --color-shade8: #89DAFD;
+    --color-shade9: #FEC269;
     --color-shade10: ;
     --color-shade11: ;
     --color-shade12: ;
@@ -68,7 +70,6 @@
     --color-shade21: ;
     --color-shade22: ;
     --color-shade23: ;
-
     --color-shade24: ;
     --color-shade25: ;
     --color-shade26: ;
@@ -89,14 +90,26 @@
     --color-gradient-6: linear-gradient(133.03deg, #3FC6FF 0%, #D7F3FF 116.64%);
     --color-gradient-7: linear-gradient(133.03deg, #FFA41F 0%, #FFE3BB 116.64%);
 
+    --color-gradient-8: linear-gradient(122.96deg, #7AE985 11.09%, #49B5D7 90.59%);
+    --color-gradient-9: linear-gradient(122.96deg, #FF9966 11.09%, #FF5E62 90.59%);
+    --color-gradient-10: linear-gradient(122.96deg, #7AE9E2 11.09%, #4993D7 90.59%);
+    --color-gradient-11: linear-gradient(122.96deg, #C57AE9 11.09%, #8749D7 90.59%);
+    --color-gradient-12: linear-gradient(122.96deg, #1488CC 11.09%, #1453CC 90.59%);
+    --color-gradient-13: linear-gradient(122.96deg, #56AB2F 11.09%, #A8E063 90.59%);
+    --color-gradient-14: linear-gradient(122.96deg, #F8B500 11.09%, #FFDB7B 90.59%);
+    --color-gradient-15: linear-gradient(122.96deg, #7A7FE9 11.09%, #5549D7 90.59%);
+
+
+
 
 
     //border-radius
-    --border-radius-xs: 4px;
-    --border-radius-sm: 6px;
-    --border-radius-md: 10px;
-    --border-radius-lg: 20px;
-    --border-radius-xl: 50px;
+
+    --border-radius-10: 10px;
+    --border-radius-50: 50px;
+    --border-radius-100: 100px
+    --border-radius-lg: ;
+    --border-radius-xl: ;
     --border-radius-none: 0;
     
 

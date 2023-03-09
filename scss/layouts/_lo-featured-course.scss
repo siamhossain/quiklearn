@@ -1,0 +1,31 @@
+.featured-course-section {
+    .section-text-content {
+        margin-bottom: 32px;
+    }
+    .course-category-menu {
+        ul.course-category-menu-list {
+            gap: 10px;
+            li {
+                background: linear-gradient(180deg, #FFFFFF 0%, #EFEFEF 100%);
+                border: 1px solid #DFDFDF;
+                border-radius: 30px;
+                padding: 7px 20px; 
+                cursor: pointer;
+
+                font-family: $font-outfit;
+                font-weight: 500;
+                font-size: 16px;
+                text-transform: capitalize;
+                color: #4F536C;;
+                
+            }
+            li.active {
+                background: linear-gradient(118.54deg, #8674FF 6.57%, #593EFE 85.92%);
+                border: 1px solid #684FFF;
+                box-shadow: 0px 5px 6px rgba(99, 73, 255, 0.4);
+                border-radius: 30px; 
+                color: $color-white;
+            } 
+        }
+    }
+}

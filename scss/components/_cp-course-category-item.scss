@@ -1,0 +1,85 @@
+.course-category-item {
+    position: relative;
+    background: $color-gray13;
+    gap: 18px;
+    padding: 35px 32px; 
+    overflow: hidden;
+    z-index: 0;
+    .icon {
+        width: 70px;
+        height: 70px;
+    }
+    .course-text-content {
+        flex: 1;
+        .title {
+            .title-link {
+                font-family: $font-outfit;
+                font-weight: 500;
+                @include toRem(font-size, 20);
+                line-height: 24px;
+                text-transform: capitalize;
+                color: $color-title;
+            }
+        }
+        .para-text {
+            @include toRem(font-size, 16); 
+            line-height: 24px;
+        }
+    }
+    .shapes {
+        ul {
+            li {
+                position: absolute;
+                &:nth-child(1) {
+                    top: 26px;
+                    left: 24px;
+                    z-index: -1;
+                }
+                &:nth-child(2) {
+                    right: 0;
+                    bottom: 0;
+                    z-index: -1;
+                }
+            }
+        }
+    }
+}
+
+.more-categories {
+    position: relative;
+    background: $color-gray13;
+    padding: 40px 25px 35px 25px;
+    z-index: 0;
+    .course-text-content {
+        display: inline-block;
+        .number-of-categories {
+            font-family: $font-outfit;
+            font-weight: 700;
+            @include toRem(font-size, 36);
+            line-height: 24px;
+            text-transform: capitalize;
+            color: $color-primary;
+            margin-bottom: 5px;
+        }
+        .title-link {
+            font-family: $font-outfit;
+            font-weight: 500;
+            @include toRem(font-size, 20); 
+            line-height: 24px;
+            text-transform: capitalize;
+            color: $color-shade1;
+        }
+    }
+    .shapes {
+        ul {
+            li {
+                position: absolute;
+                &:nth-child(1) {
+                    bottom: 22px;
+                    right: 24px;
+                    z-index: -1;
+                }
+            }
+        }
+    }
+}

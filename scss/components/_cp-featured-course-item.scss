@@ -1,0 +1,72 @@
+.featured-course-item {
+    background: $color-white;
+    border: 1px solid $color-gray14;
+    padding: 21px 24px 28px 24px;
+    .featured-course-img {
+        position: relative;
+        padding: 28px 47px 4px 57px;
+        // background: linear-gradient(122.96deg, #7AE985 11.09%, #49B5D7 90.59%);
+        .icon {
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.39) 0%, rgba(255, 255, 255, 0) 100%);
+            width: 178px;
+            height: 178px;
+            position: relative;
+            z-index: 0;
+        }
+        margin-bottom: 18px;
+    }
+    .course-content {
+        margin-bottom: 15px;
+        .meta-wrapper {
+            .meta-data {
+                gap: 17px;
+                .meta-item {
+                    gap: 8px;
+                    font-family: $font-outfit;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 0px;
+                    color: $color-shade1;
+                }
+            }
+            margin-bottom: 18px;
+        }
+        .featured-course-title {
+            .featured-course-title-link {
+                font-family: $font-outfit;
+                font-weight: 500;
+                @include toRem(font-size, 20px);
+                line-height: 28px;
+                text-transform: capitalize;
+                color: $color-title;
+            }
+            margin-bottom: 22px;
+        }
+        .author-name {
+            font-family: $font-outfit;
+            font-weight: 400;
+            @include toRem(font-size, 15);
+            line-height: 0px;
+            color: $color-gray12;
+        }
+    }
+    .featured-course-bottom {
+        .rating {
+            gap: 6px;
+            .rating-text {
+                font-family: $font-outfit;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 0px;
+                color: #9D9CAE;
+            }
+        }
+        .course-price {
+            font-family: $font-outfit;
+            font-weight: 600;
+            @include toRem(font-size, 22px);
+            line-height: 0px;
+            color: $color-title;
+        }
+    }
+}
