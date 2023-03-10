@@ -1,0 +1,33 @@
+.counter-section {
+    padding: 96px 0;
+    .section-text-content {
+        .section-heading {
+            font-family: $font-outfit;
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 40px;
+            text-transform: capitalize;
+            color: $color-white;
+        }
+        margin-bottom: 0;
+    }
+    .shapes {
+        ul {
+            li {
+                position: absolute;
+                &:nth-child(1) {
+                    left: 209px;
+                    top: 29px;
+                }
+                &:nth-child(2) {
+                    right: 0;
+                    top: 0;
+                }
+                &:nth-child(3) {
+                    right: 0;
+                    bottom: 0;
+                }
+            }
+        }
+    }
+}
