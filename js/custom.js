@@ -255,12 +255,15 @@
                         spaceBetween: slideSpace,
                         speed: slideSpeed,
                         loop: slideLoop,
-                        effect: slideEffect,
+                        // effect: slideEffect,
                         observer: true,
                         observeParents: true,
                         watchSlidesProgress: true,
                         watchSlidesVisibility: true,
                         loopAdditionalSlides: 10,
+
+                        
+
                         autoplay: {
                             delay: slideAutoPlayDelay
                         },
@@ -271,9 +274,10 @@
                         },
     
                         pagination: {
-                            el: '.pagination-' + index,
+                            // el: '.pagination-' + index,
+                            el: '.swiper-pagination',
                             type: 'bullets',
-                            clickable: true
+                            clickable: true,
                         },
     
                         // Responsive breakpoints
@@ -348,6 +352,25 @@
             }); 
         },
 
+        isotope: function () {
+            // init Isotope
+            $('.course-category-items').isotope({
+                itemSelector: '.item',
+                layoutMode: 'fitRows'
+            });
+            
+            $('.course-category-menu ul li').click(function(){
+                $('.course-category-menu ul li').removeClass('active');
+                $(this).addClass('active');
+            
+                var selector = $(this).attr('data-filter');
+                $('.course-category-items').isotope({
+                filter: selector
+                });
+                return false;
+            });
+        },
+
 
 		bodyClass: function () {
 			$body.addClass('document-loaded');
@@ -369,6 +392,7 @@
         rtInsureti.functions.niceSelect();
         rtInsureti.functions.elementsCarousel();
         rtInsureti.functions.activeMenu();
+        rtInsureti.functions.isotope();
 	});
 
 	/**
@@ -398,23 +422,6 @@
     scrollContainer: null,
     });
     wow.init();
-
-    // init Isotope
-    $('.course-category-items').isotope({
-        itemSelector: '.item',
-        layoutMode: 'fitRows'
-      });
-    
-      $('.course-category-menu ul li').click(function(){
-        $('.course-category-menu ul li').removeClass('active');
-        $(this).addClass('active');
-    
-        var selector = $(this).attr('data-filter');
-        $('.course-category-items').isotope({
-          filter: selector
-        });
-        return false;
-      });
   
 
 })(jQuery);
