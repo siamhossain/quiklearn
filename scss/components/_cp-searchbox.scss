@@ -52,4 +52,41 @@
             }
         }
     }
+    &--style-2 {
+        border: 1px solid #2E2B37;
+        border-radius: 5px;
+        display: inline-block;
+        padding: 10px;
+        margin-bottom: 15px;
+        .search-box-content-warpper {
+            gap: 10px;
+        }
+        .searchbox-textfield {
+            .searchbox-input {
+                border: none;
+                padding-left: 10px;
+                background: transparent;
+                width: 100%;
+                color: #646375;
+                font-family: $font-outfit;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 24px;
+                text-transform: capitalize;
+                // color: #646375;
+            }
+        }
+        .searchbox-submit {
+            .rt-searchbox-btn {
+                font-family: $font-outfit;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 23px;
+                text-transform: capitalize;
+                border: none;
+                padding: 8px 20px 9px 20px;
+                border-radius: 3px;
+            }
+        }
+    }
 }

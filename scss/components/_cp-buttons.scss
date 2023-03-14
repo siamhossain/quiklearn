@@ -82,12 +82,19 @@
 
 // White Button
 .button-white {
-    background: $color-white ;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: $color-white;
     color: $color-primary;
     position: relative;
-
+    overflow: hidden;
+    z-index: 1;
+    svg {
+        transition: all 0.3s ease;
+    }
     &:hover {
-        color: $color-white;
-        background: #4256c6;
+        // color: $color-white;
+        // background: $color-primary;
     }
 }

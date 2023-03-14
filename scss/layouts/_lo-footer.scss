@@ -1,0 +1,153 @@
+.footer-section {
+    .rt-footer-content-wrapper {
+        padding: 123px 0 95px 0;
+        .rt-footer-logo {
+            margin-bottom: 27px;
+        }
+        .rt-footer-content {
+            .first-para {
+                width: 276px;
+            }
+            .para-text {
+                line-height: 24px;
+                color: $color-gray12;
+                margin-bottom: 10px
+            }
+            .footer-info {
+                .info-list {
+                    margin-bottom: 15px;
+                    li {
+                        @extend .para-text;
+                        line-height: 30px;
+                        color: $color-gray12;
+                        margin-bottom: 4px;
+                        a {
+                            line-height: 30px;
+                            color: $color-gray12;
+                            margin-bottom: 0;
+                        }
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+            .app-download-area {
+                gap: 8px;
+            }
+
+            //
+            .rt-footer-link-list-wrapper {
+                .rt-footer-link-heading {
+                    font-family: $font-outfit;
+                    font-weight: 600;
+                    @include toRem(font-size, 24);
+                    line-height: 30px;
+                    color: $color-white;
+                    margin-bottom: 30px;
+                }
+                ul.rt-footer-link-list {
+                    li {
+                        position: relative;
+                        a {
+                            @extend .para-text;
+                            color: #9D9CAE;
+                            line-height: 38px;
+                            margin-bottom: 0;
+
+                            &::before {
+                                content: "";
+                                position: absolute;
+                                width: 12px;
+                                height: 3px;
+                                background: #543EE8;
+                                border-radius: 50px;
+                                left: -12px;
+                                top: 17px;
+                                @include transition;
+                                opacity: 0;
+                                visibility: hidden;
+                            }
+
+                            &:hover {
+                                color: $color-white;
+                                padding-left: 20px;
+                                &::before {
+                                    left: 0;
+                                    opacity: 1;
+                                    visibility: visible;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            //
+            .footer-newsletter-area {
+                .para-text {
+                    margin-bottom: 15px;
+                }
+                .rt-footer-link-heading {
+                    font-family: $font-outfit;
+                    font-weight: 600;
+                    @include toRem(font-size, 24);
+                    line-height: 30px;
+                    color: $color-white;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+
+    .rt-footer-bottom {
+        padding: 45px 0 40px 0;
+        border-top: 1px solid #27242F;
+        .rt-footer-copyright-area {
+            .rt-footer-copyright-text {
+                font-family: $font-outfit;
+                font-weight: 400;
+                @include toRem(font-size, 16);
+                line-height: 30px;
+                text-transform: capitalize;
+                color: #69676F;
+                a {
+                    @extend .rt-footer-copyright-text;
+                }
+            }
+            .copyright-area-links {
+                .copyright-area-link-list {
+                    gap: 20px;
+                    li {
+                        position: relative;
+                        a {
+                            @extend .rt-footer-copyright-text;
+                            @include toRem(font-size, 15);
+                        }
+                        &::after {
+                            content: '.';
+                            position: absolute;
+                            right: -13px;
+                            color: #69676F;
+                        }
+                        &:last-child {
+                            &::after {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+            .social-share-list {
+                gap: 20px;
+                li {
+                    a {
+                        color: #565558;
+                        i {
+                            font-size: 20px ;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -47,30 +47,4 @@
     }
 }
 
-.testimonial-section {
-    .section-text-content {
-        .section-heading {
-            margin-bottom: 40px;
-            position: relative;
-            &::before {
-                content: url("../images/testimonial/shapes/heading-shape.svg");
-                position: absolute;
-                bottom: -33px;
-                right: 0;
-                left: 0;
-                text-align: center;
-            }
-            &::after {
-                content: url("../images/testimonial/shapes/shape-2.svg");
-                position: absolute;
-                right: -187px;
-                top: 14px;
-                z-index: -1;
-            }
-        }
-        .para-text {
-
-        }
-    }
-}
 
