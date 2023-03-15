@@ -4,6 +4,12 @@
 
     &--style-1 {
         .header-topbar-wrapper {
+            flex-wrap: wrap;
+            gap: 20px;
+            @include media-only('xl', min) {
+                flex-wrap: unset;
+                gap: unset;
+            }
             .header-logo {
                 margin-top: -25px;
             }        

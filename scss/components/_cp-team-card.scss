@@ -47,11 +47,11 @@
         ul.meta-list {
             .meta-data {
                 gap: 10px;
-                margin-bottom: 11px;
+                // margin-bottom: 11px;
                 font-family: 'Hind';
                 font-weight: 400;
                 font-size: 16px;
-                line-height: 0px;
+                // line-height: 0px;
                 color: #4F536C;
                 svg {
                     margin-top: -2px;
@@ -66,6 +66,18 @@
         margin-bottom: 20px;
         .section-heading {
             margin-bottom: 25px;
+            display: inline-block;
+            &::before {
+                content: url("../images/team/shapes/underline.svg");
+                position: absolute;
+                bottom: -24px;
+                right: 0;
+                bottom: -24px;
+                text-align: center;
+            }
+        }
+        .para-text {
+            margin-bottom: 20px;
         }
     }
 }

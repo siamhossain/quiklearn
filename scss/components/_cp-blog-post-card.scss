@@ -5,8 +5,10 @@
         overflow: hidden;
         border-radius: 10px 10px 0px 0px;
         .blog-post-img-link {
+            width: 100%;
             img {
                 @include transition;
+                width: 100%;
             }
         }
     }
@@ -33,13 +35,18 @@
 
         .entry-meta {
             gap: 28px;
+            @include media-from-to(1200px, min, 1400px, max) {
+                gap: 20px;
+            }
             li {
                 gap: 7px;
                 span {
-                    line-height: 0;
+                    // line-height: 0;
+                    font-size: 14px;
                 }
                 a {
-                    line-height: 0;
+                    // line-height: 0;
+                    font-size: 14px;
                     &:hover {
                         color: $color-primary;
                     }

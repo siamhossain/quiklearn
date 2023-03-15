@@ -1,6 +1,10 @@
 
 .rt-hero-section {
     &-content-wrapper {
+        padding: 70px 0;
+        @include media-only('lg', min) {
+            padding: 0;
+        }
         .section-text-content {
             .section-name {
                 color: $color-shade1;
@@ -8,8 +12,9 @@
             }
             .section-heading {
                 position: relative;
-                font-size: 60px;
-                line-height: 76px;
+                display: inline-block;
+                font-size: 45px;
+                line-height: 60px;
                 color: $color-title;
                 svg {
                     vertical-align: sub;
@@ -18,8 +23,21 @@
                 &::before {
                     content: url("../images/hero-section/shapes/hero-shape-5.svg");
                     position: absolute;
-                    top: 30px;
+                    display: none;
                     right: 0;
+                    @include media-only('md', min) {
+                        top: 60px;
+                        display: block;
+                    }
+                    @include media-only('lg', min) {
+                        top: 30px;
+                        display: block;
+                    }
+                }
+
+                @include media-only('lg', min) {
+                    font-size: 60px;
+                    line-height: 76px;
                 }
             }
             .para-text {

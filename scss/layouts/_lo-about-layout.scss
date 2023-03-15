@@ -4,11 +4,21 @@
         .about-img {
             text-align: center;
             position: relative;
+            margin-bottom: 50px;
+            @include media-only('lg', min) {
+                margin-bottom: 0;
+            }
             .background-shape1 {
                 position: absolute;
                 bottom: 0;
                 left: 0;
+                right: 0;
+                text-align: center;
                 z-index: -1;
+                @include media-only('lg', min) {
+                    left: 0;
+                    right: unset;
+                }
             }
             .shapes {
                 ul {
@@ -43,6 +53,10 @@
                         position: absolute;
                         bottom: 32px;
                         right: 30px;
+                        display: none;
+                        @include media-only('lg', min) {
+                            display: block;
+                        }
                     }
                 }
                 .para-text {

@@ -15,11 +15,16 @@
 .section-heading {
     font-family: $font-outfit;
     font-weight: 600;
-    @include toRem(font-size, 36);
-    line-height: 40px;
+    @include toRem(font-size, 30);
+    line-height: 30px;
     text-transform: capitalize;
     color: $color-title;
     margin-bottom: 22px;
+    display: inline-block;
+    @include media-only ('sm', min) {
+        @include toRem(font-size, 36);
+        line-height: 40px;
+    }
 }
 .para-text {
     font-family: $font-outfit;

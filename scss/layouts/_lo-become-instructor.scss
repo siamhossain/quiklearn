@@ -1,13 +1,26 @@
 .become-instructor-section {
     .become-instructor-img {
         position: relative;
-        padding-left: 58px;
+        padding-left: 0;
+        display: inline-block;
+        @include media-only ('lg', min) {
+            padding-left: 58px;
+        }
         &::before {
             content: url("../images/become-instructor/shapes/shape-bg.svg");
             position: absolute;
             left: 0;
             top: -43px;
             z-index: -1;
+            display: none;
+            @include media-only('lg', min) {
+                left: -50px;
+                display: block;
+            }
+            @include media-only(1330px, min) {
+                left: 0;
+                display: block;
+            }
         }
     }
 
@@ -21,6 +34,12 @@
                 margin-bottom: 17px;
             }
         }
+        .become-instructor-btn {
+            margin-bottom: 30px;
+            @include media-only('lg', min) {
+                margin-bottom: 0;
+            }
+        }
     }
 
     .shapes {
@@ -29,8 +48,11 @@
                 position: absolute;
                 display: inline-block;
                 &:nth-child(1) {
-                    right: 50px;
+                    right: 0;
                     top: -50px;
+                    @include media-only('xl', min) {
+                        right: 50px;
+                    }
                 }
                 &:nth-child(2) {
                     left: 115px;

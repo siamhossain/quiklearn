@@ -17,6 +17,10 @@
                 right: -187px;
                 top: 14px;
                 z-index: -1;
+                display: none;
+                @include media-only('lg', min) {
+                    display: block;
+                }
             }
         }
         .para-text {

@@ -422,6 +422,65 @@
     scrollContainer: null,
     });
     wow.init();
+
+
+    
+      /*=================================
+   // counter up
+   ==================================*/
+   var counter = true;
+   $(".counter-appear").appear();
+   $(".counter-appear").on("appear", function () {
+     if (counter) {
+       // Only number counter
+       $(".counterUp").each(function () {
+         let $this = $(this);
+         jQuery({
+           Counter: 0,
+         }).animate(
+           {
+             Counter: $this.attr("data-counter"),
+           },
+           {
+             duration: 3000,
+             easing: "swing",
+             step: function () {
+               let num = Math.ceil(this.Counter).toString();
+               if (Number(num) > 99999999) {
+                 while (/(\d+)(\d{8})/.test(num)) {
+                   num = num.replace(/(\d+)(\d{8})/, "");
+                 }
+               }
+               $this.html(num);
+             },
+           }
+         );
+       });
+ 
+       // with skill bar
+       $(".skill-per").each(function () {
+         let $this = $(this);
+         let per = $this.attr("data-per");
+         $this.css("width", per + "%");
+         $({ animatedValue: 0 }).animate(
+           { animatedValue: per },
+           {
+             duration: 500,
+             step: function () {
+               $this.attr("data-per", Math.floor(this.animatedValue) + "%");
+             },
+             complete: function () {
+               $this.attr("data-per", Math.floor(this.animatedValue) + "%");
+             },
+           }
+         );
+       });
+ 
+       counter = false;
+     }
+   });
+
+
   
 
 })(jQuery);

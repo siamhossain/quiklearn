@@ -4,8 +4,10 @@
     padding: 21px 24px 28px 24px;
     .featured-course-img {
         position: relative;
-        padding: 28px 47px 4px 57px;
-        // background: linear-gradient(122.96deg, #7AE985 11.09%, #49B5D7 90.59%);
+        padding: 20px 25px 4px 25px;
+        @include media-only ('xs', min) {
+            padding: 28px 47px 4px 57px;
+        }
         .icon {
             background: linear-gradient(180deg, rgba(255, 255, 255, 0.39) 0%, rgba(255, 255, 255, 0) 100%);
             width: 178px;

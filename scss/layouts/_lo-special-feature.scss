@@ -1,6 +1,6 @@
 .special-feature-section {
     position: relative;
-    padding: 76px 0;
+    padding: 76px 0 46px 0;
     .parent {
         .child {
             position: relative;
@@ -12,7 +12,10 @@
                 right: -24%;
                 background: $color-shade2;
                 top: 20px;
-                
+                display: none;
+                @include media-only ('lg', min) {
+                    display: block;
+                }
             }
             &:last-child {
                 &::after {

@@ -190,7 +190,7 @@ a.menu--link.second-level::after {
         @include toRem(font-size, 16);
         color: black;
         font-weight: 400;
-        padding: 10px 20px;
+        padding: 20px 20px;
         display: block;
         width: 100%;
         overflow: hidden;
@@ -216,18 +216,65 @@ a.menu--link.second-level::after {
 }
 
 .navbar-action-area {
-  display: flex;
-  align-items: center;
-  gap: 25px;
+  gap: 24px;
 
-  .rt-header-action-btn {
-    padding: 13px 20px;
-    display: flex;
-    gap: 8px;
-    align-items: center;
-    z-index: 1;
-    @include transition;
+  ul.action-icon-list {
+    gap: 48px;
+    li {
+      position: relative;
+      span {
+        font-family: $font-outfit;
+        font-weight: 400;
+        @include toRem(font-size, 14);
+        line-height: 18px;
+        text-transform: capitalize;
+        color: #111111;
+        position: absolute;
+        background: #FFCD1F;
+        border: 1.5px solid #FAF9F6;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 50px;
+        width: 24px;
+        height: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: -5px;
+        right: -20px;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 20px;
+        background: #BDBABB;
+        right: -33px;
+        top: 2px;
+      }
+      &:last-child {
+        &::after {
+          display: none;
+        }
+      }
+    }
   }
+  span.amount {
+    font-family: $font-outfit;
+    font-weight: 400;
+    @include toRem(font-size, 15);
+    line-height: 19px;
+    text-transform: capitalize;
+    color: #100E19;
+  }
+
+  // .rt-header-action-btn {
+  //   padding: 13px 20px;
+  //   display: flex;
+  //   gap: 8px;
+  //   align-items: center;
+  //   z-index: 1;
+  //   @include transition;
+  // }
 }
 
 .header {

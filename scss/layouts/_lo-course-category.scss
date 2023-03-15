@@ -11,6 +11,10 @@
                 position: absolute;
                 top: 24px;
                 left: 138px;
+                display: none;
+                @include media-only('md', min) {
+                    display: block;
+                }
             }
         }
         .para-text {
