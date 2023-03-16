@@ -103,6 +103,7 @@
         padding: 45px 0 40px 0;
         border-top: 1px solid #27242F;
         .rt-footer-copyright-area {
+            flex-wrap: wrap;
             .rt-footer-copyright-text {
                 font-family: $font-outfit;
                 font-weight: 400;

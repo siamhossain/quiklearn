@@ -43,6 +43,34 @@
             }
         }
     }
+    &--style-2 {
+        position: relative;
+        gap: 30px;
+        .icon {
+            position: relative;
+            .icon-shapes {
+                ul {
+                    li {
+                        position: absolute;
+                        left: 0;
+                        z-index: -1;
+                        bottom: -13px;
+                    }
+                }
+            }
+        }
+        .shapes {
+            ul {
+                li {
+                    position: absolute;
+                    &:nth-child(1) {
+                        right: 0;
+                        z-index: -1;
+                    }
+                }
+            }
+        }
+    }
 }
 
 .more-categories {

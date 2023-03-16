@@ -230,9 +230,14 @@ section,
     .container-lg, 
     .container-md, 
     .container-sm, 
-    .container-xl,
-    .container-xxl {
+    .container-xl {
         max-width: 1410px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container-xxl {
+        max-width: 1720px;
     }
 }
 

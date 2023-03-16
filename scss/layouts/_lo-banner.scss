@@ -25,8 +25,11 @@
             }
             .section-heading {
                 color: $color-white;
-                font-size: 40px;
+                font-size: 30px;
                 line-height: 52px;
+                @include media-only('lg', min) {
+                    font-size: 40px;
+                }
             }
         }
         .banner-btn {

@@ -74,8 +74,54 @@
         }
     }
 
+    &--style-2 {
+        padding: 105px 0;
+        .section-text-content {
+            position: relative;
+            z-index: 0;
+            margin-bottom: 50px;
+            .section-name {
+                margin-bottom: 26px;
+            }
+            .section-heading {
+                font-size: 55px;
+                line-height: 69px;
+                span {
+                    color: $color-white;
+                    position: relative;
+                    margin-right: 10px;
+                    &::before {
+                        content: url("../../images/hero-section/shapes/hero-shape-6.svg");
+                        position: absolute;
+                        left: -10px;
+                        z-index: -1;
+                        top: -7px;
+                    }
+                }
+            }
+        }
+        .brand-section {
+            padding: 0;
+            .brand-wrapper {
+                gap: 60px;
+            }
+        }
 
-    &--style {
-
+        .shapes {
+            ul {
+                li {
+                    position: absolute;
+                    &:nth-child(1) {
+                        top: -10px;
+                        left: -106px;
+                        z-index: -1;
+                    }
+                    &:nth-child(2) {
+                        top: -6px;
+                        left: -75px;
+                    }
+                }
+            }
+        }
     }
 }

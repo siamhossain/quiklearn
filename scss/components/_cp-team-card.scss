@@ -6,7 +6,10 @@
     .rt-team-card-img-container {
         position: relative;
         .rt-team-card-img {
-            height: 210px;
+            height: 150px;
+            @include media-only('xs', min) {
+                height: 210px;
+            }
         }
         .shapes {
             ul {

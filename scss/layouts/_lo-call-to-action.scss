@@ -1,6 +1,11 @@
 .call-to-action-section {
-    padding-top: 34px;
     z-index: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    @include media-only ('lg', min) {
+        padding-top: 34px;
+        padding-bottom: 0;
+    }
     .call-to-action-img {
         position: relative;
         z-index: 0;
@@ -29,19 +34,25 @@
                 &:nth-child(1) {
                     left: 209px;
                     top: 29px;
+                    z-index: -1;
                 }
                 &:nth-child(2) {
                     right: 0;
                     top: 0;
+                    z-index: -1;
                 }
                 &:nth-child(3) {
                     right: 0;
                     bottom: 0;
+                    z-index: -1;
                 }
                 &:nth-child(4) {
                     left: 135px;
                     bottom: 0;
                     z-index: -1;
+                    @include media-from-to(1200px, min, 1650px, max) {
+                        left: 0;
+                    }
                 }
                 &:nth-child(5) {
                     left: 0;

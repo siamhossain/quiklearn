@@ -22,6 +22,28 @@
             color: $color-white;
         }
     }
+    &--style-2 {
+        .icon {
+            background: #FFFFFF;
+            border: 1px solid #D5D1E1;
+            border-radius: 10px;
+            width: 79px;
+            height: 79px;
+        }
+        .item-title { 
+            .rtOdoCounter {
+                font-size: 30px;
+                line-height: 40px;
+                font-weight: 700;
+                color: $color-secondary;
+            }
+            .label {
+                font-size: 18px;
+                // line-height: 48px;
+                color: #9D9CAE;
+            }
+        }
+    }
 }
 
 .odometer.odometer-auto-theme .odometer-digit .odometer-digit-inner, .odometer.odometer-theme-default .odometer-digit .odometer-digit-inner {
