@@ -1,0 +1,58 @@
+.swiper-container-initialized {
+    position: relative;
+}
+
+.slider-navigation-btn-wrapper {
+    .swiper-arrow {
+        font-size: 1.125rem;
+        color: var(--color-text);
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 60px;
+        border: 1px solid var(--border-color);
+        background-color: var(--color-white);
+        transition: all 0.4s ease-in-out;
+        position: absolute;
+        bottom: -15%;
+        transform: translateY(-50%);
+        z-index: 1;
+        top: 42%;
+        svg {
+            @include transition;
+        }
+
+        &:hover {
+            background-color: $color-primary;
+            color: $color-white;
+            border: 1px solid $color-primary;
+            svg {
+                fill: $color-white;
+            }
+        }
+        @include media-only ('lg', min) {
+            display: inline-flex;
+        }
+        @include media-only (1400px, min) {
+            top: 45%;
+        }
+    }
+    .prev {
+        left: 15.5%;
+        // @include media-only (1400px, min) {
+        //     left: -80px;
+        // }
+    }
+    .next {
+        right: 15.5%;
+        // @include media-only (1400px, min) {
+        //     right: -80px;
+        // }
+    }
+}
+
+.slider-wrapper {
+    position: relative;
+}
