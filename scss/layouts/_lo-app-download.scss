@@ -1,0 +1,46 @@
+.app-download-section {
+    padding: 155px 0;
+    position: relative;
+    overflow: hidden;
+    &::before {
+        content: url("../images/apps/app-download-img1.png");
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .app-download-content {
+        .section-text-content {
+            .section-name {
+
+            }
+            .section-heading {
+                color: $color-white;
+                @include toRem(font-size, 40);
+                line-height: 52px;
+            }
+            margin-bottom: 10px;
+        }
+        .app-download-buttons {
+            gap: 12px;
+        }
+    }
+
+    .shapes {
+        ul {
+            li {
+                position: absolute;
+                display: inline-block;
+                &:nth-child(1) {
+                    left: 48px;
+                    bottom: -55px;
+                }
+                &:nth-child(2) {
+                    left: 0;
+                    right: 0;
+                    bottom: 120px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
