@@ -233,8 +233,9 @@
                     var $this = $(this);
     
                     // Fetching from data attributes
-                    var visibleSlides       = $this.attr("data-visible-slide") ? parseInt($this.attr("data-visible-slide"), 10) : 3;
-                    var visibleSlides_xl    = $this.attr("data-visible-xl-slide") ? parseInt($this.attr("data-visible-xl-slide"), 10) : 3;
+                    var visibleSlides       = $this.attr("data-visible-slide") ? parseInt($this.attr("data-visible-slide"), 10) : 4;
+                    var visibleSlides_xxl   = $this.attr("data-visible-xxl-slide") ? parseInt($this.attr("data-visible-xxl-slide"), 10) : 4;
+                    var visibleSlides_xl    = $this.attr("data-visible-xl-slide") ? parseInt($this.attr("data-visible-xl-slide"), 10) : 4;
                     var visibleSlides_lg    = $this.attr("data-visible-lg-slide") ? parseInt($this.attr("data-visible-lg-slide"), 10) : 3;
                     var visibleSlides_md    = $this.attr("data-visible-md-slide") ? parseInt($this.attr("data-visible-md-slide"), 10) : 2;
                     var visibleSlides_sm    = $this.attr("data-visible-sm-slide") ? parseInt($this.attr("data-visible-sm-slide"), 10) : 1;
@@ -285,22 +286,30 @@
                             0: {
                                 slidesPerView: visibleSlides_xs,
                             },
-                            640: {
+                            576: {
                               slidesPerView: visibleSlides_sm,
-                              spaceBetween: 20,
+                              spaceBetween: 30,
                             },
                             768: {
                               slidesPerView: visibleSlides_md,
-                              spaceBetween: 40,
-                            },
-                            1024: {
-                              slidesPerView: visibleSlides_lg,
-                              spaceBetween: 50,
-                            },
-                            1200: {
-                              slidesPerView: visibleSlides,
                               spaceBetween: 30,
                             },
+                            992: {
+                              slidesPerView: visibleSlides_lg,
+                              spaceBetween: 30,
+                            },
+                            1200: {
+                              slidesPerView: visibleSlides_xl,
+                              spaceBetween: 30,
+                            },
+                            1400: {
+                                slidesPerView: visibleSlides_xxl,
+                                spaceBetween: 30,
+                            },
+                            1600: {
+                                slidesPerView: visibleSlides,
+                                spaceBetween: 30,
+                            }
                           }
                     });
                 });
@@ -425,7 +434,7 @@
 
 
     
-      /*=================================
+   /*=================================
    // counter up
    ==================================*/
    var counter = true;

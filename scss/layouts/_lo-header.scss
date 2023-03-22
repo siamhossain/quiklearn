@@ -312,6 +312,12 @@ a.menu--link.second-level::after {
       .header-logo {
         margin-top: -25px;
       }
+      .main-menu {
+        margin-left: 0;
+        @include media-only(1500px, min) {
+          margin-left: 245px;
+        }
+      }
     }
 
     .menu--link {
@@ -329,7 +335,7 @@ a.menu--link.second-level::after {
     .menu {
       margin-right: 0;
       gap: 30px;
-      margin-left: 245px;
+      // margin-left: 245px;
     }
 
     .navbar-action-area {

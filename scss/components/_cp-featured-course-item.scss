@@ -4,7 +4,7 @@
     padding: 21px 24px 28px 24px;
     .featured-course-img {
         position: relative;
-        padding: 20px 25px 4px 25px;
+        padding: 20px 0 4px 0;
         @include media-only ('xs', min) {
             // padding: 28px 47px 4px 57px;
         }

@@ -7,6 +7,17 @@
         position: absolute;
         top: 0;
         right: 0;
+        display: none;
+        @include media-from-to(1400px, min, 1600px, max) {
+            right: -100px;
+        }
+        @include media-only('md', min) {
+            width: 50%;
+            display: block;
+        }
+        @include media-only(1400px, min) {
+            width: unset;
+        }
     }
     .app-download-content {
         .section-text-content {

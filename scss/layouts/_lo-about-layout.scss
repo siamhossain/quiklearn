@@ -74,7 +74,10 @@
         .about-img {
             // width: 100%;
             img {
-                width: 100%;
+                width: 75%;
+                @include media-only('lg', min) {
+                    width: 100%;
+                }
             }
             .background-shape1 {
                 width: 100%;
@@ -84,8 +87,14 @@
             }
         }
         .counter-wrapper {
-            gap: 85px;
+            gap: 0;
             margin-bottom: 10px;
+            @include media-only(400px, min) {
+                gap: 25px;
+            }
+            @include media-only('xs', min) {
+                gap: 85px;
+            }
         }
 
         .about-content-wrapper {

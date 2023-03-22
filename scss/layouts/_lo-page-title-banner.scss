@@ -1,0 +1,129 @@
+/*================================
+// Page Title Banner [layout]
+=================================*/
+
+.page-title-banner-section {
+    position: relative;
+    padding: 90px 0 110px 0;
+
+    .title-banner-img {
+        position: relative;
+        display: inline-block;
+        .shapes {
+            ul {
+                li {
+                    position: absolute;
+                    display: inline-block;
+                    &:nth-child(1) {
+                        top: -42px;
+                        left: 0;
+                        right: 0;
+                        text-align: center;
+                    }
+                    &:nth-child(2) {
+                        left: -10px;
+                        bottom: 50px;
+                    }
+                    &:nth-child(3) {
+                        right: -15px;
+                        bottom: 60px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.rt-banner {
+    &-content {
+        svg {
+            margin: 0 10px;
+        }
+        ul.banner-menu-list {
+            gap: 23px;
+            margin-top: 20px;
+            margin-bottom: 36px;
+            @include media-only('sm', min) {
+                gap: 20px;
+            }
+            @include media-only('md', min) {
+                gap: 20px;
+                margin-top: 0;
+            }
+            li {
+                position: relative;
+                a {
+                    font-family: $font-outfit;
+                    font-weight: 400;
+                    @include toRem(font-size, 16px);
+                    line-height: 20px;
+                    text-transform: capitalize;
+                    color: #9D9CAE;
+                    @include transition;
+                    &:hover {
+                        color: $color-shade2;
+                    }
+                }
+                &::after {
+                    content: ""; 
+                    position: absolute;
+                    width: 5px;
+                    height: 5px;
+                    background: #9D9CAE;
+                    right: -12px;
+                    top: 12px;
+                    border-radius: 50px;
+                    display: none;
+                    @include media-only('sm', min) {
+                        display: block;
+                    }
+                }
+                &:last-child {
+                    &::after {
+                        display: none;
+                    }
+                    a {
+                        color: #4F536C;
+                    }
+                }
+            }
+        }
+    }
+    &-title {
+
+        font-family: $font-outfit;
+        @include toRem(font-size, 48);
+        font-weight: 600;
+        text-transform: capitalize;
+        color: $color-title;
+        line-height: 36px;
+
+        @media (max-width: 'md') {
+            @include toRem(font-size, 40);
+            line-height: 120%;
+        } 
+        @media (max-width: 'sm') {
+            @include toRem(font-size, 35);
+            line-height: 120%;
+        } 
+        @media (max-width: 600px) {
+            @include toRem(font-size, 32);
+            line-height: 120%;
+        } 
+    }
+    &-sub-text {
+        a {
+            font-family: $text-font;
+            font-weight: 400;
+            @include toRem(font-size, 16);
+            line-height: 19px;
+            color: $color-gray1;
+        }
+        span {
+            a {
+                font-weight: 500;
+                color: $color-gray1;
+            }
+        }
+    }
+}

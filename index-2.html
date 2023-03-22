@@ -211,7 +211,7 @@
                     <nav class="sticky-header">
                         <div class="container-xxl">
                             <div class="row">
-                                <div id="header-content-wrap" class="header-content-wrap d-flex align-items-center justify-content-between navbar-wrap"
+                                <div id="header-content-wrap" class="header-content-wrap d-flex flex-wrap align-items-center justify-content-between navbar-wrap"
                                     >
                                     <div class="header-logo">
                                         <a href="index.html">
@@ -373,7 +373,7 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <div class="navbar-action-area d-flex align-items-center">
+                                    <div class="navbar-action-area d-flex align-items-center d-none d-xl-flex">
                                         <ul class="action-icon-list d-flex align-items-center">
                                             <li class="search">
                                                 <a href="#template-search" class="search-icon-link">
@@ -414,7 +414,7 @@
                                         
                                         <h1 class="section-heading wow animate__fadeInUp animate__animated" data-wow-duration="1200ms" data-wow-delay="400ms">
                                             Find The Best <span>Online</span>
-                                            <svg width="59" height="59" viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <svg class="" width="59" height="59" viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                                 <rect width="59" height="59" fill="url(#pattern0)"/>
                                                 <defs>
                                                 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
@@ -426,7 +426,7 @@
                                             Courses & Learn With Us
                                         </h1>
 
-                                        <div class="searchbox-container searchbox-container--style-3 d-flex justify-content-between align-items-center">
+                                        <div class="searchbox-container searchbox-container--style-3 d-flex justify-content-between align-items-center d-none d-sm-flex">
                                             <div class="category-selector d-flex align-items-center">
                                                 <select name="categories" id="categories">
                                                     <option value="category-all" selected>All Categories</option>
@@ -824,7 +824,7 @@
                                         <h2 class="section-heading wow animate__fadeInUp animate__animated" data-wow-duration="1200ms" data-wow-delay="400ms">
                                             Take the next step toward your personal and professional goals with Quiklearn
                                         </h2>
-                                        <div class="counter-wrapper d-flex align-items-center">
+                                        <div class="counter-wrapper d-flex flex-wrap align-items-center">
                                             <div class="rt-counter-item rt-counter-item--style-2 rt-mb-30 d-flex align-items-center">
                                                 <div class="icon d-flex justify-content-center align-items-center">
                                                     <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -893,8 +893,10 @@
                     <div class="rt-slider swiper">
                         <div class="element-carousel anime-element instance-0 swiper-container-initialized swiper-container-horizontal" 
                             data-visible-slide="6"
-                            data-visible-lg-slide="2"
-                            data-visible-md-slide="1"
+                            data-visible-xxl-slide="5"
+                            data-visible-xl-slide="4"
+                            data-visible-lg-slide="3"
+                            data-visible-md-slide="2"
                             data-loop="false" 
                             data-space-between="30" 
                             data-speed="1000"
@@ -1302,7 +1304,7 @@
                                 </div>
                             </div>
                             <!-- navigation -->
-                            <div class="slider-navigation-btn-wrapper">
+                            <div class="slider-navigation-btn-wrapper d-none d-xl-block">
                                 <div class="circle-radius swiper-arrow prev">
                                     <svg width="19" height="13" viewBox="0 0 19 13" fill="#543EE8" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M19 6.49998C19 6.27872 18.9193 6.06652 18.7756 5.91006C18.6319 5.7536 18.437 5.66571 18.2338 5.66571H2.61604L6.51172 1.42419C6.58287 1.34671 6.6393 1.25473 6.6778 1.1535C6.7163 1.05227 6.73611 0.943779 6.7361 0.834216C6.73608 0.724653 6.71625 0.616165 6.67773 0.514947C6.63922 0.413729 6.58276 0.321762 6.5116 0.244298C6.44044 0.166834 6.35596 0.105389 6.26299 0.0634726C6.17002 0.0215559 6.07038 -1.20994e-05 5.96975 5.09219e-09C5.86912 1.21096e-05 5.76948 0.0216041 5.67652 0.0635432C5.58356 0.105482 5.49909 0.166947 5.42794 0.244428L0.224411 5.9101C0.0807228 6.06655 0 6.27875 0 6.5C0 6.72126 0.0807228 6.93345 0.224411 7.08991L5.42794 12.7556C5.57164 12.9121 5.76653 13 5.96976 13C6.17299 13 6.36791 12.9121 6.51163 12.7557C6.65534 12.5992 6.73609 12.387 6.73611 12.1657C6.73613 11.9445 6.65541 11.7322 6.51172 11.5758L2.61623 7.33425H18.2338C18.437 7.33425 18.6319 7.24635 18.7756 7.08989C18.9193 6.93344 19 6.72124 19 6.49998Z" fill=""/>
@@ -1385,7 +1387,7 @@
                                 </div>
                             </div>
                             <div class="col-xl-5">
-                                <div class="course-intro-video text-center text-xl-start">
+                                <div class="course-intro-video text-center text-xl-start d-none d-xl-block">
                                     <img src="images/course-intro/intro-img1.png" alt="" class="circle-radius">
                                     <div class="intro-video-shapes d-none d-xl-block">
                                         <ul>
@@ -1592,8 +1594,8 @@
                 <section class="speciality-section speciality-section--style-2 rt-color-bg section-padding">
                     <div class="container">
                         <div class="row gutters-30 justify-content-between">
-                            <div class="col-xl-5">
-                                <div class="speciality-img">
+                            <div class="col-lg-12 col-xl-5">
+                                <div class="speciality-img d-none d-xl-block">
                                     <div class="inner-circle circle-radius">
                                     </div>
                                     <ul class="speciality-img-list ">
@@ -1624,7 +1626,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-6">
+                            <div class="col-md-12 col-lg-12 col-xl-6">
                                 <div class="speciality-content-wrapper">
                                     <div class="section-text-content text-start">
                                         <div class="section-name wow animate__fadeInUp animate__animated" data-wow-duration="1200ms" data-wow-delay="300ms">Our Speciality </div>
@@ -1637,7 +1639,7 @@
                                         <p class="para-text last-para">
                                             when an unknown printer took a galley offer area type and scrambled to make a type specimen book has survived when an unknown printer took a galley offer area type and scrambled to make.
                                         </p>
-                                        <div class="counter-wrapper d-flex align-items-center">
+                                        <div class="counter-wrapper d-flex flex-wrap align-items-center justify-content-center justify-content-sm-start">
                                             <div class="rt-counter-item rt-counter-item--style-3 rt-mb-30 d-flex align-items-center">
                                                 <div class="icon">
                                                     <svg width="60" height="68" viewBox="0 0 60 68" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1704,7 +1706,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="discover-course-btn">
+                                        <div class="discover-course-btn text-center text-sm-start">
                                             <a href="" class="button button-primary">
                                                 Discover Our Courses
                                                 <svg width="19" height="13" viewBox="0 0 19 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2013,7 +2015,7 @@
                 <div class="app-download-section rt-secondary-color-bg section-padding">
                     <div class="container">
                         <div class="row">
-                            <div class="col-xl-7">
+                            <div class="col-md-12 col-lg-7 col-xl-7">
                                 <div class="app-download-content">
                                     <div class="section-text-content text-start">
                                         <div class="section-name wow animate__fadeInUp animate__animated" data-wow-duration="1200ms" data-wow-delay="300ms">Available on Android & App Store</div>
@@ -2021,7 +2023,7 @@
                                             Build a beautiful, professional-looking online course with Quiklearn
                                         </h2>
                                     </div>
-                                    <div class="app-download-buttons d-flex align-items-center justify-content-center justify-content-lg-start">
+                                    <div class="app-download-buttons d-flex align-items-center justify-content-lg-start">
                                         <a href="" class="appButtons__logo">
                                             <img src="images/apps/google-play.svg" alt="google-play">
                                         </a>
@@ -2392,7 +2394,7 @@
                     </div>
                     <div class="rt-footer-bottom">
                         <div class="container">
-                            <div class="rt-footer-copyright-area d-flex justify-content-between align-items-center">
+                            <div class="rt-footer-copyright-area d-flex justify-content-between align-items-center flex-column flex-md-row">
                                 <p class="rt-footer-copyright-text m-0" data-wow-duration="1200ms"
                                     data-wow-delay="500ms"
                                     style="visibility: visible; animation-duration: 1200ms; animation-delay: 500ms; animation-name: fadeInUp;">

@@ -84,19 +84,30 @@
                 margin-bottom: 26px;
             }
             .section-heading {
-                font-size: 55px;
-                line-height: 69px;
+                font-size: 45px;
+                line-height: 55px;
                 span {
-                    color: $color-white;
+                    color: $color-title;
                     position: relative;
                     margin-right: 10px;
+                    @include media-only('md', min) {
+                        color: $color-white;
+                    }
                     &::before {
                         content: url("../../images/hero-section/shapes/hero-shape-6.svg");
                         position: absolute;
                         left: -10px;
                         z-index: -1;
                         top: -7px;
+                        display: none;
+                        @include media-only('md', min) {
+                            display: block;
+                        }
                     }
+                }
+                @include media-only('md', min) {
+                    font-size: 55px;
+                    line-height: 69px;
                 }
             }
         }

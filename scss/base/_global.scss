@@ -226,17 +226,18 @@ section,
     }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1500px) {
     .container, 
     .container-lg, 
     .container-md, 
     .container-sm, 
-    .container-xl {
+    .container-xl,
+    .container-xxl {
         max-width: 1410px;
     }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1600px) {
     .container-xxl {
         max-width: 1720px;
     }

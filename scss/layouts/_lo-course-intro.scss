@@ -12,6 +12,10 @@
                 right: 0;
                 left: 0;
                 text-align: center;
+                display: none;
+                @include media-only('lg', min) {
+                    display: block;
+                }
             }
         }
     }
@@ -126,7 +130,10 @@
     }
     &--style-2 {
         .section-text-content {
-            margin-bottom: 0;
+            margin-bottom: 30px;
+            @include media-only('lg', min) {
+                margin-bottom: 0;
+            }
             .section-heading {
                 margin-bottom: 0;
             }
