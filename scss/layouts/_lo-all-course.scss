@@ -1,0 +1,155 @@
+.all-course-section {
+    .sidebar-widget-wrapper {
+
+        background: $color-white;
+        border: 1px solid #DCDBE5;
+        border-radius: 10px;
+        padding: 30px 30px;
+
+        margin-bottom: 40px;
+
+        @include media-only('lg') {
+            margin-bottom: 0;
+        }
+
+        .widget {
+            border-bottom: 1px solid #E8E8E8;
+            padding-bottom: 23px;
+            margin-bottom: 35px;
+            &:last-child {
+                border-bottom: none;
+                padding-bottom: 0;
+                margin-bottom: 0;
+            }
+            .widget-heading {
+                margin-bottom: 26px;
+                h3 {
+                    font-family: $font-outfit;
+                    font-weight: 500;
+                    @include toRem(font-size, 20);
+                    line-height: 0px;
+                    text-transform: capitalize;
+                    color: $color-title;
+                }
+                .up-arrow-btn {
+                    background: transparent;
+                    border: none;
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+            ul {
+                li {
+                    .check-box-area {
+                        gap: 11px;
+                        input.widget-checkbox {
+                            width: 15px;
+                            height: 15px;
+                            border: 1px solid red !important;
+                            border-radius: 3px;
+                        }
+                        .checkbox-label {
+                            a {
+                                font-family: $font-outfit;
+                                font-weight: 400;
+                                @include toRem(font-size, 16);
+                                line-height: 32px;
+                                color: #4F536C;
+                            }
+                        }
+                    }
+                    .number-of-products {
+                        font-family: $font-outfit;
+                        font-weight: 400;
+                        @include toRem(font-size, 15);
+                        line-height: 32px;
+                        color: $color-gray12;
+                    }
+                }
+                .ratings {
+                    margin-top: -6px;
+                    gap: 4px;
+                }
+            }
+            button.show-more-btn {
+                margin-top: 10px;
+                margin-bottom: 3px;
+                border: none;
+                background: transparent;
+
+                font-family: $font-outfit;
+                font-weight: 400;
+                @include toRem(font-size, 16);
+                color: $color-primary;
+            }
+        }
+    }
+    .all-course-content-wrapper {
+        @include media-only(1500px, min) {
+            padding-left: 10px;
+        }
+        .all-course-content-action-area {
+            margin-bottom: 32px;
+            .total-result {
+                font-family: $font-outfit;
+                font-weight: 400;
+                @include toRem(font-size, 16);
+                line-height: 40px;
+                text-transform: capitalize;
+                color: $color-title;
+            }
+            .actions {
+                gap: 8px;
+                .search-filter {
+                    gap: 12px;
+                    .sort-by-text {
+                        @extend .total-result;
+                        color: #4F536C;
+                    }
+                    .course-filter-selector {
+                        border: 1px solid #DCDBE5;
+                        border-radius: 5px;
+                        .nice-select {
+                            padding-right: 41px;
+                            span {
+                                font-family: $font-outfit;
+                                font-weight: 400;
+                                @include toRem(font-size, 16);
+                                text-transform: capitalize;
+                                color: $color-title;
+
+                            }
+                            &::after {
+                                border-bottom: 2px solid $color-primary;
+                                border-right: 2px solid $color-primary;
+                            }
+                        }
+                    }
+                }
+                .view-buttons {
+                    gap: 8px;
+                    button {
+                        width: 42px;
+                        height: 42px;
+                        border: 1px solid #DCDBE5;
+                        border-radius: 5px;
+                        background: transparent;
+                        @include transition;
+                        &:hover {
+                            background: $color-primary;
+                            svg {
+                                fill: $color-white;
+                            }
+                        }
+                    }
+                    button.active {
+                        background: $color-primary;
+                        svg {
+                            fill: $color-white
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

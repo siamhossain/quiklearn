@@ -1,0 +1,46 @@
+/*================================
+//  Pagination [component]
+=================================*/
+
+.pagination-wrapper {
+    margin-top: 30px;
+    display: inline-block;
+    ul.pagination {
+        .active {
+                color: $color-primary;
+            }
+        gap: 12px;
+        li {
+            a {
+                font-family: $title-font;
+                font-weight: 500;
+                @include toRem(font-size, 17);
+                line-height: 26px;
+                text-align: center;
+                color: $color-text;
+                border-radius: 6px;
+                border: none;
+                padding: .375rem 9px;
+                &:hover {
+                    color: $color-primary;
+                }
+            }
+            &:first-child {
+                a {
+                    background: #F4F3FF;
+                    width: 44px;
+                    height: 44px;
+                    border-radius: 5px;
+                }
+            }
+            &:last-child {
+                a {
+                    background: #F4F3FF;
+                    width: 44px;
+                    height: 44px;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}

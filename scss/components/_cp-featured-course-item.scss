@@ -4,7 +4,7 @@
     padding: 21px 24px 28px 24px;
     .featured-course-img {
         position: relative;
-        padding: 20px 0 4px 0;
+        padding: 28px 0 4px 0;
         @include media-only ('xs', min) {
             // padding: 28px 47px 4px 57px;
         }
@@ -69,6 +69,65 @@
             @include toRem(font-size, 22px);
             line-height: 0px;
             color: $color-title;
+        }
+    }
+    &--style-2 {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        .featured-course-img {
+            width: 282px;
+            margin-bottom: 0;
+        }
+        .course-content {
+            flex: 1;
+            margin-bottom: 0;
+            .meta-wrapper {
+                margin-bottom: 15px;
+            }
+            .featured-course-title {
+                margin-bottom: 10px;
+            }
+            .para-text {
+                margin-bottom: 34px;
+            }
+            .featured-course-bottom {
+                gap: 20px;
+                p.author-name {
+                    line-height: unset;
+                }
+            }
+
+            .action-area {
+                .course-price {
+                    margin-bottom: 13px;
+                }
+
+                a {
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 8px;
+
+                    border: 1px solid #DCDBE5;
+                    border-radius: 5px;
+                    font-family: $font-outfit;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 0px;
+                    text-transform: capitalize;
+                    color: $color-title;
+                }
+                .add-to-card-btn {
+                    margin-bottom: 8px;
+                    width: 143px;
+                    height: 42px;
+                }
+                .add-to-wishlist-btn {
+                    width: 164px;
+                    height: 42px;
+                }
+            }
         }
     }
 }
