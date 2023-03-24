@@ -76,8 +76,11 @@
         gap: 30px;
         align-items: center;
         .featured-course-img {
-            width: 282px;
+            width: 100%;
             margin-bottom: 0;
+            @include media-only('md', min) {
+                width: 282px;
+            }
         }
         .course-content {
             flex: 1;
@@ -117,6 +120,14 @@
                     line-height: 0px;
                     text-transform: capitalize;
                     color: $color-title;
+
+                    &:hover {
+                        background: $color-primary;
+                        color: $color-white;
+                        svg {
+                            fill: $color-white;
+                        }
+                    }
                 }
                 .add-to-card-btn {
                     margin-bottom: 8px;

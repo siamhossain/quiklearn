@@ -27,4 +27,10 @@
             background: rgba(84, 62, 232, 0.1);
         }
     }
+    &--style-3 {
+        a {
+            color: $color-white;
+            background: linear-gradient(122.96deg, #56AB2F 11.09%, #A8E063 90.59%);
+        }
+    }
 }

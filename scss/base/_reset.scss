@@ -3,14 +3,23 @@
 /* =========================== */
 
 .accordion-button {
-    font-family: 'Inter';
+    // font-family: 'Inter';
+    // font-weight: 500;
+    // font-size: 17px;
+    // line-height: 21px;
+    // color: #292940;
+    // padding: 25px 25px 20px 30px;
+    // border-radius: 5px;
+    // border: none;
+
+    background: #F8F8F8;
+    font-family: $font-outfit;
     font-weight: 500;
-    font-size: 17px;
-    line-height: 21px;
-    color: #292940;
-    padding: 25px 25px 20px 30px;
-    border-radius: 6px;
-    border: none;
+    @include toRem(font-size, 18);
+    line-height: 23px;
+    color: $color-title;
+    height: 60px;
+
     @media (max-width: 768px) {
         font-size: 16px;
     }
@@ -20,26 +29,20 @@
 .accordion-button::after {
     background-image: url("../images/faq/plus-icon.svg");
     background-size: unset;
-    // width: 16px;
-    // height: 16px;
-    // position: absolute;
-    // left: 30px;
-    // top: 50%;
-    // bottom: 0;
-    // margin: 0 auto;
-    // transform: translateY(-50%);
 }
 
 .accordion-button:not(.collapsed)::after {
     background-image: url("../images/faq/minus-icon.svg");
     transform: rotate(0deg);
     height: 10px;
+    
 }
 
-.accordion-button:not(.collapsed) {
-    color: $color-title;
-    background-color: $color-white;
+.accordion-flush .accordion-item .accordion-button:not(.collapsed) {
+    color: $color-white;
+    background-color: $color-primary;
     box-shadow: none;
+    border-radius: 5px 5px 0px 0px;
 }
 
 .accordion-button:focus {
@@ -49,21 +52,21 @@
 
 .accordion-flush .accordion-item {
     position: relative;
-    margin-bottom: 15px;
-    border-radius: 6px;
-    border: 1px solid#E7E7E7;
+    margin-bottom: 7px;
+    border-radius: 5px;
+    border: none;
     &:first-child {
-        border-top: 1px solid#E7E7E7;
+        
     }
     &:last-child {
-        border-bottom: 1px solid#E7E7E7;
+        
     }
 }
 
 .accordion-flush .accordion-item .accordion-button {
-    border-radius: 6px;
+    border-radius: 5px;
     &:last-child {
-        border-radius: 6px;
+        // border-radius: 6px;
     }
 }
 

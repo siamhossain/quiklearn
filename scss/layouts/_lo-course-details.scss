@@ -1,0 +1,191 @@
+.course-details-section {
+    .course-details-main-wrapper {
+        .course-details-content-wrapper {
+            // padding-right: 39px;
+            .course-details-info {
+                border-bottom: 1px solid #DBDBDB;
+                margin-bottom: 35px;
+                .tag-rating-wrapper {
+                    margin-bottom: 15px;
+                    gap: 13px;
+
+                    .rating {
+                        .rating-text {
+                            margin-left: 10px;
+                        }
+                    }
+                }
+                .featured-course-title {
+                    margin-bottom: 20px;
+                    line-height: 28px;
+                    a {
+                        font-family: $font-outfit;
+                        font-weight: 600;
+                        @include toRem(font-size, 36);
+                        text-transform: capitalize;
+                        color: $color-title;
+                    }
+                }
+                .para-text {
+                    margin-bottom: 10px;
+                }
+                .course-info-bottom {
+                    padding-bottom: 25px;
+                    gap: 30px;
+                    .author-info {
+                        gap: 5px;
+                        .avatar {
+                            
+                        }
+                        .author-name {
+                            font-family: $font-outfit;
+                            font-weight: 500;
+                            @include toRem(font-size, 16);
+                            color: $color-title;
+                            span {
+                                color: #9D9CAE;
+                            }
+                        }
+                        
+                    }
+                    .meta-wrapper {
+                        .meta-data {
+                            gap: 28px;
+                            .meta-item {
+                                gap: 8px;
+                                span {
+                                    font-family: 'Hind';
+                                    font-weight: 400;
+                                    @include toRem(font-size, 16);
+                                    color: #4F536C;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .course-details-tabs {
+                gap: 10px;
+                margin-bottom: 45px;
+                a {
+                    padding: 13px 30px;
+                    border-radius: 6px;
+                    background: #F8F8F8;
+                    line-height: unset;
+                    color: #4F536C;
+                    &:hover {
+                        background: $color-primary;
+                        color: $color-white;
+                    }
+                }
+            }
+            .overview-details {
+                padding-bottom: 56px;
+                border-bottom: 1px solid #E8E8E8;
+                margin-bottom: 50px;
+                .course-description {
+                    margin-bottom: 60px;
+                    .title {
+                        font-family: $font-outfit;
+                        font-weight: 600;
+                        @include toRem(font-size, 26);
+                        color: $color-title;
+                        margin-bottom: 12px;
+                    }
+                    .para-1 {
+                        margin-bottom: 20px;
+                    }
+                }
+                .course-learning {
+                    .title {
+                        font-family: $font-outfit;
+                        font-weight: 600;
+                        @include toRem(font-size, 26);
+                        color: $color-title;
+                        margin-bottom: 12px;
+                    }
+                    .para-text {
+                        margin-bottom: 20px;
+                    }
+                    ul.course-learning-list {
+                        columns: 2;
+                        -webkit-columns: 2;
+                        -moz-columns: 2;
+                        li {
+                            font-family: 'Hind';
+                            font-weight: 400;
+                            @include toRem(font-size, 18);
+                            line-height: 35px;
+                            color: #4F536C;
+                            position: relative;
+                            padding-left: 31px;
+                            &::before {
+                                content: url("../images/course-details/tick-mark-white.svg");
+                                position: absolute;
+                                width: 20px;
+                                height: 20px;
+                                background: $color-primary;
+                                border-radius: 50px;
+    
+                                display: inline-block;
+                                text-align: center;
+                                line-height: 20px;
+                                left: 0;
+                                top: 6px;
+                            }
+                        }
+                    }
+                }
+            }
+            .course-curriculum {
+                .title {
+                    font-family: $font-outfit;
+                    font-weight: 600;
+                    @include toRem(font-size, 26);
+                    color: $color-title;
+                    margin-bottom: 12px;
+                }
+                .para-text {
+                    margin-bottom: 20px;
+                }
+
+                .course-curriculum-accordion {
+                    .accordion-body {
+                        .course-curriculum-video-content {
+                            ul.course-curriculum-video {
+                                .course-curriculum-video-item {
+                                    .video-title-area {
+                                        gap: 10px;
+                                        .icon {
+                                            width: 26px;
+                                            height: 26px;
+                                            border: 1px solid $color-primary;
+                                        }
+                                        .video-title {
+                                            font-family: $font-outfit;
+                                            font-weight: 400;
+                                            @include toRem(font-size, 16);
+                                            line-height: 20px;
+                                            color: #4F536C;
+                                        }
+                                    }
+                                    .video-duration {
+                                        gap: 19px;
+                                        span {
+                                            font-family: 'Hind';
+                                            font-weight: 400;
+                                            font-size: 16px;
+                                            line-height: 26px;
+                                            color: #4F536C;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

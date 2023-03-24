@@ -336,6 +336,14 @@
     }
 }
 
+.section-padding--3 {
+    padding: 100px 0;
+    
+    @include breakpoint("sm") {
+        padding: 70px 0;
+    }
+}
+
 
 //custom margin
 
