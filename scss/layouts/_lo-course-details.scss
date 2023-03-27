@@ -138,6 +138,9 @@
                 }
             }
             .course-curriculum {
+                padding-bottom: 56px;
+                border-bottom: 1px solid #E8E8E8;
+                margin-bottom: 50px;
                 .title {
                     font-family: $font-outfit;
                     font-weight: 600;
@@ -152,6 +155,11 @@
                 .course-curriculum-accordion {
                     .accordion-body {
                         .course-curriculum-video-content {
+                            padding: 17px 25px;
+                            border-bottom: 1px solid #DCDBE5;
+                            &:last-child {
+                                border-bottom: none;
+                            }
                             ul.course-curriculum-video {
                                 .course-curriculum-video-item {
                                     .video-title-area {
@@ -162,11 +170,13 @@
                                             border: 1px solid $color-primary;
                                         }
                                         .video-title {
-                                            font-family: $font-outfit;
-                                            font-weight: 400;
-                                            @include toRem(font-size, 16);
-                                            line-height: 20px;
-                                            color: #4F536C;
+                                            a {
+                                                font-family: $font-outfit;
+                                                font-weight: 400;
+                                                @include toRem(font-size, 16);
+                                                line-height: 20px;
+                                                color: #4F536C;
+                                            }
                                         }
                                     }
                                     .video-duration {
@@ -185,6 +195,302 @@
                     }
                 }
             }
+            .instructors-details {
+                margin-bottom: 70px;
+                .title {
+                    font-family: $font-outfit;
+                    font-weight: 600;
+                    font-size: 26px;
+                    color: $color-title;
+                    margin-bottom: 12px;
+                }
+                .para-text {
+                    margin-bottom: 20px;
+                }
+                .instructor-info-wrapper {
+                    border: 1px solid #DCDBE5;
+                    border-radius: 6px;
+                    padding: 45px 50px 45px 36px;
+                    gap: 20px;
+                    .instructor-img {
+
+                    }
+                    .instructor-text-info {
+                        flex: 1;
+                        .name {
+                            a {
+                                font-family: $font-outfit;
+                                font-weight: 500;
+                                font-size: 20px;
+                                line-height: 0px;
+                                color: $color-title;
+                            }
+                            margin-bottom: 5px;
+                        }
+                        .designation {
+                            font-family: $font-outfit;
+                            font-weight: 400;
+                            font-size: 15px;
+                            color: $color-shade1;
+                            margin-bottom: 8px;
+                        }
+                        .meta-wrapper {
+                            gap: 30px;
+                            margin-bottom: 15px;
+                            .rating {
+                                gap: 6px;
+                            }
+                            .meta-data {
+                                gap: 30px;
+                                .meta-item {
+                                    gap: 8px;
+                                    font-family: 'Hind';
+                                    font-weight: 400;
+                                    font-size: 16px;
+                                    line-height: 0px;
+                                    color: #4F536C;
+                                }
+                            }
+                        }
+                        .para-2 {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+            .student-feedback {
+                margin-bottom: 70px;
+                .title {
+                    font-family: $font-outfit;
+                    font-weight: 600;
+                    font-size: 26px;
+                    color: $color-title;
+                    margin-bottom: 25px;
+                }
+                .feedback-content-wrapper {
+                    .exceptional-feedback {
+                        background: #FCFCFC;
+                        border: 1px solid #E0E3E7;
+                        border-radius: 6px;
+                        padding: 51px 103px 48px 82px;
+                        .feedback-rating {
+                            font-family: $font-outfit;
+                            font-weight: 600;
+                            font-size: 64px;
+                            line-height: 65px;
+                            color: $color-primary;
+                        }
+                        P { 
+                            font-family: $font-outfit;
+                            font-weight: 500;
+                            font-size: 18px;
+                            line-height: 26px;
+                            color: $color-title;
+                        }
+                    }
+                    .progressbar-rating-wrapper {
+                        background: #FCFCFC;
+                        border: 1px solid #E0E3E7;
+                        border-radius: 6px;
+                        padding: 34px 43px 38px 31px;
+                        border-left: 0;
+                        .single-progressbar {
+                            gap: 11px;
+                            margin-bottom: 10px;
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+                        }
+                        .progressbar-rating {
+                            background: #EAEAEA;
+                            border-radius: 100px;
+                            width: 461px;
+                            height: 8px;
+                            position: relative;
+                            overflow: hidden;
+                            .progressbar-fill {
+                                background: linear-gradient(270deg, #543EE8 23.5%, #EDEBFE 108.2%);
+                                position: absolute;
+                                top: 0;
+                                bottom: 0;
+                                border-radius: 100px;
+                            }
+                        }
+                        .rating-in-percentage {
+                            span {
+                                font-family: $font-outfit;
+                                font-weight: 600;
+                                font-size: 14px;
+                                line-height: 20px;
+                                color: $color-title;
+                            }
+                        }
+                    }
+                }
+            }
+            .reviews {
+                .title {
+                    font-family: $font-outfit;
+                    font-weight: 600;
+                    font-size: 26px;
+                    color: $color-title;
+                    margin-bottom: 45px;
+                }
+                .reviewer-details {
+                    gap: 19px;
+                    border-bottom: 1px solid #E8E8E8;
+                    padding-bottom: 35px;
+                    margin-bottom: 40px;
+                    .reviewer-img {
+
+                    }
+                    .reviewer-info {
+                        flex: 1;
+                        .reviewer-name {
+                            margin-bottom: 10px;
+                            .name-post-time-wrapper {
+                                a {
+                                    font-family: $font-outfit;
+                                    font-weight: 500;
+                                    font-size: 18px;
+                                    color: #4F536C;
+                                    margin-right: 10px;
+                                }
+                                span {
+                                    font-family: $font-outfit;
+                                    font-weight: 400;
+                                    font-size: 14px;
+                                    color: #9D9CAE;
+                                }
+                            }
+                        }
+                        .review-title {
+                            font-family: $font-outfit;
+                            font-weight: 600;
+                            font-size: 17px;
+                            color: $color-title;
+                            margin-bottom: 2px;
+                        }
+                        .para-text {
+                            font-size: 16px;
+                            line-height: 26px;
+                        }
+                    }
+                }
+            }
+            .write-review {
+                .title {
+                    font-family: $font-outfit;
+                    font-weight: 600;
+                    font-size: 26px;
+                    color: $color-title;
+                    margin-bottom: 25px;
+                }
+                .sub-text {
+                    font-family: $font-outfit;
+                    font-weight: 400;
+                    font-size: 18px;
+                    color: $color-title;
+                    margin-bottom: 17px;
+                }
+                .rating {
+                    margin-bottom: 40px;
+                }
+                .review-form-wrapper {
+                    form.review-post-form {
+                        .input-area {
+                            label {
+                                font-family: $font-outfit;
+                                font-weight: 500;
+                                font-size: 16px;
+                                color: $color-title;
+                                display: block;
+                                margin-bottom: 7px;
+                            }
+                            input {
+                                background: #FFFFFF;
+                                border: 1px solid #DCDBE5;
+                                border-radius: 5px;
+                                width: 100%;
+                                height: 60px;
+                                margin-bottom: 15px;
+                            }
+                        }
+                        textarea {
+                            background: #FFFFFF;
+                            border: 1px solid #DCDBE5;
+                            border-radius: 5px;
+                            width: 100%;
+                            margin-bottom: 7px;
+                        }
+                        .submit-btn {
+                            background: $color-primary;
+                            color: $color-white;
+                            border: none;
+
+                            font-family: $font-outfit;
+                            font-weight: 500;
+                            font-size: 18px;
+                            text-transform: capitalize;
+                            border-radius: 6px;
+                            width: 229px;
+                            height: 60px;
+                        }
+                    }
+                }
+            }
+        }
+        .course-details-right-sidebar {
+            .action-btn-list {
+                gap: 13px;
+                a {
+                    background: #FFFFFF;
+                    border: 1px solid #DCDBE5;
+                    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+                    border-radius: 5px;
+                    padding: 12px 24px;
+
+                    font-family: $font-outfit;
+                    font-weight: 400;
+                    font-size: 15px;
+                    text-align: center;
+                    text-transform: capitalize;
+                    color: #4F536C;
+
+                    gap: 8px;
+                
+                }
+                .add-to-wishlist-btn {
+
+                }
+                .add-to-card-btn {
+
+                }
+            }
+        }
+    }
+}
+
+
+.course-details-1-page {
+    .featured-course-section {
+        padding-top: 0;
+        padding-bottom: 100px;
+        .swiper {
+            padding-bottom: 0;
+        }
+        .featured-course-item {
+            margin-bottom: 0;
+        }
+        .section-text-content {
+            .section-heading {
+                &::before {
+                    text-align: center;
+                    left: 0;
+                    right: 0;
+                }
+            }
+
         }
     }
 

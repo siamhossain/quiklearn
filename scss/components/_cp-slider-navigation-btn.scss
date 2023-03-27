@@ -56,3 +56,19 @@
 .slider-wrapper {
     position: relative;
 }
+
+
+
+.course-details-1-page {
+    .wrapper {
+        position: relative;
+    }
+    .slider-navigation-btn-wrapper {
+        .prev {
+            left: -30px;
+        }
+        .next {
+            right: -30px;
+        }
+    }
+}

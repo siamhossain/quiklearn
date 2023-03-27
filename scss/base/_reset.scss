@@ -3,15 +3,6 @@
 /* =========================== */
 
 .accordion-button {
-    // font-family: 'Inter';
-    // font-weight: 500;
-    // font-size: 17px;
-    // line-height: 21px;
-    // color: #292940;
-    // padding: 25px 25px 20px 30px;
-    // border-radius: 5px;
-    // border: none;
-
     background: #F8F8F8;
     font-family: $font-outfit;
     font-weight: 500;
@@ -19,20 +10,20 @@
     line-height: 23px;
     color: $color-title;
     height: 60px;
+    padding: 1rem 25px;
 
     @media (max-width: 768px) {
         font-size: 16px;
     }
-    
 }
 
 .accordion-button::after {
-    background-image: url("../images/faq/plus-icon.svg");
+    background-image: url("../images/icons/right-arrow.svg");
     background-size: unset;
 }
 
 .accordion-button:not(.collapsed)::after {
-    background-image: url("../images/faq/minus-icon.svg");
+    background-image: url("../images/icons/white-up-arrow.svg");
     transform: rotate(0deg);
     height: 10px;
     
@@ -77,14 +68,9 @@
 }
 
 .accordion-body {
-    padding-left: 30px;
-    padding-top: 0;
-
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 26px;
-    color: #696969;
+    border: 1px solid #DCDBE5;
+    padding: 0;
+    border-radius: 0px 0px 5px 5px;
 }
 
 /* End Custom accordion */
@@ -110,8 +96,8 @@
 }
 
 .nice-select:after {
-    border-bottom: 2px solid #4F536C;
-    border-right: 2px solid #4F536C;
+    border-bottom: 2px solid #FFFFFF;
+    border-right: 2px solid #FFFFFF;
     height: 10px;
     width: 10px;
     right: 23px;
