@@ -78,6 +78,10 @@
                         color: $color-white;
                     }
                 }
+                a.active {
+                    background: $color-primary;
+                    color: $color-white;
+                }
             }
             .overview-details {
                 padding-bottom: 56px;
@@ -441,32 +445,179 @@
             }
         }
         .course-details-right-sidebar {
+            margin-left: 40px;
             .action-btn-list {
                 gap: 13px;
+                margin-bottom: 28px;
                 a {
                     background: #FFFFFF;
                     border: 1px solid #DCDBE5;
                     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
                     border-radius: 5px;
-                    padding: 12px 24px;
-
+                    padding: 12px 28px;
                     font-family: $font-outfit;
                     font-weight: 400;
                     font-size: 15px;
                     text-align: center;
                     text-transform: capitalize;
                     color: #4F536C;
-
                     gap: 8px;
+                    &:hover {
+                        background: $color-primary;
+                        color: $color-white;
+                        svg {
+                            fill: $color-white;
+                        }
+                    }
                 
                 }
                 .add-to-wishlist-btn {
-
+                    
                 }
                 .add-to-card-btn {
 
                 }
             }
+            .featured-course-item {
+                background: #FFFFFF;
+                border: 1px solid #DCDBE5;
+                box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+                border-radius: 10px;
+                padding: 15px;
+                .featured-course-img {
+                    margin-bottom: 28px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 35px 0;
+                    .play-icon {
+                        width: 64px;
+                        height: 64px;
+                        background: $color-white;
+                        position: absolute;
+                        display: inline-flex;
+                        justify-content: center;
+                        align-items: center;
+                        outline: 2px solid rgba(255, 255, 255, .4);;
+                        outline-offset: 10px;
+                        &::after {
+                            content: "";
+                            height:76px;
+                            width:76px;
+                            border-radius:50%;
+                            position: absolute;
+                            border: 2px solid #FFFFFF;
+                            opacity: 0.7;
+                        }
+                        svg {
+                            margin-left: 7px;
+                        }
+                    }
+                }
+                .course-content {
+                    padding: 15px;
+                    margin-bottom: 10px;
+                    .course-pricing {
+                        margin-bottom: 3px;
+                        p {
+                            font-family: $font-outfit;
+                            font-weight: 400;
+                            font-size: 16px;
+                            text-transform: capitalize;
+                            color: #4F536C;
+                        }
+                        h3 {
+                            font-family: $font-outfit;
+                            font-weight: 500;
+                            font-size: 30px;
+                            text-transform: capitalize;
+                            color: $color-title;
+
+                        }
+                    }
+                    .pricing-subtext {
+                        font-family: $font-outfit;
+                        font-weight: 400;
+                        font-size: 14px;
+                        text-transform: capitalize;
+                        color: #4F536C;
+                        margin-bottom: 25px;
+                    }
+                    .purchase-area {
+                        a {
+                            border: 1.5px solid #4F536C;
+                            border-radius: 6px;
+                            width: 100%;
+                            margin-bottom: 8px;
+                            font-family: $font-outfit;
+                            font-weight: 500;
+                            font-size: 18px;
+                            line-height: 0px;
+                            text-transform: capitalize;
+                            color: #241442;
+                            text-align: center;
+                            padding: 29px 0;
+                            &:hover {
+                                background: $color-primary;
+                                color: $color-white;
+                                border: 1.5px solid transparent;
+                            }
+
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+                        }
+                        a.active {
+                            background: $color-primary;
+                            color: $color-white;
+                            border: 1.5px solid transparent;
+                        }
+                        margin-bottom: 28px;
+                    }
+                    .course-includes {
+                        .title {
+                            font-family: $font-outfit;
+                            font-weight: 500;
+                            font-size: 17px;
+                            text-transform: capitalize;
+                            color: $color-title;
+                            margin-bottom: 16px;
+                        }
+                        ul.course-include-list {
+                            li {
+                                border-bottom: 1px solid #E8E8E8;
+                                padding-bottom: 24px;
+                                margin-bottom: 14px;
+                                font-family: $font-outfit;
+                                font-weight: 400;
+                                font-size: 15px;
+                                text-transform: capitalize;
+                                color: #4F536C;
+                                &:last-child {
+                                    border-bottom: none;
+                                    padding-bottom: 0;
+                                    margin-bottom: 0;
+                                }
+                                .course-includes-name {
+                                    gap: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &--style-2 {
+        &::before {
+            content: "";
+            background: #FAF9F6;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 440px;
+            z-index: -1;
+            border-bottom: 1px solid#DBDBDB;
         }
     }
 }
@@ -493,5 +644,4 @@
 
         }
     }
-
 }
