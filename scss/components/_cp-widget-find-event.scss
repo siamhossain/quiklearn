@@ -1,0 +1,83 @@
+.widget-find-event {
+    padding-bottom: 22px;
+    margin-bottom: 26px;
+    .searchbox-container {
+        height: 45px;
+        box-shadow: none;
+        margin-bottom: 11px;
+        .searchbox-submit {
+            .rt-searchbox-btn {
+                padding: 12px 17px;
+            }
+        }
+        .searchbox-textfield {
+            .searchbox-input {
+                border: none;
+                padding-left: 20px;
+                background: transparent;
+                width: 100%;
+                font-family: $font-outfit;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 24px;
+                text-transform: capitalize;
+                color: #9D9CAE;
+                &::placeholder {
+                    color: #9D9CAE;
+                }
+            }
+        }
+    }
+
+    .category-selector {
+        height: 45px;
+        background: $color-white;
+        border: 1px solid #DCDBE5;
+        border-radius: 4px;
+        margin-bottom: 11px;
+
+        .nice-select {
+            width: 100%;
+            span {
+                font-family: $font-outfit;
+                font-weight: 400;
+                font-size: 15px;
+                color: #9D9CAE;
+            }
+            &::after { 
+                border-bottom: 2px solid #9D9CAE;
+                border-right: 2px solid #9D9CAE;
+                width: 10px;
+                right: 20px;
+            }
+        }
+    }
+
+    .location-searchbox-container {
+        background: #FFFFFF;
+        border: 1px solid #DCDBE5;
+        border-radius: 4px;
+        height: 45px;
+        margin-bottom: 11px;
+        .rt-searchbox-form {
+            input {
+                border: none;
+                padding-left: 20px;
+                font-family: $font-outfit;
+                font-weight: 400;
+                font-size: 15px;
+                color: #9D9CAE;
+                width: 100%;
+                &::placeholder {
+                    color: #9D9CAE;
+                }
+            }
+        }
+        button {
+            background: transparent;
+            border: none;
+            padding-right: 17px;
+        }
+    }
+}
+

@@ -1,0 +1,43 @@
+/*=================================
+// Widget-popular-tag [side widget]
+===================================*/
+
+.widget-tag {
+    border-radius: 12px;
+    .sub-title {
+        border-radius: 8px 8px 0px 0px;
+        font-family: $title-font;
+        font-weight: 600;
+        @include toRem(font-size, 20);
+        line-height: 140%;
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+    .tag-list-wrapper {
+        ul.tag-list {
+            gap: 10px;
+            flex-wrap: wrap;
+            li {
+                .tag-link {
+                    background: #F8F8F8;
+                    border-radius: 3px;
+                    
+                    padding: 5px 15px;
+
+                    font-family: $font-outfit;
+                    font-weight: 400;
+                    @include toRem(font-size, 16);
+                    line-height: 23px;
+                    text-transform: capitalize;
+                    color: $color-primary;
+
+                    &:hover {
+                        background: $color-primary;
+                        color: $color-white;
+                    }
+                }
+            }
+        }
+    }
+    
+}

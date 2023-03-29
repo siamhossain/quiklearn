@@ -1,0 +1,25 @@
+.sidebar-widget-wrapper {
+    background: $color-white;
+    border: 1px solid #DCDBE5;
+    border-radius: 10px;
+    padding: 35px 30px 50px 30px;
+    margin-bottom: 30px;
+
+    .title {
+        font-family: $font-outfit;
+        font-weight: 500;
+        font-size: 20px;
+        text-transform: capitalize;
+        color: $color-title;
+        margin-bottom: 15px;
+    }
+
+    .side-widget {
+        border-bottom: 1px solid #E8E8E8;
+        &:last-child {
+            padding-bottom: 0;
+            margin-bottom: 0;
+            border-bottom: none;
+        }
+    }
+}
