@@ -1037,6 +1037,26 @@ p {
 .searchbox-container--style-3 .searchbox-submit .rt-searchbox-btn {
   padding: 18px 30px;
 }
+.searchbox-container--style-4 {
+  width: 100%;
+  height: 60px;
+  background: #FFFFFF;
+  border: 1px solid #DCDBE5;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  padding: 0;
+  margin-bottom: 36px;
+}
+.searchbox-container--style-4 .searchbox-textfield {
+  width: 100%;
+}
+.searchbox-container--style-4 .searchbox-textfield .rt-searchbox-form input {
+  padding: 0 26px;
+}
+.searchbox-container--style-4 .searchbox-submit .rt-searchbox-btn {
+  background: var(--color-white);
+  padding: 19px 26px;
+}
 
 .contact-info-box {
   gap: 10px;
@@ -1770,6 +1790,68 @@ p {
   width: 44px;
   height: 44px;
   border-radius: 5px;
+}
+
+.reviews .title, .reviews .course-intro-section .course-intro-text-content-wrapper .feature-list ul li, .course-intro-section .course-intro-text-content-wrapper .feature-list ul .reviews li {
+  font-family: var(--font-outfit);
+  font-weight: 600;
+  font-size: 26px;
+  color: var(--color-title);
+  margin-bottom: 45px;
+}
+.reviews .reviewer-details {
+  gap: 19px;
+  border-bottom: 1px solid #E8E8E8;
+  padding-bottom: 35px;
+  margin-bottom: 40px;
+}
+.reviews .reviewer-details .reviewer-info {
+  flex: 1;
+}
+.reviews .reviewer-details .reviewer-info .reviewer-name {
+  margin-bottom: 10px;
+}
+.reviews .reviewer-details .reviewer-info .reviewer-name .name-post-time-wrapper a {
+  font-family: var(--font-outfit);
+  font-weight: 500;
+  font-size: 18px;
+  color: #4F536C;
+  margin-right: 10px;
+}
+.reviews .reviewer-details .reviewer-info .reviewer-name .name-post-time-wrapper span {
+  font-family: var(--font-outfit);
+  font-weight: 400;
+  font-size: 14px;
+  color: #9D9CAE;
+}
+.reviews .reviewer-details .reviewer-info .review-title {
+  font-family: var(--font-outfit);
+  font-weight: 600;
+  font-size: 17px;
+  color: var(--color-title);
+  margin-bottom: 2px;
+}
+.reviews .reviewer-details .reviewer-info .para-text, .reviews .reviewer-details .reviewer-info .footer-section .rt-footer-content-wrapper .rt-footer-content .rt-footer-link-list-wrapper ul.rt-footer-link-list li a, .footer-section .rt-footer-content-wrapper .rt-footer-content .rt-footer-link-list-wrapper ul.rt-footer-link-list li .reviews .reviewer-details .reviewer-info a, .reviews .reviewer-details .reviewer-info .footer-section .rt-footer-content-wrapper .rt-footer-content .footer-info .info-list li, .footer-section .rt-footer-content-wrapper .rt-footer-content .footer-info .info-list .reviews .reviewer-details .reviewer-info li {
+  font-size: 16px;
+  line-height: 26px;
+}
+.reviews--style-2 {
+  background: var(--color-white);
+}
+.reviews--style-2 .title, .reviews--style-2 .course-intro-section .course-intro-text-content-wrapper .feature-list ul li, .course-intro-section .course-intro-text-content-wrapper .feature-list ul .reviews--style-2 li {
+  font-family: var(--font-outfit);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 40px;
+  text-transform: capitalize;
+  color: var(--color-title);
+  margin-bottom: 19px;
+}
+.reviews--style-2 .reviewer-details {
+  border: 1px solid #DCDBE6;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  padding: 32px 38px 42px 50px;
 }
 
 .header-topbar {
@@ -4021,49 +4103,6 @@ body.slidemenuon .sidebarBtn .bar:nth-child(4) {
   font-size: 14px;
   line-height: 20px;
   color: var(--color-title);
-}
-.course-details-section .course-details-main-wrapper .course-details-content-wrapper .reviews .title, .course-details-section .course-details-main-wrapper .course-details-content-wrapper .reviews .course-intro-section .course-intro-text-content-wrapper .feature-list ul li, .course-intro-section .course-intro-text-content-wrapper .feature-list ul .course-details-section .course-details-main-wrapper .course-details-content-wrapper .reviews li {
-  font-family: var(--font-outfit);
-  font-weight: 600;
-  font-size: 26px;
-  color: var(--color-title);
-  margin-bottom: 45px;
-}
-.course-details-section .course-details-main-wrapper .course-details-content-wrapper .reviews .reviewer-details {
-  gap: 19px;
-  border-bottom: 1px solid #E8E8E8;
-  padding-bottom: 35px;
-  margin-bottom: 40px;
-}
-.course-details-section .course-details-main-wrapper .course-details-content-wrapper .reviews .reviewer-details .reviewer-info {
-  flex: 1;
-}
-.course-details-section .course-details-main-wrapper .course-details-content-wrapper .reviews .reviewer-details .reviewer-info .reviewer-name {
-  margin-bottom: 10px;
-}
-.course-details-section .course-details-main-wrapper .course-details-content-wrapper .reviews .reviewer-details .reviewer-info .reviewer-name .name-post-time-wrapper a {
-  font-family: var(--font-outfit);
-  font-weight: 500;
-  font-size: 18px;
-  color: #4F536C;
-  margin-right: 10px;
-}
-.course-details-section .course-details-main-wrapper .course-details-content-wrapper .reviews .reviewer-details .reviewer-info .reviewer-name .name-post-time-wrapper span {
-  font-family: var(--font-outfit);
-  font-weight: 400;
-  font-size: 14px;
-  color: #9D9CAE;
-}
-.course-details-section .course-details-main-wrapper .course-details-content-wrapper .reviews .reviewer-details .reviewer-info .review-title {
-  font-family: var(--font-outfit);
-  font-weight: 600;
-  font-size: 17px;
-  color: var(--color-title);
-  margin-bottom: 2px;
-}
-.course-details-section .course-details-main-wrapper .course-details-content-wrapper .reviews .reviewer-details .reviewer-info .para-text, .course-details-section .course-details-main-wrapper .course-details-content-wrapper .reviews .reviewer-details .reviewer-info .footer-section .rt-footer-content-wrapper .rt-footer-content .footer-info .info-list li, .footer-section .rt-footer-content-wrapper .rt-footer-content .footer-info .info-list .course-details-section .course-details-main-wrapper .course-details-content-wrapper .reviews .reviewer-details .reviewer-info li, .course-details-section .course-details-main-wrapper .course-details-content-wrapper .reviews .reviewer-details .reviewer-info .footer-section .rt-footer-content-wrapper .rt-footer-content .rt-footer-link-list-wrapper ul.rt-footer-link-list li a, .footer-section .rt-footer-content-wrapper .rt-footer-content .rt-footer-link-list-wrapper ul.rt-footer-link-list li .course-details-section .course-details-main-wrapper .course-details-content-wrapper .reviews .reviewer-details .reviewer-info a {
-  font-size: 16px;
-  line-height: 26px;
 }
 .course-details-section .course-details-main-wrapper .course-details-content-wrapper .write-review .title, .course-details-section .course-details-main-wrapper .course-details-content-wrapper .write-review .course-intro-section .course-intro-text-content-wrapper .feature-list ul li, .course-intro-section .course-intro-text-content-wrapper .feature-list ul .course-details-section .course-details-main-wrapper .course-details-content-wrapper .write-review li {
   font-family: var(--font-outfit);
