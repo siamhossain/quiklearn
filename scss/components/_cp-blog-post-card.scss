@@ -37,9 +37,12 @@
         }
 
         .entry-meta {
-            gap: 28px;
+            gap: 15px;
             @include media-from-to(1200px, min, 1400px, max) {
                 gap: 20px;
+            }
+            @include media-only(1500px, min) {
+                gap: 28px;
             }
             li {
                 gap: 7px;

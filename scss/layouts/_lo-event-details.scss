@@ -1,0 +1,106 @@
+.events-details-section {
+    .event-details-cover-img {
+        position: relative;
+        margin-bottom: 28px;
+        img {
+            border-radius: 10px;
+        }
+        .event-counter-wrapper {
+            gap: 4px;
+            position: absolute;
+            right: 31px;
+            bottom: -25px;
+            .event-counter-item {
+                width: 60px;
+                height: 60px;
+                background: #FFFFFF;
+                border: 1px solid $color-primary;
+                border-radius: 8px;
+                position: relative;
+                overflow: hidden;
+
+                .counter-content-wrapper {
+                    .count-numbers {
+                        font-family: $font-outfit;
+                        font-weight: 700;
+                        font-size: 20px;
+                        // line-height: 0px;
+                        color: $color-title;
+                    }
+                    .count-title {
+                        font-family: $font-outfit;
+                        font-weight: 400;
+                        font-size: 14px;
+                        color: #9D9CAE;
+                    }
+                }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 33px;
+                    height: 7px;
+                    background: $color-primary;
+                    border-radius: 100px;
+                    bottom: -3.5px;
+                }
+
+            }
+        }
+    }
+    .video-title-area {
+        .video-title {
+            position: relative;
+            padding-left: 20px;
+            &::before {
+                content: "";
+                position: absolute;
+                background: $color-primary;
+                width: 8px;
+                height: 8px;
+                border-radius: 50px;
+                left: 0;
+                top: 9px;
+            }
+        }
+    }
+    .all-speaker-wrapper {
+        padding: 55px 45px;
+        background: $color-white;
+        border: 1px solid #DCDBE5;
+        border-radius: 6px;
+        gap: 63px;
+        .speaker-info {
+            .speaker-img {
+                margin-bottom: 12px;
+            }
+            .speaker-text-info {
+                .name {
+                    a {
+                        font-family: $font-outfit;
+                        font-weight: 500;
+                        font-size: 20px;
+                        line-height: 25px;
+                        color: $color-title;
+                    }
+                }
+                .designation {
+                    font-family: $font-outfit;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 19px;
+                    color: #4F536C;
+                    margin-bottom: 10px;
+                }
+                .rating {
+                    span {
+                        font-family: 'Hind';
+                        font-weight: 400;
+                        font-size: 16px;
+                        color: #9D9CAE;
+                        margin-left: 6px;
+                    }
+                }
+            }
+        }
+    }
+}

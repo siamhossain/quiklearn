@@ -5,6 +5,10 @@
 .pagination-wrapper {
     margin-top: 30px;
     display: inline-block;
+    margin-bottom: 25px;
+    @include media-only('md', min) {
+        margin-bottom: 0;
+    }
     ul.pagination {
         .active {
                 color: $color-primary;

@@ -33,4 +33,10 @@
             background: linear-gradient(122.96deg, #56AB2F 11.09%, #A8E063 90.59%);
         }
     }
+    &--style-4 {
+        a {
+            color: $color-white;
+            background: $color-primary;
+        }
+    }
 }

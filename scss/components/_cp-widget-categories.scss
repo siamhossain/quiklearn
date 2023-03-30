@@ -1,0 +1,99 @@
+/*=================================
+// Widget-categories [side widget]
+===================================*/
+
+.widget-categories {
+    padding-bottom: 34px;
+    margin-bottom: 26px;
+    .sub-title {
+        background: #F7F9FE;
+        border-radius: 8px 8px 0px 0px;
+        padding: 16px 30px;
+        font-family: $font-outfit;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 140%;
+        color: red;
+    }
+    .categories-list {
+        ul {
+            li {
+                position: relative;
+                &::after {
+                    content: "";
+                    width: 100%;
+                    border-bottom: 1px solid #E8E8E8;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    -webkit-transition: all 0.3s ease-in-out;
+                    transition: all 0.3s ease-in-out;
+                }
+                a {
+                    font-family: $font-outfit;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 50px;
+                    color: #4F536C;
+                    svg {
+                        margin-right: 6px;
+                    }
+                }
+
+
+                a {
+                    background-image: linear-gradient(to right, $color-primary, $color-primary 50%, #000 50%);
+                    background-size: 200% 100%;
+                    background-position: -100%;
+                    display: inline-block;
+                    padding: 5px 0;
+                    position: relative;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    transition: all 0.3s ease-in-out;
+                    &::before{
+                      content: '';
+                      background: $color-primary;
+                      display: block;
+                      position: absolute;
+                      bottom: 0;
+                      left: 0;
+                      width: 0;
+                      height: 1px;
+                      transition: all 0.3s ease-in-out;
+                      z-index: 1;
+                    }
+                    
+                    &:hover {
+                     background-position: 0;
+                    }
+                    
+                    &:hover::before{
+                      width: 100%;
+                    }
+                }
+                  
+
+
+                
+                &:hover {
+                    &::after {
+                        // border-bottom: 1px dashed $rt-color-primary;
+                    }
+                    a {
+                        color: $color-primary;
+                        // padding-left: 10px;
+                        svg {
+                            fill: $color-primary;
+                        }
+                    }
+                }
+                &:last-child {
+                    &::after { 
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

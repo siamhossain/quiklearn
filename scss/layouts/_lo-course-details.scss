@@ -24,6 +24,7 @@
                         @include toRem(font-size, 36);
                         text-transform: capitalize;
                         color: $color-title;
+                        line-height: 36px;
                     }
                 }
                 .para-text {
@@ -112,9 +113,11 @@
                         margin-bottom: 20px;
                     }
                     ul.course-learning-list {
-                        columns: 2;
-                        -webkit-columns: 2;
-                        -moz-columns: 2;
+                        @include media-only('sm', min) {
+                            columns: 2;
+                            -webkit-columns: 2;
+                            -moz-columns: 2;
+                        }
                         li {
                             font-family: 'Hind';
                             font-weight: 400;
@@ -239,19 +242,24 @@
                             margin-bottom: 8px;
                         }
                         .meta-wrapper {
-                            gap: 30px;
+                            gap: 15px;
+                            @include media-only('sm', min) {
+                                gap: 30px;
+                            }
                             margin-bottom: 15px;
                             .rating {
                                 gap: 6px;
                             }
                             .meta-data {
-                                gap: 30px;
+                                gap: 15px;
+                                @include media-only('sm', min) {
+                                    gap: 30px;
+                                }
                                 .meta-item {
                                     gap: 8px;
                                     font-family: 'Hind';
                                     font-weight: 400;
                                     font-size: 16px;
-                                    line-height: 0px;
                                     color: #4F536C;
                                 }
                             }
@@ -297,7 +305,9 @@
                         border: 1px solid #E0E3E7;
                         border-radius: 6px;
                         padding: 34px 43px 38px 31px;
-                        border-left: 0;
+                        @include media-only('md', min) {
+                            border-left: 0;
+                        }
                         .single-progressbar {
                             gap: 11px;
                             margin-bottom: 10px;
@@ -333,6 +343,10 @@
                 }
             }
             .write-review {
+                margin-bottom: 25px;
+                @include media-only('lg') {
+                    margin-bottom: 0;
+                }
                 .title {
                     font-family: $font-outfit;
                     font-weight: 600;
@@ -395,7 +409,12 @@
             }
         }
         .course-details-right-sidebar {
-            margin-left: 40px;
+            @include media-only('lg', min) {
+                margin-left: 20px;
+            }
+            @include media-only(1500px, min) {
+                margin-left: 40px;
+            }
             .action-btn-list {
                 gap: 13px;
                 margin-bottom: 28px;
@@ -531,7 +550,7 @@
                             font-size: 17px;
                             text-transform: capitalize;
                             color: $color-title;
-                            margin-bottom: 16px;
+                            margin-bottom: 23px;
                         }
                         ul.course-include-list {
                             li {
@@ -550,6 +569,11 @@
                                 }
                                 .course-includes-name {
                                     gap: 10px;
+                                    @include transition;
+                                    &:hover {
+                                        color: $color-primary;
+                                        cursor: pointer;
+                                    }
                                 }
                             }
                         }
@@ -568,6 +592,13 @@
             height: 440px;
             z-index: -1;
             border-bottom: 1px solid#DBDBDB;
+            display: none;
+            @include media-only('md', min) {
+                display: block;
+            } 
+            @include media-from-to(1200px, min, 1500px, max) {
+                height: 470px;
+            }
         }
     }
 }

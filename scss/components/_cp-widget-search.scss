@@ -1,0 +1,16 @@
+.widget-search {
+    padding-bottom: 34px;
+    margin-bottom: 26px;
+    .searchbox-container {
+        margin-bottom: 0;
+        box-shadow: none;
+        height: 45px;
+        border-radius: 4px;
+
+        .searchbox-submit {
+            .rt-searchbox-btn {
+                padding: 12px 18px;
+            }
+        }
+    }
+}
