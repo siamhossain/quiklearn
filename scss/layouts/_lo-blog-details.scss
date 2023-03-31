@@ -1,0 +1,76 @@
+.blog-details-section {
+    .event-details-cover-img {
+        img {
+            border-radius: 10px;
+        }
+        margin-bottom: 20px;
+    }
+    .course-details-main-wrapper .course-details-content-wrapper .overview-details {
+        margin-bottom: 0;
+    }
+    .course-learning {
+        margin-bottom: 30px;
+    }
+    
+    .blog-tag-share {
+        border-bottom: 1px solid #E8E8E8;
+        padding: 19px 0;
+        margin-bottom: 50px;
+        .single-tag-area {
+            gap: 20px;
+            .title {
+                font-family: $font-outfit;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 28px;
+                color: #00235A;
+            }
+            ul.tag-list {
+                gap: 6px;
+                li {
+                    a {
+                        background: #F8F8F8;
+                        font-family: $font-outfit;
+                        font-weight: 400;
+                        font-size: 15px;
+                        line-height: 28px;
+                        color: $color-primary;
+                        border-radius: 50px;
+                        padding: 8px 21px;
+                        &:hover {
+                            background: $color-primary;
+                            color: $color-white;
+                        }
+                    }
+                }
+            }
+        }
+        .single-share-area {
+            gap: 13px;
+            .title {    
+                font-family: $font-outfit;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 28px;
+                color: #4F536C;
+            }
+            ul.social-icon-list {
+                gap: 12px;
+                li {
+                    a {
+                        i {
+                            color: #9D9CAE;
+                            font-size: 19px;
+                            @include transition;
+                        }
+                        &:hover {
+                            i {
+                                color: $color-primary;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

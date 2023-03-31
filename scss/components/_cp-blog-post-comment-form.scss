@@ -1,0 +1,95 @@
+.post-comment-form-wrapper {
+    border-radius: 8px;
+    padding: 38px 17px  45px 40px;
+    background: #F8F8F8;
+    border: 1px solid #E0E0ED;
+    border-radius: 12px;
+    .title {
+        font-family: $font-outfit;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 30px;
+        color: $color-title;
+        margin-bottom: 2px;
+    }
+    .para-text {
+        margin-bottom: 17px;
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .post-comment-form {
+        .input-area {
+            input {
+                background: $color-white;
+                border-radius: 5px;
+                border: none;
+                width: 100%;
+                padding: 11px 15px;
+                font-family: 'Hind';
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 28px;
+                text-transform: capitalize;
+                margin-bottom: 30px;
+                &::placeholder {
+                    color: #A2A8B0;
+                }
+            }
+            textarea {
+                background: $color-white;
+                border-radius: 5px;
+                border: none;
+                width: 100%;
+                padding: 15px 15px;
+                margin-bottom: 13px;
+
+                font-family: 'Hind';
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 28px;
+                text-transform: capitalize;
+
+                &::placeholder {
+                    color: #A2A8B0;
+                }
+            }
+        }
+        .check-box-area {
+            gap: 12px;
+            margin-bottom: 24px;
+            input {
+                width: 23px;
+                height: 23px;
+                margin: 0;
+                border-radius: 3px;
+                border: 1px solid #C6C6C6;
+
+            }
+            label {
+                font-family: $font-outfit;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+                text-transform: capitalize;
+                color: #4F536C;
+            }
+        }
+        .form-btn {
+            a {
+                padding: 16px 26px;
+                background: $color-primary;
+                border-radius: 5px;
+                font-family: $font-outfit;
+                font-weight: 600;
+                font-size: 16px;
+                color: $color-white;
+            }
+        }
+    }
+}
+
+.contact-page {
+    .post-comment-form-wrapper {
+        padding: 35px 6px 40px 30px;
+    }
+}

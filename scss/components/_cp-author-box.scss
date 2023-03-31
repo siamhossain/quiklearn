@@ -1,0 +1,119 @@
+.rt-author-box {
+    background: #F7F7FB;
+    border: 1px solid #E0E0ED;
+    border-radius: 10px;
+
+    gap: 30px;
+    padding: 40px 45px 40px 50px;
+    margin-bottom: 45px;
+    border-radius: 12px;
+    overflow: hidden;
+    .post-author-img {
+        
+    }
+    .post-author-content {
+        flex: 1;
+        .post-author-name {
+            font-family: $font-outfit;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 26px;
+            color: $color-primary;
+            margin-bottom: 12px;
+        }
+        .para-text {
+
+        }
+        .single-share-area {
+            ul {
+                display: flex;
+                gap: 8px;
+                align-items: center;
+                li {
+                     a {
+                        width: 26px;
+                        height: 26px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 50px;
+                        i {
+                            color: $color-white;
+                        }
+                        &:hover {
+                            i {
+                                animation: toBottomFromTop 0.5s forwards;
+                            }
+                        }
+                    }
+                }
+                li:nth-child(1) {
+                    font-family: $text-font;
+                    font-weight: 500;
+                    font-size: 15px;
+                    line-height: 18px;
+                    text-align: right;
+                    color: #222222;
+                    margin-right: 7px;
+                    color: $color-title;
+
+                }
+                li:nth-child(2) {
+                    a {
+                        background: #1877F2;
+                    }
+                }
+                li:nth-child(3) {
+                    a {
+                        background: #E60023;
+                    }
+                }
+                li:nth-child(4) {
+                    a {
+                        background: #1DA1F2;
+                    }
+                }
+            }
+        }
+    }
+
+    .shapes {
+        ul {
+            li {
+                position: absolute;
+            }
+            li:nth-child(1) {
+                right: 0;
+                top: 0;
+                z-index: -1;
+
+                width: 148px;
+                height: 224px;
+               
+            }
+            li:nth-child(2) {
+                left: 0;
+                bottom: 0;
+                z-index: -1;
+
+                width: 210px;
+                height: 132px;
+            }
+            li:nth-child(3) {
+                left: 75px;
+                bottom: 55px;
+                z-index: -1;
+
+                width: 65px;
+                height: 65px;
+            }
+            li:nth-child(4) {
+                right: 37px;
+                bottom: 187px;
+                z-index: -1;
+                width: 53px;
+                height: 53px;
+            }
+        }
+    }
+}

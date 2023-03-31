@@ -1,0 +1,31 @@
+.qoutation-area {
+    background: #F7F7FB;
+    padding: 50px 63px;
+    position: relative;
+    border-radius: 10px;
+    margin-bottom: 60px;
+    .quote {
+        font-family: $font-outfit;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+        color: $color-title;
+    }
+    .quotation-logo {
+        position: absolute;
+        right: 36px;
+        bottom: 32px;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        width: 5px;
+        height: 86px;
+        left: 0px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        background: #543EE8;
+        border-radius: 100px;
+    }
+}

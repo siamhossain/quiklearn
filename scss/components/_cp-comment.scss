@@ -1,0 +1,75 @@
+.comment-section {
+    margin-bottom: 35px;
+    .title {
+        font-family: $font-outfit;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 30px;
+        color: $color-title;
+        padding-bottom: 20px;
+    }
+    .comment-reply {
+        margin-left: 45px;
+    }
+    .comment-wrapper {
+        gap: 30px;
+        padding: 30px 0;
+        border-bottom: 1px solid $border-color;
+        &:last-child {
+            border-bottom: none;
+        }
+
+        .comment-content {
+            flex: 1;
+            .commentor-info {
+                .commentor-name {
+                    font-family: $font-outfit;
+                    font-weight: 500;
+                    @include toRem(font-size, 20);
+                    line-height: 26px;
+                    color: $color-title;
+                    margin-bottom: 12px;
+                }
+                .comment-meta {
+                    span {
+                        font-family: 'Hind';
+                        font-weight: 500;
+                        @include toRem(font-size, 14);
+                        line-height: 20px;
+                        color: #9D9CAE;
+                    }
+                }
+                .comment {
+                    p {
+                        font-family: 'Hind';
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 26px;
+                        color: #4F536C;
+                    }
+                    margin-bottom: 12px;
+                }
+            }
+            .reply-btn {
+                background: #F7F7FB;
+                border-radius: 10px;
+                padding: 8px 19px;
+                font-family: $font-outfit;
+                font-weight: 500;
+                @include toRem(font-size, 14);
+                line-height: 18px;
+                color: $color-primary;
+                text-transform: uppercase;
+                color: #543EE8;
+
+                &:hover {
+                    color: $color-white;
+                    border-color: transparent;
+                    svg {
+                        fill: $color-white;
+                    }
+                }
+            }
+        }
+    }
+}
