@@ -1,0 +1,49 @@
+.core-feature-item {
+    background: $color-white;
+    border: 1px solid #DBDBDB;
+    border-radius: 10px;
+    padding: 45px 35px;
+    margin: 0 5px;
+    .icon {
+        width: 90px;
+        height: 90px;
+        box-shadow: 0px 4px 20px #D0D0D0;
+        margin-bottom: 25px;
+    }
+    .title {
+        a {
+            font-family: $font-outfit;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 30px;
+            text-align: center;
+            text-transform: capitalize;
+            color: $color-black;
+        }
+        margin-bottom: 14px;
+    }
+    .para-text {
+
+    }
+}
+
+.core-feature-section {
+    .section-text-content {
+        .section-heading {
+            position: relative;
+            margin-bottom: 42px;
+            &::before {
+                content: url("../images/core-feature/underline-shape.svg");
+                position: absolute;
+                top: 35px;
+                left: 0;
+                right: 0;
+                margin: auto;
+                display: none;
+                @include media-only('md', min) {
+                    display: block;
+                }
+            }
+        }
+    }
+}

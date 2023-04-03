@@ -205,5 +205,20 @@
                 }
             }
         }
+        .about-content-wrapper {
+            padding-left: 70px;
+
+            .section-text-content {
+                .para-1 {
+                    margin-bottom: 20px;
+                }
+            }
+
+            .course-learning {
+                .course-learning-list {
+                    columns: unset;
+                }
+            }
+        }
     }
 }

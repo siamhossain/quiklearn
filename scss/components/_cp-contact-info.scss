@@ -1,0 +1,92 @@
+/*================================
+//  Contact Info Card [component]
+=================================*/
+
+
+.rt-contact {
+    &-info-wrapper {
+        background: #FFFFFF;
+        border: 1px solid #ECECEC;
+        border-radius: 10px;
+        padding: 35px 40px 50px;
+        
+        .title-area {
+            .title {
+                font-family: $font-outfit;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 30px;
+                color: $color-title;
+                position: relative;
+                margin-bottom: 40px;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    background: #543EE8;
+                    border-radius: 100px;
+                    width: 40px;
+                    height: 5px;
+                    bottom: -23px;
+                }
+            }
+            .para-text {
+                margin-bottom: 25px;
+            }
+        }
+    }
+    &-item {
+        text-align: center;
+        margin-right: 40px;
+        gap: 20px;
+        border-bottom: 1px solid #E4E8EF;
+        padding-bottom: 25px;
+        margin-bottom: 25px;
+        @include transition;
+        &:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+        &:hover {
+            .rt-contact-icon {
+                background: $color-primary;
+                svg {
+                    fill: $color-white;
+                }
+            }
+        }
+    }
+    &-icon {
+        width: 70px;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s ease-in-out;
+        background: #EEECFD;
+        @include transition;
+    }
+    &-item-content {
+        flex: 1;
+        .contact-item-content-heading {
+            font-family: $font-outfit;
+            font-weight: 600;
+            @include toRem(font-size, 20);
+            line-height: 26px;
+            color: $color-title;
+            margin-bottom: 6px;
+        }
+        .para-text {
+            font-family: 'Hind';
+            @include toRem(font-size, 16);
+            line-height: 26px;
+            text-transform: lowercase;
+        }
+    }
+}
+
+//service-section 
+
+.service-section {
+    
+}

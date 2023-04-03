@@ -1,0 +1,149 @@
+/*================================
+//  Pricing Card [component]
+=================================*/
+
+.rt-pricing { 
+    &-item {
+        background: $color-white;
+        position: relative;
+        border: 1px solid #DBDAE9;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+        border-radius: 10px;
+        padding: 70px 47px 60px;
+        @include transition;
+        margin-bottom: 30px;
+        @include media-only ('lg', min) {
+            margin-bottom: 0;
+        }
+        .pricing-header {
+            transition: all ease 0.31s;
+            padding-bottom: 35px;
+            .pricing-title {
+                font-family: $font-outfit;
+                font-weight: 500;
+                @include toRem(font-size, 24);
+                line-height: 28px;
+                color: $color-title;
+                margin-bottom: 17px;
+            }
+            .para-text {
+                margin-bottom: 26px;
+            }
+            .pricing-price {
+                span.currency-type {
+                    font-family: $font-outfit;
+                    font-weight: 500;
+                    font-size: 24px;
+                    line-height: 28px;
+                    text-align: center;
+                    text-transform: capitalize;
+                    color: $color-title;
+                }
+
+                font-family: $font-outfit;
+                font-weight: 700;
+                @include toRem(font-size, 40);
+                line-height: 28px;
+                color: $color-title;
+
+                span.price-unit {
+                    font-family: $font-outfit;
+                    font-weight: 400;
+                    @include toRem(font-size, 20);
+                    line-height: 28px;
+                    color: #4F536C;
+                }
+            }
+        }
+        &:hover {
+
+        }
+    }
+    &-item-btn {
+        text-align: center;
+        line-height: 0;
+        margin-bottom: 35px;
+        .pricing-btn {
+            background: #F3F1FF;
+            border-radius: 50px;
+            padding: 15px 30px;
+
+            font-family: $font-outfit;
+            font-weight: 600;
+            font-size: 18px;
+            letter-spacing: 0.01em;
+            text-transform: capitalize;
+            line-height: 24px;
+            color: $color-primary;
+            width: 100%;
+            gap: 10px;
+            @include flex-position(flex, center, center);
+            @include transition;
+            &:hover {
+                background: $color-primary;
+                color: $color-white;
+                svg {
+                    fill: $color-white;
+                }
+            }
+        }
+        .pricing-btn.active {
+            background: $color-primary;
+            color: $color-white;
+            svg {
+                fill: $color-white;
+            }
+        }
+    }
+    &-features {
+        .rt-pricing-features-list {
+            li {
+                font-family: $font-outfit;
+                font-weight: 400;
+                @include toRem(font-size, 16);
+                line-height: 46px;
+                color: #4F536C;
+                position: relative;
+
+                &:hover {
+                    color: $color-primary;
+                }
+            }
+        }
+    }
+}
+
+.pricing-section {
+    .section-text-content {
+        .section-name {
+            
+        }
+        .section-heading {
+            position: relative;
+            margin-bottom: 25px;
+            &::before {
+                content: url("../images/hero-section/shapes/hero-shape-5.svg");
+                position: absolute;
+                top: 30px;
+                left: 0;
+                right: 0;
+                margin: auto;
+                display: none;
+                @include media-only('md', min) {
+                    display: block;
+                }
+            }
+        }
+        .para-text {
+            margin-bottom: 40px;
+        }
+    }
+}
+
+
+
+.all-pricing {
+    padding-bottom: 90px;
+}
+
+

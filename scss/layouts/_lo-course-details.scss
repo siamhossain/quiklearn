@@ -101,48 +101,6 @@
                         margin-bottom: 20px;
                     }
                 }
-                .course-learning {
-                    .title {
-                        font-family: $font-outfit;
-                        font-weight: 600;
-                        @include toRem(font-size, 26);
-                        color: $color-title;
-                        margin-bottom: 12px;
-                    }
-                    .para-text {
-                        margin-bottom: 20px;
-                    }
-                    ul.course-learning-list {
-                        @include media-only('sm', min) {
-                            columns: 2;
-                            -webkit-columns: 2;
-                            -moz-columns: 2;
-                        }
-                        li {
-                            font-family: 'Hind';
-                            font-weight: 400;
-                            @include toRem(font-size, 18);
-                            line-height: 35px;
-                            color: #4F536C;
-                            position: relative;
-                            padding-left: 31px;
-                            &::before {
-                                content: url("../images/course-details/tick-mark-white.svg");
-                                position: absolute;
-                                width: 20px;
-                                height: 20px;
-                                background: $color-primary;
-                                border-radius: 50px;
-    
-                                display: inline-block;
-                                text-align: center;
-                                line-height: 20px;
-                                left: 0;
-                                top: 6px;
-                            }
-                        }
-                    }
-                }
             }
             .course-curriculum {
                 padding-bottom: 56px;
