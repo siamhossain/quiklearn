@@ -1,0 +1,35 @@
+.error-section {
+    .rt-error-area {
+        img {
+            margin-bottom: 90px;
+        }
+        .error-heading {
+            font-family: $font-outfit;
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 65px;
+            color: $color-title;
+            margin-bottom: 11px;
+        }
+        .error-text {
+            font-family: $font-outfit;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 30px;
+            color: $color-title;
+            margin-bottom: 40px;
+        }
+        .go-to-home-btn {
+            background: $color-primary;
+            color: $color-white;
+            font-family: $font-outfit;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 26px;
+            padding: 22px 35px;
+            border-radius: 5px;
+            width: 371px;
+            
+        }
+    }
+}

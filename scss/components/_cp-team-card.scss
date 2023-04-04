@@ -64,56 +64,97 @@
     }
     &--style-2 {
         background: $color-gray15;
-        padding: 30px 20px;
+        padding: 23px 0 0 0;
         .rt-team-card-img-container {
             .rt-team-card-img {
-                height: 300px;
+                height: unset;
             }
         }
-        .rt-team-card-content {
-            background: red;
-            border-radius: 10px;    
+        .rt-team-card-content-wrapper {
             position: relative;
-            z-index: 0;
-            overflow: hidden;
-            &::before {
-                content: "";
+            margin: 30px;
+            .rt-team-card-content {
+                background: #fff;
+                border-radius: 10px;    
                 position: absolute;
-                background: purple;
-                width: 150px; 
-                height: 150px; 
-                margin: auto;
-                left: 0;
-                right: 0;
-                transform: rotate(45deg);
-                border-radius: 10px;
-                padding: 50px;
-                z-index: -1;
-            }
-               
-
-            .title {
-                a {
-                    font-family: $font-outfit;
-                    font-weight: 600;
-                    @include toRem(font-size, 24);
-                    line-height: 40px;
-                    text-transform: capitalize;
-                    color: $color-primary;
+                // padding: 15px;
+                width: 269px;
+                height: 75px;
+                bottom: 30px;
+                transition: 0.5s ease-in-out;
+                .title {
+                    a {
+                        font-family: $font-outfit;
+                        font-weight: 600;
+                        @include toRem(font-size, 24);
+                        line-height: 40px;
+                        text-transform: capitalize;
+                        color: $color-primary;
+                        @include transition;
+                    }
+                    transition: 0.5s ease-in-out;
                 }
+                .designation {
+                    font-family: $font-outfit;
+                    font-weight: 400;
+                    @include toRem(font-size, 16);
+                    line-height: 20px;
+                    text-transform: capitalize;
+                    color: $color-shade1;
+                    margin-bottom: 0;
+                    @include transition;
+                }
+
+                .meta-list {
+                    // visibility: hidden;
+                    // opacity: 0;
+                    // transition: 0.5s ease-in-out;
+                    display: none;
+                }
+    
+                &::before {
+                    content: "";
+                    position: absolute;
+                    border-bottom: 20px solid white;
+                    border-left: 130px solid transparent;
+                    border-right: 130px solid transparent;
+                    top: -19px;
+                    width: 0;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                    transition: 0.5s ease-in-out;
+                }
+                &:hover {
+                    height: 145px;
+                    background: $color-primary;
+                    &::before {
+                        border-bottom: 20px solid $color-primary;  
+                    }
+                    .title {
+                        a {
+                            color: $color-white;
+                        }
+                    }
+                    .designation {
+                        color: $color-white;
+                        margin-bottom: 10px;
+                    }
+                    .meta-list {
+                        // opacity: 1;
+                        // visibility: visible;
+                        display: block;
+                        li {
+                            color: $color-white;
+                            svg {
+                                fill: $color-white;
+                            }
+                        }
+                    }
+                }
+    
             }
-            .designation {
-                font-family: $font-outfit;
-                font-weight: 400;
-                @include toRem(font-size, 16);
-                line-height: 40px;
-                text-transform: capitalize;
-                color: $color-shade1;
-                margin-bottom: 0;
-            }
-            .meta-list {
-                // display: none;
-            }
+
         }
 
     }

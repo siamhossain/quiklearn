@@ -2,12 +2,11 @@
     gap: 20px;
 
     .item-title {
-        .rtOdoCounter {
+        span {
             font-family: $font-outfit;
             font-weight: 600;
             font-size: 48px;
             line-height: 30px;
-            text-align: center;
             text-transform: capitalize;
             color: $color-white;
         }
@@ -15,9 +14,8 @@
         .label {
             font-family: $font-outfit;
             font-weight: 400;
-            font-size: 15px;
-            line-height: 18px;
-            text-align: center;
+            font-size: 20px;
+            line-height: 30px;
             text-transform: capitalize;
             color: $color-white;
         }
@@ -31,11 +29,11 @@
             height: 79px;
         }
         .item-title { 
-            .rtOdoCounter {
+            span {
                 font-size: 30px;
                 line-height: 40px;
                 font-weight: 700;
-                color: $color-secondary;
+                color: $color-title;
             }
             .label {
                 font-size: 18px;
@@ -73,8 +71,4 @@
             }
         }
     }
-}
-
-.odometer.odometer-auto-theme .odometer-digit .odometer-digit-inner, .odometer.odometer-theme-default .odometer-digit .odometer-digit-inner {
-    // overflow: unset;
 }
