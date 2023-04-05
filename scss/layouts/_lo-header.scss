@@ -278,7 +278,6 @@ a.menu--link.second-level::after {
 }
 
 .header {
-
   &--style-1 {
     border-top: 1px solid $border-color;
     border-bottom: 1px solid $border-color;
@@ -662,13 +661,15 @@ body.slidemenuon {
       content: "";
       position: absolute;
       left: 0;
-      bottom: 19px;
+      bottom: 0;
       background: $color-primary;
       width: 0;
-      height: 1px;
+      height: 3px;
+      border-radius: 50px;
       opacity: 0;
       visibility: hidden;
       @include transition;
+      width: 62px;
     }
 
     &:hover {
@@ -681,36 +682,13 @@ body.slidemenuon {
   }
 }
 
-
-// .about-page,
-// .error-page,
-// .blog-details-left-sidebar-page,
-// .blog-details-right-sidebar-page,
-// .blog-left-sidebar-page,
-// .blog-right-sidebar-page,
-// .blog-page,
-// .contact-page,
-// .faq-page,
-// .Insurance-details-1-page,
-// .Insurance-details-2-page,
-// .pricing-page,
-// .services-1-page,
-// .services-2-page,
-// .single-team-page,
-// .team-page,
-// .testimonial-page {
-//   .header-logo {
-//     display: none;
-//   }
-// }
-
-// .menu--item.active {
-//     .parent-link {
-//         color: $color-primary;
-//     }
-
-//   color: $color-primary;
-//   .menu--link.active {
-//     color: $color-primary;
-//   }
-// }
+.home2-page {
+  .underline-style {
+    .parent-menu {
+      &::before {
+        height: 1px;
+        bottom: 19px;
+      }
+    }
+  }
+}

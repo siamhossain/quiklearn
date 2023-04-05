@@ -63,8 +63,13 @@
         }
     }
     &--style-2 {
+        width: 100%;
         background: $color-gray15;
         padding: 23px 0 0 0;
+        @include media-only(380px, min) {
+            width: 325px;
+        }
+     
         .rt-team-card-img-container {
             .rt-team-card-img {
                 height: unset;
@@ -72,13 +77,13 @@
         }
         .rt-team-card-content-wrapper {
             position: relative;
-            margin: 30px;
+            margin: 0 30px;
+            height: 105px;
             .rt-team-card-content {
                 background: #fff;
                 border-radius: 10px;    
                 position: absolute;
-                // padding: 15px;
-                width: 269px;
+                width: 100%;
                 height: 75px;
                 bottom: 30px;
                 transition: 0.5s ease-in-out;
@@ -106,61 +111,66 @@
                 }
 
                 .meta-list {
-                    // visibility: hidden;
-                    // opacity: 0;
-                    // transition: 0.5s ease-in-out;
-                    display: none;
+                    visibility: hidden;
+                    opacity: 0;
+                    transition: 0.5s ease;
                 }
     
                 &::before {
                     content: "";
                     position: absolute;
-                    border-bottom: 20px solid white;
-                    border-left: 130px solid transparent;
-                    border-right: 130px solid transparent;
-                    top: -19px;
+                    border-bottom: 15px solid white;
+                    border-left: 125px solid transparent;
+                    border-right: 125px solid transparent;
+                    top: -14px;
                     width: 0;
                     left: 0;
                     right: 0;
                     margin: auto;
                     transition: 0.5s ease-in-out;
                 }
-                &:hover {
-                    height: 145px;
-                    background: $color-primary;
-                    &::before {
-                        border-bottom: 20px solid $color-primary;  
-                    }
-                    .title {
-                        a {
-                            color: $color-white;
-                        }
-                    }
-                    .designation {
-                        color: $color-white;
-                        margin-bottom: 10px;
-                    }
-                    .meta-list {
-                        // opacity: 1;
-                        // visibility: visible;
-                        display: block;
-                        li {
-                            color: $color-white;
-                            svg {
-                                fill: $color-white;
-                            }
-                        }
-                    }
-                }
-    
             }
 
         }
-
+        &:hover {
+            .rt-team-card-content {
+                height: 145px;
+                background: $color-primary;
+                &::before {
+                    border-bottom: 15px solid $color-primary;  
+                }
+                .title {
+                    a {
+                        color: $color-white;
+                    }
+                }
+                .designation {
+                    color: $color-white;
+                    margin-bottom: 10px;
+                }
+                .meta-list {
+                    opacity: 1;
+                    visibility: visible;
+                    li {
+                        color: $color-white;
+                        svg {
+                            fill: $color-white;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
 .team-section {
+    .team-wrap {
+        gap: 30px;
+        flex-wrap: wrap;
+        @include media-only (1500px, min ) {
+            flex-wrap: nowrap;
+        }
+    }
     .section-text-content {
         margin-bottom: 20px;
         .section-heading {
@@ -177,6 +187,17 @@
         }
         .para-text {
             margin-bottom: 20px;
+        }
+    }
+}
+
+.team-page {
+    .team-section {
+        .team-wrap { 
+            margin-bottom: 30px;
+            &:last-child {
+                margin-bottom: 0;
+            }
         }
     }
 }

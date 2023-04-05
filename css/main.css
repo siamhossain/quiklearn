@@ -914,8 +914,16 @@ p {
   z-index: 1;
 }
 .button-white svg {
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
 }
+.button-white:hover {
+  color: var(--color-white);
+  background: var(--color-secondary);
+}
+.button-white:hover svg {
+  fill: var(--color-white);
+}
+
 .test {
   color: red;
 }
@@ -1467,21 +1475,28 @@ p {
   margin-top: -2px;
 }
 .rt-team-card--style-2 {
+  width: 100%;
   background: var(--color-gray15);
   padding: 23px 0 0 0;
+}
+@media only screen and (min-width: 380px) {
+  .rt-team-card--style-2 {
+    width: 325px;
+  }
 }
 .rt-team-card--style-2 .rt-team-card-img-container .rt-team-card-img {
   height: unset;
 }
 .rt-team-card--style-2 .rt-team-card-content-wrapper {
   position: relative;
-  margin: 30px;
+  margin: 0 30px;
+  height: 105px;
 }
 .rt-team-card--style-2 .rt-team-card-content-wrapper .rt-team-card-content {
   background: #fff;
   border-radius: 10px;
   position: absolute;
-  width: 269px;
+  width: 100%;
   height: 75px;
   bottom: 30px;
   transition: 0.5s ease-in-out;
@@ -1509,45 +1524,57 @@ p {
   transition: all 0.4s ease-in-out;
 }
 .rt-team-card--style-2 .rt-team-card-content-wrapper .rt-team-card-content .meta-list {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s ease;
 }
 .rt-team-card--style-2 .rt-team-card-content-wrapper .rt-team-card-content::before {
   content: "";
   position: absolute;
-  border-bottom: 20px solid white;
-  border-left: 130px solid transparent;
-  border-right: 130px solid transparent;
-  top: -19px;
+  border-bottom: 15px solid white;
+  border-left: 125px solid transparent;
+  border-right: 125px solid transparent;
+  top: -14px;
   width: 0;
   left: 0;
   right: 0;
   margin: auto;
   transition: 0.5s ease-in-out;
 }
-.rt-team-card--style-2 .rt-team-card-content-wrapper .rt-team-card-content:hover {
+.rt-team-card--style-2:hover .rt-team-card-content {
   height: 145px;
   background: var(--color-primary);
 }
-.rt-team-card--style-2 .rt-team-card-content-wrapper .rt-team-card-content:hover::before {
-  border-bottom: 20px solid var(--color-primary);
+.rt-team-card--style-2:hover .rt-team-card-content::before {
+  border-bottom: 15px solid var(--color-primary);
 }
-.rt-team-card--style-2 .rt-team-card-content-wrapper .rt-team-card-content:hover .title a, .rt-team-card--style-2 .rt-team-card-content-wrapper .rt-team-card-content:hover .course-intro-section .course-intro-text-content-wrapper .feature-list ul li a, .course-intro-section .course-intro-text-content-wrapper .feature-list ul .rt-team-card--style-2 .rt-team-card-content-wrapper .rt-team-card-content:hover li a {
+.rt-team-card--style-2:hover .rt-team-card-content .title a, .rt-team-card--style-2:hover .rt-team-card-content .course-intro-section .course-intro-text-content-wrapper .feature-list ul li a, .course-intro-section .course-intro-text-content-wrapper .feature-list ul .rt-team-card--style-2:hover .rt-team-card-content li a {
   color: var(--color-white);
 }
-.rt-team-card--style-2 .rt-team-card-content-wrapper .rt-team-card-content:hover .designation {
+.rt-team-card--style-2:hover .rt-team-card-content .designation {
   color: var(--color-white);
   margin-bottom: 10px;
 }
-.rt-team-card--style-2 .rt-team-card-content-wrapper .rt-team-card-content:hover .meta-list {
-  display: block;
+.rt-team-card--style-2:hover .rt-team-card-content .meta-list {
+  opacity: 1;
+  visibility: visible;
 }
-.rt-team-card--style-2 .rt-team-card-content-wrapper .rt-team-card-content:hover .meta-list li {
+.rt-team-card--style-2:hover .rt-team-card-content .meta-list li {
   color: var(--color-white);
 }
-.rt-team-card--style-2 .rt-team-card-content-wrapper .rt-team-card-content:hover .meta-list li svg {
+.rt-team-card--style-2:hover .rt-team-card-content .meta-list li svg {
   fill: var(--color-white);
 }
 
+.team-section .team-wrap {
+  gap: 30px;
+  flex-wrap: wrap;
+}
+@media only screen and (min-width: 1500px) {
+  .team-section .team-wrap {
+    flex-wrap: nowrap;
+  }
+}
 .team-section .section-text-content {
   margin-bottom: 20px;
 }
@@ -1567,16 +1594,27 @@ p {
   margin-bottom: 20px;
 }
 
+.team-page .team-section .team-wrap {
+  margin-bottom: 30px;
+}
+.team-page .team-section .team-wrap:last-child {
+  margin-bottom: 0;
+}
+
 .rt-counter-item {
   gap: 20px;
 }
-.rt-counter-item .item-title span {
+.rt-counter-item .item-title {
+  padding-top: 10px;
+}
+.rt-counter-item .item-title h3 {
   font-family: var(--font-outfit);
   font-weight: 600;
   font-size: 48px;
   line-height: 30px;
   text-transform: capitalize;
   color: var(--color-white);
+  margin-bottom: 10px;
 }
 .rt-counter-item .item-title .label {
   font-family: var(--font-outfit);
@@ -1593,9 +1631,12 @@ p {
   width: 79px;
   height: 79px;
 }
-.rt-counter-item--style-2 .item-title span {
+.rt-counter-item--style-2 .item-title {
+  padding-top: 0;
+}
+.rt-counter-item--style-2 .item-title h3 {
   font-size: 30px;
-  line-height: 40px;
+  line-height: 30px;
   font-weight: 700;
   color: var(--color-title);
 }
@@ -1607,11 +1648,11 @@ p {
   position: relative;
   z-index: 0;
 }
-.rt-counter-item--style-3 .item-title .rtOdoCounter {
+.rt-counter-item--style-3 .item-title h3 {
   font-size: 40px;
   line-height: 30px;
   font-weight: 700;
-  color: var(--color-secondary);
+  color: var(--color-title);
 }
 .rt-counter-item--style-3 .item-title .label {
   font-size: 18px;
@@ -3465,18 +3506,25 @@ body.slidemenuon .sidebarBtn .bar:nth-child(4) {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 19px;
+  bottom: 0;
   background: var(--color-primary);
   width: 0;
-  height: 1px;
+  height: 3px;
+  border-radius: 50px;
   opacity: 0;
   visibility: hidden;
   transition: all 0.4s ease-in-out;
+  width: 62px;
 }
 .underline-style .parent-menu:hover::before {
   width: 100%;
   opacity: 1;
   visibility: visible;
+}
+
+.home2-page .underline-style .parent-menu::before {
+  height: 1px;
+  bottom: 19px;
 }
 
 .rt-hero-section-content-wrapper {
@@ -3533,6 +3581,25 @@ body.slidemenuon .sidebarBtn .bar:nth-child(4) {
   position: relative;
   padding: 50px 25px 65px 0;
   z-index: 0;
+}
+.rt-hero-section-banner-img .hero-img-wrapper {
+  position: relative;
+  display: inline-block;
+}
+.rt-hero-section-banner-img .hero-img-wrapper .play-btn {
+  width: 65px;
+  height: 65px;
+  background: #FC5842;
+  border: 1px solid var(--color-white);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+}
+.rt-hero-section-banner-img .hero-img-wrapper .play-btn svg {
+  margin-left: 5px;
 }
 .rt-hero-section-banner-img .shapes ul li {
   position: absolute;
@@ -3708,12 +3775,12 @@ body.slidemenuon .sidebarBtn .bar:nth-child(4) {
   position: absolute;
 }
 .about-section .about-img .shapes ul li:nth-child(1) {
-  top: -35px;
-  left: 123px;
+  top: 15px;
+  left: 130px;
 }
 .about-section .about-img .shapes ul li:nth-child(2) {
-  top: 23%;
-  right: 52px;
+  top: 32%;
+  right: 40px;
   z-index: -1;
 }
 .about-section .about-img .shapes ul li:nth-child(3) {
@@ -4123,9 +4190,14 @@ body.slidemenuon .sidebarBtn .bar:nth-child(4) {
 }
 .course-intro-section--style-2 .course-intro-video .intro-video-shapes ul li:nth-child(3) {
   top: 25px;
-  right: -90px;
+  right: 0;
   display: inline-block;
   border-radius: 10px;
+}
+@media only screen and (min-width: 1700px) {
+  .course-intro-section--style-2 .course-intro-video .intro-video-shapes ul li:nth-child(3) {
+    right: -90px;
+  }
 }
 .course-intro-section--style-2 .course-intro-video .intro-video-shapes ul li:nth-child(4) {
   left: -131px;
@@ -4147,6 +4219,21 @@ body.slidemenuon .sidebarBtn .bar:nth-child(4) {
   line-height: 40px;
   text-transform: capitalize;
   color: var(--color-white);
+}
+.counter-section--style-1 .rt-counter-item .item-title {
+  position: relative;
+  z-index: 0;
+}
+.counter-section--style-1 .rt-counter-item .item-title .counter-shapes ul li {
+  position: absolute;
+  top: -20px;
+  z-index: -1;
+  right: 0px;
+  left: 12px;
+  margin: auto;
+}
+.counter-section--style-1 .section-text-content .section-heading {
+  margin-bottom: 0;
 }
 .counter-section .shapes ul li {
   position: absolute;
@@ -4179,7 +4266,7 @@ body.slidemenuon .sidebarBtn .bar:nth-child(4) {
   width: 100%;
   top: 0;
   bottom: 0;
-  opacity: 0.9;
+  opacity: 0.8;
 }
 .banner-section .banner-content-wrapper {
   position: relative;

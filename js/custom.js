@@ -18,7 +18,6 @@
         $intelHeader = $('.intelligent-header'),
         $headerSpace = $('.fixed-header-space'),
         $elCarousel = $(".element-carousel"),
-
         $rtMobileMenu = $(".offscreen-navigation .mobile-menu"),
         $rtTabWrappers = document.querySelectorAll('.rt-tabs-wrapper');
     
@@ -76,16 +75,31 @@
 
         //counter-up
         counterUp: function () {
-            $('.counts').each(function () {
-                $(this).prop('Counter',0).animate({
-                    Counter: $(this).html()
-                }, {
-                    duration: 2000,
-                    easing: 'swing',
-                    step: function (now) {
-                        $(this).text(Math.ceil(now));
+            var observer = new IntersectionObserver(function (entries, observer) {
+                entries.forEach(function (entry) {
+                    // If the element is in view, start counter animation
+                    if (entry.isIntersecting) {
+                    $(entry.target).prop("Counter", 0).animate(
+                        {
+                        Counter: $(entry.target).text(),
+                        },
+                        {
+                        duration: 3000,
+                        easing: "swing",
+                        step: function (now) {
+                            $(entry.target).text(Math.ceil(now));
+                        },
+                        }
+                    );
+                    // Stop observing the element to prevent duplicate animations
+                    observer.unobserve(entry.target);
                     }
                 });
+            });
+            
+            // Observe each .counterup element
+            $(".counterup").each(function () {
+            observer.observe(this);
             });
         },
 
@@ -432,6 +446,7 @@
     });
     wow.init();
 
+    
     
       
 

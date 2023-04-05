@@ -91,10 +91,13 @@
     overflow: hidden;
     z-index: 1;
     svg {
-        transition: all 0.3s ease;
+        transition: all 0.4s ease;
     }
     &:hover {
-        // color: $color-white;
-        // background: $color-primary;
+        color: $color-white;
+        background: $color-secondary;
+        svg {
+            fill: $color-white;
+        }
     }
 }

@@ -2,13 +2,15 @@
     gap: 20px;
 
     .item-title {
-        span {
+        padding-top: 10px;
+        h3 {
             font-family: $font-outfit;
             font-weight: 600;
             font-size: 48px;
             line-height: 30px;
             text-transform: capitalize;
             color: $color-white;
+            margin-bottom: 10px;
         }
 
         .label {
@@ -20,6 +22,7 @@
             color: $color-white;
         }
     }
+    
     &--style-2 {
         .icon {
             background: #FFFFFF;
@@ -29,9 +32,10 @@
             height: 79px;
         }
         .item-title { 
-            span {
+            padding-top: 0;
+            h3 {
                 font-size: 30px;
-                line-height: 40px;
+                line-height: 30px;
                 font-weight: 700;
                 color: $color-title;
             }
@@ -46,11 +50,11 @@
         .item-title { 
             position: relative;
             z-index: 0;
-            .rtOdoCounter {
+            h3 {
                 font-size: 40px;
                 line-height: 30px;
                 font-weight: 700;
-                color: $color-secondary;
+                color: $color-title;
             }
             .label {
                 font-size: 18px;

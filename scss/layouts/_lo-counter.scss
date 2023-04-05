@@ -11,6 +11,31 @@
         }
         margin-bottom: 0;
     }
+    &--style-1 {
+        .rt-counter-item {
+            .item-title {
+                position: relative;
+                z-index: 0;
+                .counter-shapes {
+                    ul {
+                        li {
+                            position: absolute;
+                            top: -20px;
+                            z-index: -1;
+                            right: 0px;
+                            left: 12px;
+                            margin: auto;
+                        }
+                    }
+                }
+            }
+        }
+        .section-text-content {
+            .section-heading {
+                margin-bottom: 0;
+            }
+        }
+    }
     .shapes {
         ul {
             li {

@@ -207,9 +207,12 @@
                         }
                         &:nth-child(3) {
                             top: 25px;
-                            right: -90px;
+                            right: 0;
                             display: inline-block;
                             border-radius: 10px;
+                            @include media-only(1700px, min) {
+                                right: -90px;
+                            }
                         }
                         &:nth-child(4) {
                             left: -131px;

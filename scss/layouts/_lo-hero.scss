@@ -49,6 +49,25 @@
         position: relative;
         padding: 50px 25px 65px 0;
         z-index: 0;
+        .hero-img-wrapper {
+            position: relative;
+            display: inline-block;
+            .play-btn {
+                width: 65px;
+                height: 65px;
+                background: #FC5842;
+                border: 1px solid $color-white;
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                top: 0;
+                margin: auto;
+                svg {
+                    margin-left: 5px;
+                }
+            }
+        }
         .shapes {
             ul {
                 li {
