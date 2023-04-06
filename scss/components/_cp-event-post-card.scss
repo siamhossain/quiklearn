@@ -1,6 +1,6 @@
 .event-post-item {
-    background: #FFFFFF;
-    border: 1px solid #DCDBE6;
+    background: $color-white;
+    border: 1px solid $color-gray14;
     border-radius: 10px;
     overflow: hidden;
     padding: 21px 24px 26px 24px;
@@ -35,11 +35,11 @@
                 gap: 7px;
                 span {
                     // line-height: 0;
-                    font-size: 14px;
+                    @include toRem(font-size, 14); 
                 }
                 a {
                     // line-height: 0;
-                    font-size: 14px;
+                    @include toRem(font-size, 14); 
                     &:hover {
                         color: $color-primary;
                     }
@@ -50,7 +50,7 @@
             a {
                 font-family: $font-outfit;
                 font-weight: 500;
-                font-size: 20px;
+                @include toRem(font-size, 20); 
                 line-height: 28px;
                 text-transform: capitalize;
                 color: $color-title;
@@ -65,13 +65,13 @@
                 gap: 9px;
                 font-family: 'Hind';
                 font-weight: 400;
-                font-size: 16px;
+                @include toRem(font-size, 16); 
                 color: #4F536C;
             }
             .pricing {
                 font-family: $font-outfit;
                 font-weight: 600;
-                font-size: 22px;
+                @include toRem(font-size, 22); 
                 color: $color-title;
             }
         }

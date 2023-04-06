@@ -25,10 +25,10 @@
             }
             .section-heading {
                 color: $color-white;
-                font-size: 30px;
+                @include toRem(font-size, 30);
                 line-height: 52px;
                 @include media-only('lg', min) {
-                    font-size: 40px;
+                    @include toRem(font-size, 40);
                 }
             }
         }

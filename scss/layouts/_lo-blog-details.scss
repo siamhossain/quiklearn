@@ -21,7 +21,7 @@
             .title {
                 font-family: $font-outfit;
                 font-weight: 500;
-                font-size: 18px;
+                @include toRem(font-size, 18);
                 line-height: 28px;
                 color: #00235A;
             }
@@ -32,7 +32,7 @@
                         background: #F8F8F8;
                         font-family: $font-outfit;
                         font-weight: 400;
-                        font-size: 15px;
+                        @include toRem(font-size, 15);
                         line-height: 28px;
                         color: $color-primary;
                         border-radius: 50px;
@@ -50,7 +50,7 @@
             .title {    
                 font-family: $font-outfit;
                 font-weight: 500;
-                font-size: 18px;
+                @include toRem(font-size, 18);
                 line-height: 28px;
                 color: #4F536C;
             }
@@ -60,7 +60,7 @@
                     a {
                         i {
                             color: #9D9CAE;
-                            font-size: 19px;
+                            @include toRem(font-size, 19);
                             @include transition;
                         }
                         &:hover {

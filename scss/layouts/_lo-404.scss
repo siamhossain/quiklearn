@@ -6,7 +6,7 @@
         .error-heading {
             font-family: $font-outfit;
             font-weight: 700;
-            font-size: 50px;
+            @include toRem(font-size, 50);
             line-height: 65px;
             color: $color-title;
             margin-bottom: 11px;
@@ -14,7 +14,7 @@
         .error-text {
             font-family: $font-outfit;
             font-weight: 400;
-            font-size: 24px;
+            @include toRem(font-size, 24);
             line-height: 30px;
             color: $color-title;
             margin-bottom: 40px;
@@ -24,7 +24,7 @@
             color: $color-white;
             font-family: $font-outfit;
             font-weight: 700;
-            font-size: 18px;
+            @include toRem(font-size, 18);
             line-height: 26px;
             padding: 22px 35px;
             border-radius: 5px;

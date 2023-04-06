@@ -2,7 +2,7 @@
     .title {
         font-family: $font-outfit;
         font-weight: 600;
-        font-size: 26px;
+        @include toRem(font-size, 26);
         color: $color-title;
         margin-bottom: 45px;
     }
@@ -22,14 +22,14 @@
                     a {
                         font-family: $font-outfit;
                         font-weight: 500;
-                        font-size: 18px;
+                        @include toRem(font-size, 18);
                         color: #4F536C;
                         margin-right: 10px;
                     }
                     span {
                         font-family: $font-outfit;
                         font-weight: 400;
-                        font-size: 14px;
+                        @include toRem(font-size, 14);
                         color: #9D9CAE;
                     }
                 }
@@ -37,12 +37,12 @@
             .review-title {
                 font-family: $font-outfit;
                 font-weight: 600;
-                font-size: 17px;
+                @include toRem(font-size, 17);
                 color: $color-title;
                 margin-bottom: 2px;
             }
             .para-text {
-                font-size: 16px;
+                @include toRem(font-size, 16);
                 line-height: 26px;
             }
         }

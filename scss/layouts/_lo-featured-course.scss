@@ -38,9 +38,9 @@
                 user-select: none;
                 font-family: $font-outfit;
                 font-weight: 500;
-                font-size: 16px;
+                @include toRem(font-size, 16);
                 text-transform: capitalize;
-                color: #4F536C;;
+                color: $color-shade1;
                 
             }
             li.active {

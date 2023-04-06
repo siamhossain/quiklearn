@@ -18,5 +18,13 @@
             color: #9D9CAE;
         }
     }
+
+    &:hover {
+        .icon {
+            img {
+                animation: bounceIn 0.8s forwards;
+            }
+        }
+    }
     
 }

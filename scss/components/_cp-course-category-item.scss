@@ -5,9 +5,11 @@
     padding: 35px 32px; 
     overflow: hidden;
     z-index: 0;
+    @include transition;
     .icon {
         width: 70px;
         height: 70px;
+        @include transition;
     }
     .course-text-content {
         flex: 1;
@@ -43,6 +45,14 @@
             }
         }
     }
+    &:hover {
+        .icon {
+            transform: scale(1.12) translateY(-12px);
+            img {
+                animation: toBottomFromTop 0.5s forwards;
+            }
+        }
+    }
     &--style-2 {
         position: relative;
         gap: 30px;
@@ -68,6 +78,11 @@
                         z-index: -1;
                     }
                 }
+            }
+        }
+        &:hover {
+            .icon {
+                transform: unset;
             }
         }
     }

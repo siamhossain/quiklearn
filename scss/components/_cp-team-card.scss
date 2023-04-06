@@ -7,6 +7,7 @@
         position: relative;
         .rt-team-card-img {
             height: 150px;
+            
             @include media-only('xs', min) {
                 height: 210px;
             }
@@ -36,6 +37,9 @@
                 line-height: 40px;
                 text-transform: capitalize;
                 color: $color-title;
+                &:hover {
+                    color: $color-primary;
+                }
             }
         }
         .designation {

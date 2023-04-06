@@ -14,7 +14,7 @@
             gap: 12px;
             .sort-by-text {
                 @extend .total-result;
-                color: #4F536C;
+                color: $color-shade1;
             }
             .course-filter-selector {
                 border: 1px solid #DCDBE5;

@@ -4,7 +4,7 @@
         .section-heading {
             font-family: $font-outfit;
             font-weight: 600;
-            font-size: 36px;
+            @include toRem(font-size, 36);
             line-height: 40px;
             text-transform: capitalize;
             color: $color-white;

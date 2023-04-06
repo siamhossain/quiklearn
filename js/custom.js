@@ -5,7 +5,7 @@
 'use strict';
 
 (function($) {
-    var rtInsureti = rtInsureti || {};
+    var rtQuiklearn = rtQuiklearn || {};
 
     /**
 	 * Predefined variables.
@@ -32,7 +32,7 @@
 	/**
 	 * Functions.
 	 */
-    rtInsureti.functions = {
+    rtQuiklearn.functions = {
 		preLoaderInit: function () {
 			if (!$preLoader.elExists()) {
 				return false;
@@ -404,25 +404,25 @@
 	 * Scripts to run on document ready event.
 	 */
 	$document.ready(function () {
-		rtInsureti.functions.preLoaderInit();
-		rtInsureti.functions.scrollToTop();
-        rtInsureti.functions.counterUp();
-        rtInsureti.functions.mobileMenuDropdown();
-        rtInsureti.functions.rtTabs();
-        rtInsureti.functions.mobileToggleMenu();
-        rtInsureti.functions.searchOverlay();
-        rtInsureti.functions.mouseParallax();
-        rtInsureti.functions.niceSelect();
-        rtInsureti.functions.elementsCarousel();
-        rtInsureti.functions.activeMenu();
-        rtInsureti.functions.isotope();
+		rtQuiklearn.functions.preLoaderInit();
+		rtQuiklearn.functions.scrollToTop();
+        rtQuiklearn.functions.counterUp();
+        rtQuiklearn.functions.mobileMenuDropdown();
+        rtQuiklearn.functions.rtTabs();
+        rtQuiklearn.functions.mobileToggleMenu();
+        rtQuiklearn.functions.searchOverlay();
+        rtQuiklearn.functions.mouseParallax();
+        rtQuiklearn.functions.niceSelect();
+        rtQuiklearn.functions.elementsCarousel();
+        rtQuiklearn.functions.activeMenu();
+        rtQuiklearn.functions.isotope();
 	});
 
 	/**
 	 * Scripts to run on window load event.
 	 */
 	$window.on('load', function() {
-		rtInsureti.functions.bodyClass();
+		rtQuiklearn.functions.bodyClass();
 	});
 
 	/**
@@ -445,13 +445,8 @@
     scrollContainer: null,
     });
     wow.init();
-
-    
-    
-      
-
-
-
   
+
+    
 
 })(jQuery);

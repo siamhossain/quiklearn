@@ -862,10 +862,6 @@ p {
 .button-primary svg {
   transition: all 0.3s ease;
 }
-.button-primary:hover {
-  color: var(--color-white);
-}
-
 .button-transparent {
   background: transparent;
   position: relative;
@@ -924,12 +920,57 @@ p {
   fill: var(--color-white);
 }
 
+.btn-28:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 50%;
+  background-color: var(--color-secondary);
+  transition: all 0.5s ease-in-out;
+  z-index: -1;
+}
+
+.btn-28:after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: 0%;
+  height: 50%;
+  background-color: var(--color-secondary);
+  transition: all 0.5s ease-in-out;
+  z-index: -1;
+}
+
+.btn-28:hover {
+  color: #f1f1f1;
+  border-color: var(--color-secondary);
+}
+
+.btn-28:hover:before,
+.btn-28:hover:after {
+  width: 100%;
+}
+
+.btn-28:active {
+  color: #333;
+  border-color: #00a7fc;
+  background-color: #00a7fc;
+}
+
+.btn-28:active:before,
+.btn-28:active:after {
+  background-color: #00a7fc;
+}
+
 .test {
   color: red;
 }
 
 .searchbox-container {
-  border: 1px solid #BDBABB;
+  border: 1px solid var(--color-gray11);
   padding: 3px;
   background: var(--color-white);
   border-radius: 100px;
@@ -952,7 +993,7 @@ p {
   height: 20px;
   left: 216px;
   top: 10px;
-  background: #BDBABB;
+  background: var(--color-gray11);
 }
 .searchbox-container .searchbox-textfield {
   width: 50%;
@@ -965,7 +1006,7 @@ p {
 .searchbox-container .searchbox-textfield .searchbox-input::placeholder {
   font-family: var(--font-outfit);
   font-weight: 400;
-  font-size: 15px;
+  font-size: 0.9375rem;
   line-height: 19px;
   text-transform: capitalize;
   color: var(--color-gray11);
@@ -974,7 +1015,7 @@ p {
   background: var(--color-primary);
   font-family: var(--font-outfit);
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 23px;
   text-transform: capitalize;
   color: var(--color-white);
@@ -1010,7 +1051,7 @@ p {
   color: #646375;
   font-family: var(--font-outfit);
   font-weight: 400;
-  font-size: 15px;
+  font-size: 0.9375rem;
   line-height: 24px;
   text-transform: capitalize;
 }
@@ -1020,7 +1061,7 @@ p {
 .searchbox-container--style-2 .search-box-content-warpper .searchbox-submit .rt-searchbox-btn {
   font-family: var(--font-outfit);
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 23px;
   text-transform: capitalize;
   border: none;
@@ -1048,7 +1089,7 @@ p {
 .searchbox-container--style-4 {
   width: 100%;
   height: 60px;
-  background: #FFFFFF;
+  background: var(--color-white);
   border: 1px solid #DCDBE5;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
   border-radius: 6px;
@@ -1153,6 +1194,9 @@ p {
 .feature-item .feature-text-content .para-text, .feature-item .feature-text-content .footer-section .rt-footer-content-wrapper .rt-footer-content .rt-footer-link-list-wrapper ul.rt-footer-link-list li a, .footer-section .rt-footer-content-wrapper .rt-footer-content .rt-footer-link-list-wrapper ul.rt-footer-link-list li .feature-item .feature-text-content a, .feature-item .feature-text-content .footer-section .rt-footer-content-wrapper .rt-footer-content .footer-info .info-list li, .footer-section .rt-footer-content-wrapper .rt-footer-content .footer-info .info-list .feature-item .feature-text-content li {
   color: #9D9CAE;
 }
+.feature-item:hover .icon img {
+  animation: bounceIn 0.8s forwards;
+}
 
 .course-category-item {
   position: relative;
@@ -1161,10 +1205,12 @@ p {
   padding: 35px 32px;
   overflow: hidden;
   z-index: 0;
+  transition: all 0.4s ease-in-out;
 }
 .course-category-item .icon {
   width: 70px;
   height: 70px;
+  transition: all 0.4s ease-in-out;
 }
 .course-category-item .course-text-content {
   flex: 1;
@@ -1194,6 +1240,12 @@ p {
   bottom: 0;
   z-index: -1;
 }
+.course-category-item:hover .icon {
+  transform: scale(1.12) translateY(-12px);
+}
+.course-category-item:hover .icon img {
+  animation: toBottomFromTop 0.5s forwards;
+}
 .course-category-item--style-2 {
   position: relative;
   gap: 30px;
@@ -1213,6 +1265,9 @@ p {
 .course-category-item--style-2 .shapes ul li:nth-child(1) {
   right: 0;
   z-index: -1;
+}
+.course-category-item--style-2:hover .icon {
+  transform: unset;
 }
 
 .more-categories {
@@ -1280,7 +1335,7 @@ p {
   gap: 8px;
   font-family: var(--font-outfit);
   font-weight: 400;
-  font-size: 15px;
+  font-size: 0.9375rem;
   line-height: 0px;
   color: var(--color-shade1);
 }
@@ -1295,6 +1350,9 @@ p {
   text-transform: capitalize;
   color: var(--color-title);
 }
+.featured-course-item .course-content .featured-course-title .featured-course-title-link:hover {
+  color: var(--color-primary);
+}
 .featured-course-item .course-content .author-name {
   font-family: var(--font-outfit);
   font-weight: 400;
@@ -1308,7 +1366,7 @@ p {
 .featured-course-item .featured-course-bottom .rating .rating-text {
   font-family: var(--font-outfit);
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 0px;
   color: #9D9CAE;
 }
@@ -1364,7 +1422,7 @@ p {
   border-radius: 5px;
   font-family: var(--font-outfit);
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 0px;
   text-transform: capitalize;
   color: var(--color-title);
@@ -1454,6 +1512,9 @@ p {
   line-height: 40px;
   text-transform: capitalize;
   color: var(--color-title);
+}
+.rt-team-card .rt-team-card-content .title a:hover, .rt-team-card .rt-team-card-content .course-intro-section .course-intro-text-content-wrapper .feature-list ul li a:hover, .course-intro-section .course-intro-text-content-wrapper .feature-list ul .rt-team-card .rt-team-card-content li a:hover {
+  color: var(--color-primary);
 }
 .rt-team-card .rt-team-card-content .designation {
   font-family: var(--font-outfit);
@@ -1610,7 +1671,7 @@ p {
 .rt-counter-item .item-title h3 {
   font-family: var(--font-outfit);
   font-weight: 600;
-  font-size: 48px;
+  font-size: 3rem;
   line-height: 30px;
   text-transform: capitalize;
   color: var(--color-white);
@@ -1619,29 +1680,46 @@ p {
 .rt-counter-item .item-title .label {
   font-family: var(--font-outfit);
   font-weight: 400;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 30px;
   text-transform: capitalize;
   color: var(--color-white);
 }
 .rt-counter-item--style-2 .icon {
-  background: #FFFFFF;
   border: 1px solid #D5D1E1;
   border-radius: 10px;
   width: 79px;
   height: 79px;
+  position: relative;
+  overflow: hidden;
+}
+.rt-counter-item--style-2 .icon::before {
+  content: "";
+  border-radius: 10px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  background: var(--color-primary);
+  top: 0;
+  left: 0;
+  transition: all 0.4s ease-in-out;
+  z-index: -1;
+}
+.rt-counter-item--style-2 .icon:hover::before {
+  width: 120%;
+  height: 120%;
 }
 .rt-counter-item--style-2 .item-title {
   padding-top: 0;
 }
 .rt-counter-item--style-2 .item-title h3 {
-  font-size: 30px;
+  font-size: 1.875rem;
   line-height: 30px;
   font-weight: 700;
   color: var(--color-title);
 }
 .rt-counter-item--style-2 .item-title .label {
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #9D9CAE;
 }
 .rt-counter-item--style-3 .item-title {
@@ -1649,14 +1727,14 @@ p {
   z-index: 0;
 }
 .rt-counter-item--style-3 .item-title h3 {
-  font-size: 40px;
+  font-size: 2.5rem;
   line-height: 30px;
   font-weight: 700;
   color: var(--color-title);
 }
 .rt-counter-item--style-3 .item-title .label {
-  font-size: 18px;
-  color: #9D9CAE;
+  font-size: 1.125rem;
+  color: var(--color-gray12);
 }
 .rt-counter-item--style-3 .item-title .counter-shapes ul li {
   position: absolute;
@@ -1737,7 +1815,7 @@ p {
 .blog-post-item .blog-post-content .blog-post-title a {
   font-family: var(--font-outfit);
   font-weight: 600;
-  font-size: 22px;
+  font-size: 1.375rem;
   line-height: 30px;
   color: var(--color-title);
 }
@@ -1761,10 +1839,10 @@ p {
   gap: 7px;
 }
 .blog-post-item .blog-post-content .entry-meta li span {
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 .blog-post-item .blog-post-content .entry-meta li a {
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 .blog-post-item .blog-post-content .entry-meta li a:hover {
   color: var(--color-primary);
@@ -1889,7 +1967,7 @@ p {
 .reviews .title, .reviews .course-intro-section .course-intro-text-content-wrapper .feature-list ul li, .course-intro-section .course-intro-text-content-wrapper .feature-list ul .reviews li {
   font-family: var(--font-outfit);
   font-weight: 600;
-  font-size: 26px;
+  font-size: 1.625rem;
   color: var(--color-title);
   margin-bottom: 45px;
 }
@@ -1908,25 +1986,25 @@ p {
 .reviews .reviewer-details .reviewer-info .reviewer-name .name-post-time-wrapper a {
   font-family: var(--font-outfit);
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #4F536C;
   margin-right: 10px;
 }
 .reviews .reviewer-details .reviewer-info .reviewer-name .name-post-time-wrapper span {
   font-family: var(--font-outfit);
   font-weight: 400;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #9D9CAE;
 }
 .reviews .reviewer-details .reviewer-info .review-title {
   font-family: var(--font-outfit);
   font-weight: 600;
-  font-size: 17px;
+  font-size: 1.0625rem;
   color: var(--color-title);
   margin-bottom: 2px;
 }
 .reviews .reviewer-details .reviewer-info .para-text, .reviews .reviewer-details .reviewer-info .footer-section .rt-footer-content-wrapper .rt-footer-content .rt-footer-link-list-wrapper ul.rt-footer-link-list li a, .footer-section .rt-footer-content-wrapper .rt-footer-content .rt-footer-link-list-wrapper ul.rt-footer-link-list li .reviews .reviewer-details .reviewer-info a, .reviews .reviewer-details .reviewer-info .footer-section .rt-footer-content-wrapper .rt-footer-content .footer-info .info-list li, .footer-section .rt-footer-content-wrapper .rt-footer-content .footer-info .info-list .reviews .reviewer-details .reviewer-info li {
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 26px;
 }
 .reviews--style-2 {
@@ -1967,13 +2045,13 @@ p {
   width: 100%;
   font-family: var(--font-outfit);
   font-weight: 400;
-  font-size: 15px;
+  font-size: 0.9375rem;
   line-height: 24px;
   text-transform: capitalize;
-  color: #9D9CAE;
+  color: var(--color-gray12);
 }
 .widget-find-event .searchbox-container .searchbox-textfield .searchbox-input::placeholder {
-  color: #9D9CAE;
+  color: var(--color-gray12);
 }
 .widget-find-event .category-selector {
   height: 45px;
@@ -1989,16 +2067,16 @@ p {
   font-family: var(--font-outfit);
   font-weight: 400;
   font-size: 15px;
-  color: #9D9CAE;
+  color: var(--color-gray12);
 }
 .widget-find-event .category-selector .nice-select::after {
-  border-bottom: 2px solid #9D9CAE;
-  border-right: 2px solid #9D9CAE;
+  border-bottom: 2px solid var(--color-gray12);
+  border-right: 2px solid var(--color-gray12);
   width: 10px;
   right: 20px;
 }
 .widget-find-event .location-searchbox-container {
-  background: #FFFFFF;
+  background: var(--color-white);
   border: 1px solid #DCDBE5;
   border-radius: 4px;
   height: 45px;
@@ -2009,12 +2087,12 @@ p {
   padding-left: 20px;
   font-family: var(--font-outfit);
   font-weight: 400;
-  font-size: 15px;
-  color: #9D9CAE;
+  font-size: 0.9375rem;
+  color: var(--color-gray12);
   width: 100%;
 }
 .widget-find-event .location-searchbox-container .rt-searchbox-form input::placeholder {
-  color: #9D9CAE;
+  color: var(--color-gray12);
 }
 .widget-find-event .location-searchbox-container button {
   background: transparent;
@@ -2052,7 +2130,7 @@ p {
 .widget-post .post-area .content .entry-meta span {
   font-family: var(--font-outfit);
   font-weight: 400;
-  font-size: 13px;
+  font-size: 0.8125rem;
   line-height: 24px;
   color: #4F536C;
 }
@@ -2062,7 +2140,7 @@ p {
 .widget-post .post-area .content .title a, .widget-post .post-area .content .course-intro-section .course-intro-text-content-wrapper .feature-list ul li a, .course-intro-section .course-intro-text-content-wrapper .feature-list ul .widget-post .post-area .content li a {
   font-family: var(--font-outfit);
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 23px;
   color: var(--color-title);
   display: inline;
@@ -2136,7 +2214,7 @@ p {
   gap: 12px;
 }
 .filter-action-area .actions .search-filter .sort-by-text {
-  color: #4F536C;
+  color: var(--color-shade1);
 }
 .filter-action-area .actions .search-filter .course-filter-selector {
   border: 1px solid #DCDBE5;
@@ -2184,8 +2262,8 @@ p {
 }
 
 .event-post-item {
-  background: #FFFFFF;
-  border: 1px solid #DCDBE6;
+  background: var(--color-white);
+  border: 1px solid var(--color-gray14);
   border-radius: 10px;
   overflow: hidden;
   padding: 21px 24px 26px 24px;
@@ -2223,10 +2301,10 @@ p {
   gap: 7px;
 }
 .event-post-item .event-post-content .entry-meta li span {
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 .event-post-item .event-post-content .entry-meta li a {
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 .event-post-item .event-post-content .entry-meta li a:hover {
   color: var(--color-primary);
@@ -2237,7 +2315,7 @@ p {
 .event-post-item .event-post-content .event-post-title a {
   font-family: var(--font-outfit);
   font-weight: 500;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 28px;
   text-transform: capitalize;
   color: var(--color-title);
@@ -2249,13 +2327,13 @@ p {
   gap: 9px;
   font-family: "Hind";
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   color: #4F536C;
 }
 .event-post-item .event-post-content .event-post-bottom .pricing {
   font-family: var(--font-outfit);
   font-weight: 600;
-  font-size: 22px;
+  font-size: 1.375rem;
   color: var(--color-title);
 }
 .event-post-item:hover .event-post-img .event-post-img-link img {
@@ -2289,7 +2367,7 @@ p {
   padding: 16px 30px;
   font-family: var(--font-outfit);
   font-weight: 600;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 140%;
   color: red;
 }
@@ -2309,9 +2387,9 @@ p {
 .widget-categories .categories-list ul li a {
   font-family: var(--font-outfit);
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 50px;
-  color: #4F536C;
+  color: var(--color-shade1);
 }
 .widget-categories .categories-list ul li a svg {
   margin-right: 6px;
@@ -2366,6 +2444,7 @@ p {
   font-family: var(--font-outfit);
   font-weight: 400;
   font-size: 20px;
+  font-size: 1.25rem;
   line-height: 28px;
   color: var(--color-title);
 }
@@ -2383,7 +2462,7 @@ p {
   top: 0;
   bottom: 0;
   margin: auto;
-  background: #543EE8;
+  background: var(--color-primary);
   border-radius: 100px;
 }
 
@@ -2484,7 +2563,7 @@ p {
 .comment-section .title, .comment-section .course-intro-section .course-intro-text-content-wrapper .feature-list ul li, .course-intro-section .course-intro-text-content-wrapper .feature-list ul .comment-section li {
   font-family: var(--font-outfit);
   font-weight: 600;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 30px;
   color: var(--color-title);
   padding-bottom: 20px;
@@ -2551,14 +2630,14 @@ p {
 .post-comment-form-wrapper {
   border-radius: 8px;
   padding: 38px 17px 45px 40px;
-  background: #F8F8F8;
+  background: var(--color-gray13);
   border: 1px solid #E0E0ED;
   border-radius: 12px;
 }
 .post-comment-form-wrapper .title, .post-comment-form-wrapper .course-intro-section .course-intro-text-content-wrapper .feature-list ul li, .course-intro-section .course-intro-text-content-wrapper .feature-list ul .post-comment-form-wrapper li {
   font-family: var(--font-outfit);
   font-weight: 600;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 30px;
   color: var(--color-title);
   margin-bottom: 2px;
@@ -2567,7 +2646,7 @@ p {
 .post-comment-form-wrapper .title::before, .post-comment-form-wrapper .course-intro-section .course-intro-text-content-wrapper .feature-list ul li::before, .course-intro-section .course-intro-text-content-wrapper .feature-list ul .post-comment-form-wrapper li::before {
   content: "";
   position: absolute;
-  background: #543EE8;
+  background: var(--color-primary);
   border-radius: 100px;
   width: 40px;
   height: 5px;
@@ -2575,7 +2654,7 @@ p {
 }
 .post-comment-form-wrapper .para-text, .post-comment-form-wrapper .footer-section .rt-footer-content-wrapper .rt-footer-content .rt-footer-link-list-wrapper ul.rt-footer-link-list li a, .footer-section .rt-footer-content-wrapper .rt-footer-content .rt-footer-link-list-wrapper ul.rt-footer-link-list li .post-comment-form-wrapper a, .post-comment-form-wrapper .footer-section .rt-footer-content-wrapper .rt-footer-content .footer-info .info-list li, .footer-section .rt-footer-content-wrapper .rt-footer-content .footer-info .info-list .post-comment-form-wrapper li {
   margin-bottom: 17px;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 26px;
 }
 .post-comment-form-wrapper .post-comment-form .input-area input {
@@ -2586,7 +2665,7 @@ p {
   padding: 11px 15px;
   font-family: "Hind";
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 28px;
   text-transform: capitalize;
   margin-bottom: 30px;
@@ -2603,7 +2682,7 @@ p {
   margin-bottom: 13px;
   font-family: "Hind";
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 28px;
   text-transform: capitalize;
 }
@@ -2624,7 +2703,7 @@ p {
 .post-comment-form-wrapper .post-comment-form .check-box-area label {
   font-family: var(--font-outfit);
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 26px;
   text-transform: capitalize;
   color: #4F536C;
@@ -2635,7 +2714,7 @@ p {
   border-radius: 5px;
   font-family: var(--font-outfit);
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1rem;
   color: var(--color-white);
 }
 .post-comment-form-wrapper--style-2 {
@@ -2645,7 +2724,7 @@ p {
 .post-comment-form-wrapper--style-2 .title, .post-comment-form-wrapper--style-2 .course-intro-section .course-intro-text-content-wrapper .feature-list ul li, .course-intro-section .course-intro-text-content-wrapper .feature-list ul .post-comment-form-wrapper--style-2 li {
   font-family: var(--font-outfit);
   font-weight: 600;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 30px;
   color: var(--color-title);
   margin-bottom: 37px;
@@ -2663,11 +2742,15 @@ p {
   border-radius: 5px;
   font-family: var(--font-outfit);
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1rem;
   color: var(--color-white);
   width: 100%;
   text-align: center;
   display: inline-block;
+}
+
+.blog-details-page .post-comment-form-wrapper .title::before, .blog-details-page .post-comment-form-wrapper .course-intro-section .course-intro-text-content-wrapper .feature-list ul li::before, .course-intro-section .course-intro-text-content-wrapper .feature-list ul .blog-details-page .post-comment-form-wrapper li::before {
+  display: none;
 }
 
 .course-learning .title, .course-learning .course-intro-section .course-intro-text-content-wrapper .feature-list ul li, .course-intro-section .course-intro-text-content-wrapper .feature-list ul .course-learning li {
@@ -2712,7 +2795,7 @@ p {
 
 .core-feature-item {
   background: var(--color-white);
-  border: 1px solid #DBDBDB;
+  border: 1px solid var(--border-color);
   border-radius: 10px;
   padding: 45px 35px;
   margin: 0 5px;
@@ -2729,7 +2812,7 @@ p {
 .core-feature-item .title a, .core-feature-item .course-intro-section .course-intro-text-content-wrapper .feature-list ul li a, .course-intro-section .course-intro-text-content-wrapper .feature-list ul .core-feature-item li a {
   font-family: var(--font-outfit);
   font-weight: 500;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 30px;
   text-align: center;
   text-transform: capitalize;
@@ -2920,7 +3003,7 @@ p {
 //  Contact Info Card [component]
 =================================*/
 .rt-contact-info-wrapper {
-  background: #FFFFFF;
+  background: var(--color-white);
   border: 1px solid #ECECEC;
   border-radius: 10px;
   padding: 35px 40px 50px;
@@ -2928,7 +3011,7 @@ p {
 .rt-contact-info-wrapper .title-area .title, .rt-contact-info-wrapper .title-area .course-intro-section .course-intro-text-content-wrapper .feature-list ul li, .course-intro-section .course-intro-text-content-wrapper .feature-list ul .rt-contact-info-wrapper .title-area li {
   font-family: var(--font-outfit);
   font-weight: 600;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 30px;
   color: var(--color-title);
   position: relative;
@@ -2937,7 +3020,7 @@ p {
 .rt-contact-info-wrapper .title-area .title::before, .rt-contact-info-wrapper .title-area .course-intro-section .course-intro-text-content-wrapper .feature-list ul li::before, .course-intro-section .course-intro-text-content-wrapper .feature-list ul .rt-contact-info-wrapper .title-area li::before {
   content: "";
   position: absolute;
-  background: #543EE8;
+  background: var(--color-primary);
   border-radius: 100px;
   width: 40px;
   height: 5px;
@@ -3685,7 +3768,7 @@ body.slidemenuon .sidebarBtn .bar:nth-child(4) {
 
 .special-feature-section {
   position: relative;
-  padding: 76px 0 46px 0;
+  padding: 80px 0 50px 0;
 }
 .special-feature-section .parent .child {
   position: relative;
@@ -3985,9 +4068,9 @@ body.slidemenuon .sidebarBtn .bar:nth-child(4) {
   user-select: none;
   font-family: var(--font-outfit);
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1rem;
   text-transform: capitalize;
-  color: #4F536C;
+  color: var(--color-shade1);
 }
 .featured-course-section .course-category-menu ul.course-category-menu-list li.active {
   background: linear-gradient(118.54deg, #8674FF 6.57%, #593EFE 85.92%);
@@ -4089,7 +4172,7 @@ body.slidemenuon .sidebarBtn .bar:nth-child(4) {
 .course-intro-section .course-intro-video .play-icon {
   width: 80px;
   height: 80px;
-  background: #543EE8;
+  background: var(--color-primary);
   padding-left: 5px;
   position: absolute;
   top: 45%;
@@ -4215,7 +4298,7 @@ body.slidemenuon .sidebarBtn .bar:nth-child(4) {
 .counter-section .section-text-content .section-heading {
   font-family: var(--font-outfit);
   font-weight: 600;
-  font-size: 36px;
+  font-size: 2.25rem;
   line-height: 40px;
   text-transform: capitalize;
   color: var(--color-white);
@@ -4280,12 +4363,12 @@ body.slidemenuon .sidebarBtn .bar:nth-child(4) {
 }
 .banner-section .banner-content-wrapper .section-text-content .section-heading {
   color: var(--color-white);
-  font-size: 30px;
+  font-size: 1.875rem;
   line-height: 52px;
 }
 @media only screen and (min-width: 1200px) {
   .banner-section .banner-content-wrapper .section-text-content .section-heading {
-    font-size: 40px;
+    font-size: 2.5rem;
   }
 }
 .banner-section .shapes ul li {
@@ -4380,7 +4463,7 @@ body.slidemenuon .sidebarBtn .bar:nth-child(4) {
   margin-bottom: 45px;
 }
 .brand-section .section-text-content .section-heading {
-  font-size: 24px;
+  font-size: 1.5rem;
   letter-spacing: 0.01em;
 }
 .brand-section .brand-wrapper {
@@ -4604,6 +4687,9 @@ body.slidemenuon .sidebarBtn .bar:nth-child(4) {
   text-transform: capitalize;
   color: #69676F;
 }
+.footer-section .rt-footer-bottom .rt-footer-copyright-area .rt-footer-copyright-text a:hover, .footer-section .rt-footer-bottom .rt-footer-copyright-area .copyright-area-links .copyright-area-link-list li a a:hover {
+  color: var(--color-primary);
+}
 .footer-section .rt-footer-bottom .rt-footer-copyright-area .copyright-area-links .copyright-area-link-list {
   gap: 20px;
 }
@@ -4612,6 +4698,9 @@ body.slidemenuon .sidebarBtn .bar:nth-child(4) {
 }
 .footer-section .rt-footer-bottom .rt-footer-copyright-area .copyright-area-links .copyright-area-link-list li a {
   font-size: 0.9375rem;
+}
+.footer-section .rt-footer-bottom .rt-footer-copyright-area .copyright-area-links .copyright-area-link-list li a:hover {
+  color: var(--color-primary);
 }
 .footer-section .rt-footer-bottom .rt-footer-copyright-area .copyright-area-links .copyright-area-link-list li::after {
   content: ".";
@@ -4630,6 +4719,10 @@ body.slidemenuon .sidebarBtn .bar:nth-child(4) {
 }
 .footer-section .rt-footer-bottom .rt-footer-copyright-area .social-share-list li a i {
   font-size: 20px;
+  transition: all 0.4s ease-in-out;
+}
+.footer-section .rt-footer-bottom .rt-footer-copyright-area .social-share-list li a:hover i {
+  color: var(--color-primary);
 }
 
 .speciality-section .speciality-img {
@@ -4825,6 +4918,9 @@ body.slidemenuon .sidebarBtn .bar:nth-child(4) {
   margin-bottom: 0;
 }
 
+.rt-banner-content {
+  margin-bottom: 30px;
+}
 .rt-banner-content svg {
   margin: 0 10px;
 }
@@ -5002,7 +5098,7 @@ body.slidemenuon .sidebarBtn .bar:nth-child(4) {
 }
 
 .course-details-section .course-details-main-wrapper .course-details-content-wrapper .course-details-info {
-  border-bottom: 1px solid #DBDBDB;
+  border-bottom: 1px solid var(--border-color);
   margin-bottom: 35px;
 }
 .course-details-section .course-details-main-wrapper .course-details-content-wrapper .course-details-info .tag-rating-wrapper {
@@ -5041,7 +5137,7 @@ body.slidemenuon .sidebarBtn .bar:nth-child(4) {
   color: var(--color-title);
 }
 .course-details-section .course-details-main-wrapper .course-details-content-wrapper .course-details-info .course-info-bottom .author-info .author-name span {
-  color: #9D9CAE;
+  color: var(--color-gray12);
 }
 .course-details-section .course-details-main-wrapper .course-details-content-wrapper .course-details-info .course-info-bottom .meta-wrapper .meta-data {
   gap: 28px;
@@ -5053,7 +5149,7 @@ body.slidemenuon .sidebarBtn .bar:nth-child(4) {
   font-family: "Hind";
   font-weight: 400;
   font-size: 1rem;
-  color: #4F536C;
+  color: var(--color-shade1);
 }
 .course-details-section .course-details-main-wrapper .course-details-content-wrapper .course-details-tabs {
   gap: 10px;
@@ -5062,9 +5158,9 @@ body.slidemenuon .sidebarBtn .bar:nth-child(4) {
 .course-details-section .course-details-main-wrapper .course-details-content-wrapper .course-details-tabs a {
   padding: 13px 30px;
   border-radius: 6px;
-  background: #F8F8F8;
+  background: var(--color-gray13);
   line-height: unset;
-  color: #4F536C;
+  color: var(--color-shade1);
 }
 .course-details-section .course-details-main-wrapper .course-details-content-wrapper .course-details-tabs a:hover {
   background: var(--color-primary);
@@ -5127,7 +5223,7 @@ body.slidemenuon .sidebarBtn .bar:nth-child(4) {
   font-weight: 400;
   font-size: 1rem;
   line-height: 20px;
-  color: #4F536C;
+  color: var(--color-shade1);
 }
 .course-details-section .course-details-main-wrapper .course-details-content-wrapper .course-curriculum .course-curriculum-accordion .accordion-body .course-curriculum-video-content ul.course-curriculum-video .course-curriculum-video-item .video-duration {
   gap: 19px;
@@ -5135,9 +5231,9 @@ body.slidemenuon .sidebarBtn .bar:nth-child(4) {
 .course-details-section .course-details-main-wrapper .course-details-content-wrapper .course-curriculum .course-curriculum-accordion .accordion-body .course-curriculum-video-content ul.course-curriculum-video .course-curriculum-video-item .video-duration span {
   font-family: "Hind";
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 26px;
-  color: #4F536C;
+  color: var(--color-shade1);
 }
 .course-details-section .course-details-main-wrapper .course-details-content-wrapper .instructors-details {
   margin-bottom: 70px;
@@ -5145,7 +5241,7 @@ body.slidemenuon .sidebarBtn .bar:nth-child(4) {
 .course-details-section .course-details-main-wrapper .course-details-content-wrapper .instructors-details .title, .course-details-section .course-details-main-wrapper .course-details-content-wrapper .instructors-details .course-intro-section .course-intro-text-content-wrapper .feature-list ul li, .course-intro-section .course-intro-text-content-wrapper .feature-list ul .course-details-section .course-details-main-wrapper .course-details-content-wrapper .instructors-details li {
   font-family: var(--font-outfit);
   font-weight: 600;
-  font-size: 26px;
+  font-size: 1.625rem;
   color: var(--color-title);
   margin-bottom: 12px;
 }
@@ -5167,14 +5263,14 @@ body.slidemenuon .sidebarBtn .bar:nth-child(4) {
 .course-details-section .course-details-main-wrapper .course-details-content-wrapper .instructors-details .instructor-info-wrapper .instructor-text-info .name a {
   font-family: var(--font-outfit);
   font-weight: 500;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 0px;
   color: var(--color-title);
 }
 .course-details-section .course-details-main-wrapper .course-details-content-wrapper .instructors-details .instructor-info-wrapper .instructor-text-info .designation {
   font-family: var(--font-outfit);
   font-weight: 400;
-  font-size: 15px;
+  font-size: 0.9375rem;
   color: var(--color-shade1);
   margin-bottom: 8px;
 }
@@ -5202,8 +5298,8 @@ body.slidemenuon .sidebarBtn .bar:nth-child(4) {
   gap: 8px;
   font-family: "Hind";
   font-weight: 400;
-  font-size: 16px;
-  color: #4F536C;
+  font-size: 1rem;
+  color: var(--color-shade1);
 }
 .course-details-section .course-details-main-wrapper .course-details-content-wrapper .instructors-details .instructor-info-wrapper .instructor-text-info .para-2 {
   margin-bottom: 0;
@@ -5214,7 +5310,7 @@ body.slidemenuon .sidebarBtn .bar:nth-child(4) {
 .course-details-section .course-details-main-wrapper .course-details-content-wrapper .student-feedback .title, .course-details-section .course-details-main-wrapper .course-details-content-wrapper .student-feedback .course-intro-section .course-intro-text-content-wrapper .feature-list ul li, .course-intro-section .course-intro-text-content-wrapper .feature-list ul .course-details-section .course-details-main-wrapper .course-details-content-wrapper .student-feedback li {
   font-family: var(--font-outfit);
   font-weight: 600;
-  font-size: 26px;
+  font-size: 1.625rem;
   color: var(--color-title);
   margin-bottom: 25px;
 }
@@ -5234,7 +5330,7 @@ body.slidemenuon .sidebarBtn .bar:nth-child(4) {
 .course-details-section .course-details-main-wrapper .course-details-content-wrapper .student-feedback .feedback-content-wrapper .exceptional-feedback P {
   font-family: var(--font-outfit);
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 26px;
   color: var(--color-title);
 }
@@ -5274,7 +5370,7 @@ body.slidemenuon .sidebarBtn .bar:nth-child(4) {
 .course-details-section .course-details-main-wrapper .course-details-content-wrapper .student-feedback .feedback-content-wrapper .progressbar-rating-wrapper .rating-in-percentage span {
   font-family: var(--font-outfit);
   font-weight: 600;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 20px;
   color: var(--color-title);
 }
@@ -5289,14 +5385,14 @@ body.slidemenuon .sidebarBtn .bar:nth-child(4) {
 .course-details-section .course-details-main-wrapper .course-details-content-wrapper .write-review .title, .course-details-section .course-details-main-wrapper .course-details-content-wrapper .write-review .course-intro-section .course-intro-text-content-wrapper .feature-list ul li, .course-intro-section .course-intro-text-content-wrapper .feature-list ul .course-details-section .course-details-main-wrapper .course-details-content-wrapper .write-review li {
   font-family: var(--font-outfit);
   font-weight: 600;
-  font-size: 26px;
+  font-size: 1.625rem;
   color: var(--color-title);
   margin-bottom: 25px;
 }
 .course-details-section .course-details-main-wrapper .course-details-content-wrapper .write-review .sub-text {
   font-family: var(--font-outfit);
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.125rem;
   color: var(--color-title);
   margin-bottom: 17px;
 }
@@ -5306,13 +5402,13 @@ body.slidemenuon .sidebarBtn .bar:nth-child(4) {
 .course-details-section .course-details-main-wrapper .course-details-content-wrapper .write-review .review-form-wrapper form.review-post-form .input-area label {
   font-family: var(--font-outfit);
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1rem;
   color: var(--color-title);
   display: block;
   margin-bottom: 7px;
 }
 .course-details-section .course-details-main-wrapper .course-details-content-wrapper .write-review .review-form-wrapper form.review-post-form .input-area input {
-  background: #FFFFFF;
+  background: var(--color-white);
   border: 1px solid #DCDBE5;
   border-radius: 5px;
   width: 100%;
@@ -5320,7 +5416,7 @@ body.slidemenuon .sidebarBtn .bar:nth-child(4) {
   margin-bottom: 15px;
 }
 .course-details-section .course-details-main-wrapper .course-details-content-wrapper .write-review .review-form-wrapper form.review-post-form textarea {
-  background: #FFFFFF;
+  background: var(--color-white);
   border: 1px solid #DCDBE5;
   border-radius: 5px;
   width: 100%;
@@ -5353,17 +5449,17 @@ body.slidemenuon .sidebarBtn .bar:nth-child(4) {
   margin-bottom: 28px;
 }
 .course-details-section .course-details-main-wrapper .course-details-right-sidebar .action-btn-list a {
-  background: #FFFFFF;
+  background: var(--color-white);
   border: 1px solid #DCDBE5;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
   border-radius: 5px;
   padding: 12px 28px;
   font-family: var(--font-outfit);
   font-weight: 400;
-  font-size: 15px;
+  font-size: 0.9375rem;
   text-align: center;
   text-transform: capitalize;
-  color: #4F536C;
+  color: var(--color-shade1);
   gap: 8px;
 }
 .course-details-section .course-details-main-wrapper .course-details-right-sidebar .action-btn-list a:hover {
@@ -5374,7 +5470,7 @@ body.slidemenuon .sidebarBtn .bar:nth-child(4) {
   fill: var(--color-white);
 }
 .course-details-section .course-details-main-wrapper .course-details-right-sidebar .featured-course-item {
-  background: #FFFFFF;
+  background: var(--color-white);
   border: 1px solid #DCDBE5;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
   border-radius: 10px;
@@ -5404,7 +5500,7 @@ body.slidemenuon .sidebarBtn .bar:nth-child(4) {
   width: 76px;
   border-radius: 50%;
   position: absolute;
-  border: 2px solid #FFFFFF;
+  border: 2px solid var(--color-white);
   opacity: 0.7;
 }
 .course-details-section .course-details-main-wrapper .course-details-right-sidebar .featured-course-item .featured-course-img .play-icon svg {
@@ -5420,36 +5516,36 @@ body.slidemenuon .sidebarBtn .bar:nth-child(4) {
 .course-details-section .course-details-main-wrapper .course-details-right-sidebar .featured-course-item .course-content .course-pricing p {
   font-family: var(--font-outfit);
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   text-transform: capitalize;
-  color: #4F536C;
+  color: var(--color-shade1);
 }
 .course-details-section .course-details-main-wrapper .course-details-right-sidebar .featured-course-item .course-content .course-pricing h3 {
   font-family: var(--font-outfit);
   font-weight: 500;
-  font-size: 30px;
+  font-size: 1.875rem;
   text-transform: capitalize;
   color: var(--color-title);
 }
 .course-details-section .course-details-main-wrapper .course-details-right-sidebar .featured-course-item .course-content .pricing-subtext {
   font-family: var(--font-outfit);
   font-weight: 400;
-  font-size: 14px;
+  font-size: 0.875rem;
   text-transform: capitalize;
-  color: #4F536C;
+  color: var(--color-shade1);
   margin-bottom: 25px;
 }
 .course-details-section .course-details-main-wrapper .course-details-right-sidebar .featured-course-item .course-content .purchase-area {
   margin-bottom: 28px;
 }
 .course-details-section .course-details-main-wrapper .course-details-right-sidebar .featured-course-item .course-content .purchase-area a {
-  border: 1.5px solid #4F536C;
+  border: 1.5px solid var(--color-shade1);
   border-radius: 6px;
   width: 100%;
   margin-bottom: 8px;
   font-family: var(--font-outfit);
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 0px;
   text-transform: capitalize;
   color: #241442;
@@ -5472,7 +5568,7 @@ body.slidemenuon .sidebarBtn .bar:nth-child(4) {
 .course-details-section .course-details-main-wrapper .course-details-right-sidebar .featured-course-item .course-content .course-includes .title, .course-details-section .course-details-main-wrapper .course-details-right-sidebar .featured-course-item .course-content .course-includes .course-intro-section .course-intro-text-content-wrapper .feature-list ul li, .course-intro-section .course-intro-text-content-wrapper .feature-list ul .course-details-section .course-details-main-wrapper .course-details-right-sidebar .featured-course-item .course-content .course-includes li {
   font-family: var(--font-outfit);
   font-weight: 500;
-  font-size: 17px;
+  font-size: 1.0625rem;
   text-transform: capitalize;
   color: var(--color-title);
   margin-bottom: 23px;
@@ -5483,9 +5579,9 @@ body.slidemenuon .sidebarBtn .bar:nth-child(4) {
   margin-bottom: 14px;
   font-family: var(--font-outfit);
   font-weight: 400;
-  font-size: 15px;
+  font-size: 0.9375rem;
   text-transform: capitalize;
-  color: #4F536C;
+  color: var(--color-shade1);
 }
 .course-details-section .course-details-main-wrapper .course-details-right-sidebar .featured-course-item .course-content .course-includes ul.course-include-list li:last-child {
   border-bottom: none;
@@ -5508,7 +5604,7 @@ body.slidemenuon .sidebarBtn .bar:nth-child(4) {
   width: 100%;
   height: 440px;
   z-index: -1;
-  border-bottom: 1px solid #DBDBDB;
+  border-bottom: 1px solid var(--border-color);
   display: none;
 }
 @media only screen and (min-width: 992px) {
@@ -5544,12 +5640,13 @@ body.slidemenuon .sidebarBtn .bar:nth-child(4) {
   border: 1px solid #DCDBE5;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
   border-radius: 10px;
-  height: 663px;
+  height: auto;
   margin-bottom: 25px;
 }
 @media only screen and (min-width: 1200px) {
   .instructor-profile-section .profile-nav-wrapper {
     margin-bottom: 0;
+    height: 663px;
   }
 }
 .instructor-profile-section .profile-nav-wrapper .nav-pills .nav-link {
@@ -5786,7 +5883,7 @@ body.slidemenuon .sidebarBtn .bar:nth-child(4) {
 .events-details-section .event-details-cover-img .event-counter-wrapper .event-counter-item {
   width: 60px;
   height: 60px;
-  background: #FFFFFF;
+  background: var(--color-white);
   border: 1px solid var(--color-primary);
   border-radius: 8px;
   position: relative;
@@ -5795,13 +5892,13 @@ body.slidemenuon .sidebarBtn .bar:nth-child(4) {
 .events-details-section .event-details-cover-img .event-counter-wrapper .event-counter-item .counter-content-wrapper .count-numbers {
   font-family: var(--font-outfit);
   font-weight: 700;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: var(--color-title);
 }
 .events-details-section .event-details-cover-img .event-counter-wrapper .event-counter-item .counter-content-wrapper .count-title {
   font-family: var(--font-outfit);
   font-weight: 400;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #9D9CAE;
 }
 .events-details-section .event-details-cover-img .event-counter-wrapper .event-counter-item::after {
@@ -5840,14 +5937,14 @@ body.slidemenuon .sidebarBtn .bar:nth-child(4) {
 .events-details-section .all-speaker-wrapper .speaker-info .speaker-text-info .name a {
   font-family: var(--font-outfit);
   font-weight: 500;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 25px;
   color: var(--color-title);
 }
 .events-details-section .all-speaker-wrapper .speaker-info .speaker-text-info .designation {
   font-family: var(--font-outfit);
   font-weight: 400;
-  font-size: 15px;
+  font-size: 0.9375rem;
   line-height: 19px;
   color: #4F536C;
   margin-bottom: 10px;
@@ -5855,7 +5952,7 @@ body.slidemenuon .sidebarBtn .bar:nth-child(4) {
 .events-details-section .all-speaker-wrapper .speaker-info .speaker-text-info .rating span {
   font-family: "Hind";
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   color: #9D9CAE;
   margin-left: 6px;
 }
@@ -5883,7 +5980,7 @@ body.slidemenuon .sidebarBtn .bar:nth-child(4) {
 .blog-details-section .blog-tag-share .single-tag-area .title, .blog-details-section .blog-tag-share .single-tag-area .course-intro-section .course-intro-text-content-wrapper .feature-list ul li, .course-intro-section .course-intro-text-content-wrapper .feature-list ul .blog-details-section .blog-tag-share .single-tag-area li {
   font-family: var(--font-outfit);
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 28px;
   color: #00235A;
 }
@@ -5894,7 +5991,7 @@ body.slidemenuon .sidebarBtn .bar:nth-child(4) {
   background: #F8F8F8;
   font-family: var(--font-outfit);
   font-weight: 400;
-  font-size: 15px;
+  font-size: 0.9375rem;
   line-height: 28px;
   color: var(--color-primary);
   border-radius: 50px;
@@ -5910,7 +6007,7 @@ body.slidemenuon .sidebarBtn .bar:nth-child(4) {
 .blog-details-section .blog-tag-share .single-share-area .title, .blog-details-section .blog-tag-share .single-share-area .course-intro-section .course-intro-text-content-wrapper .feature-list ul li, .course-intro-section .course-intro-text-content-wrapper .feature-list ul .blog-details-section .blog-tag-share .single-share-area li {
   font-family: var(--font-outfit);
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 28px;
   color: #4F536C;
 }
@@ -5919,7 +6016,7 @@ body.slidemenuon .sidebarBtn .bar:nth-child(4) {
 }
 .blog-details-section .blog-tag-share .single-share-area ul.social-icon-list li a i {
   color: #9D9CAE;
-  font-size: 19px;
+  font-size: 1.1875rem;
   transition: all 0.4s ease-in-out;
 }
 .blog-details-section .blog-tag-share .single-share-area ul.social-icon-list li a:hover i {
@@ -5939,7 +6036,7 @@ body.slidemenuon .sidebarBtn .bar:nth-child(4) {
 .error-section .rt-error-area .error-heading {
   font-family: var(--font-outfit);
   font-weight: 700;
-  font-size: 50px;
+  font-size: 3.125rem;
   line-height: 65px;
   color: var(--color-title);
   margin-bottom: 11px;
@@ -5947,7 +6044,7 @@ body.slidemenuon .sidebarBtn .bar:nth-child(4) {
 .error-section .rt-error-area .error-text {
   font-family: var(--font-outfit);
   font-weight: 400;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 30px;
   color: var(--color-title);
   margin-bottom: 40px;
@@ -5957,7 +6054,7 @@ body.slidemenuon .sidebarBtn .bar:nth-child(4) {
   color: var(--color-white);
   font-family: var(--font-outfit);
   font-weight: 700;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 26px;
   padding: 22px 35px;
   border-radius: 5px;

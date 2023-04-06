@@ -26,7 +26,7 @@
                     gap: 8px;
                     font-family: $font-outfit;
                     font-weight: 400;
-                    font-size: 15px;
+                    @include toRem(font-size, 15); 
                     line-height: 0px;
                     color: $color-shade1;
                 }
@@ -41,6 +41,9 @@
                 line-height: 28px;
                 text-transform: capitalize;
                 color: $color-title;
+                &:hover {
+                    color: $color-primary;
+                }
             }
             margin-bottom: 22px;
         }
@@ -58,7 +61,7 @@
             .rating-text {
                 font-family: $font-outfit;
                 font-weight: 400;
-                font-size: 16px;
+                @include toRem(font-size, 16); 
                 line-height: 0px;
                 color: #9D9CAE;
             }
@@ -116,7 +119,7 @@
                     border-radius: 5px;
                     font-family: $font-outfit;
                     font-weight: 400;
-                    font-size: 16px;
+                    @include toRem(font-size, 16); 
                     line-height: 0px;
                     text-transform: capitalize;
                     color: $color-title;

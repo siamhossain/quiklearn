@@ -116,6 +116,9 @@
                 color: #69676F;
                 a {
                     @extend .rt-footer-copyright-text;
+                    &:hover {
+                        color: $color-primary;
+                    }
                 }
             }
             .copyright-area-links {
@@ -126,6 +129,9 @@
                         a {
                             @extend .rt-footer-copyright-text;
                             @include toRem(font-size, 15);
+                            &:hover {
+                                color: $color-primary;
+                            }
                         }
                         &::after {
                             content: '.';
@@ -148,6 +154,12 @@
                         color: #565558;
                         i {
                             font-size: 20px ;
+                            @include transition;
+                        }
+                        &:hover {
+                            i {
+                                color: $color-primary;
+                            }
                         }
                     }
                 }

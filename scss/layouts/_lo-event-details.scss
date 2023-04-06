@@ -13,7 +13,7 @@
             .event-counter-item {
                 width: 60px;
                 height: 60px;
-                background: #FFFFFF;
+                background: $color-white;
                 border: 1px solid $color-primary;
                 border-radius: 8px;
                 position: relative;
@@ -23,14 +23,14 @@
                     .count-numbers {
                         font-family: $font-outfit;
                         font-weight: 700;
-                        font-size: 20px;
+                        @include toRem(font-size, 20);
                         // line-height: 0px;
                         color: $color-title;
                     }
                     .count-title {
                         font-family: $font-outfit;
                         font-weight: 400;
-                        font-size: 14px;
+                        @include toRem(font-size, 14);
                         color: #9D9CAE;
                     }
                 }
@@ -78,7 +78,7 @@
                     a {
                         font-family: $font-outfit;
                         font-weight: 500;
-                        font-size: 20px;
+                        @include toRem(font-size, 20);
                         line-height: 25px;
                         color: $color-title;
                     }
@@ -86,7 +86,7 @@
                 .designation {
                     font-family: $font-outfit;
                     font-weight: 400;
-                    font-size: 15px;
+                    @include toRem(font-size, 15);
                     line-height: 19px;
                     color: #4F536C;
                     margin-bottom: 10px;
@@ -95,7 +95,7 @@
                     span {
                         font-family: 'Hind';
                         font-weight: 400;
-                        font-size: 16px;
+                        @include toRem(font-size, 16);
                         color: #9D9CAE;
                         margin-left: 6px;
                     }

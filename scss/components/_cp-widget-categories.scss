@@ -11,7 +11,7 @@
         padding: 16px 30px;
         font-family: $font-outfit;
         font-weight: 600;
-        font-size: 20px;
+        @include toRem(font-size, 20);
         line-height: 140%;
         color: red;
     }
@@ -32,9 +32,9 @@
                 a {
                     font-family: $font-outfit;
                     font-weight: 400;
-                    font-size: 16px;
+                    @include toRem(font-size, 16);
                     line-height: 50px;
-                    color: #4F536C;
+                    color: $color-shade1;
                     svg {
                         margin-right: 6px;
                     }

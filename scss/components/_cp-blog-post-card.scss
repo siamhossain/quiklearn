@@ -26,7 +26,7 @@
             a {
                 font-family: $font-outfit;
                 font-weight: 600;
-                font-size: 22px;
+                @include toRem(font-size, 22);
                 line-height: 30px;
                 color: $color-title;
                 &:hover {
@@ -48,11 +48,11 @@
                 gap: 7px;
                 span {
                     // line-height: 0;
-                    font-size: 14px;
+                    @include toRem(font-size, 14);
                 }
                 a {
                     // line-height: 0;
-                    font-size: 14px;
+                    @include toRem(font-size, 14);
                     &:hover {
                         color: $color-primary;
                     }

@@ -1,6 +1,6 @@
 .core-feature-item {
     background: $color-white;
-    border: 1px solid #DBDBDB;
+    border: 1px solid $border-color;
     border-radius: 10px;
     padding: 45px 35px;
     margin: 0 5px;
@@ -14,7 +14,7 @@
         a {
             font-family: $font-outfit;
             font-weight: 500;
-            font-size: 24px;
+            @include toRem(font-size, 24);
             line-height: 30px;
             text-align: center;
             text-transform: capitalize;

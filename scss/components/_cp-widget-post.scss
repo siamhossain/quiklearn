@@ -27,7 +27,7 @@
                 span {
                     font-family: $font-outfit;
                     font-weight: 400;
-                    font-size: 13px;
+                    @include toRem(font-size, 13);
                     line-height: 24px;
                     color: #4F536C;
                 }
@@ -37,7 +37,7 @@
                 a {
                     font-family: $font-outfit;
                     font-weight: 400;
-                    font-size: 16px;
+                    @include toRem(font-size, 16);
                     line-height: 23px;
                     color: $color-title;
 

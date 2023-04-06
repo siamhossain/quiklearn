@@ -1,13 +1,13 @@
 .post-comment-form-wrapper {
     border-radius: 8px;
     padding: 38px 17px  45px 40px;
-    background: #F8F8F8;
+    background: $color-gray13;
     border: 1px solid #E0E0ED;
     border-radius: 12px;
     .title {
         font-family: $font-outfit;
         font-weight: 600;
-        font-size: 24px;
+        @include toRem(font-size, 24);
         line-height: 30px;
         color: $color-title;
         margin-bottom: 2px;
@@ -15,7 +15,7 @@
         &::before {
             content: "";
             position: absolute;
-            background: #543EE8;
+            background: $color-primary;
             border-radius: 100px;
             width: 40px;
             height: 5px;
@@ -24,7 +24,7 @@
     }
     .para-text {
         margin-bottom: 17px;
-        font-size: 16px;
+        @include toRem(font-size, 16);
         line-height: 26px;
     }
     .post-comment-form {
@@ -37,7 +37,7 @@
                 padding: 11px 15px;
                 font-family: 'Hind';
                 font-weight: 400;
-                font-size: 16px;
+                @include toRem(font-size, 16);
                 line-height: 28px;
                 text-transform: capitalize;
                 margin-bottom: 30px;
@@ -55,7 +55,7 @@
 
                 font-family: 'Hind';
                 font-weight: 400;
-                font-size: 16px;
+                @include toRem(font-size, 16);
                 line-height: 28px;
                 text-transform: capitalize;
 
@@ -78,7 +78,7 @@
             label {
                 font-family: $font-outfit;
                 font-weight: 400;
-                font-size: 16px;
+                @include toRem(font-size, 16);
                 line-height: 26px;
                 text-transform: capitalize;
                 color: #4F536C;
@@ -91,7 +91,7 @@
                 border-radius: 5px;
                 font-family: $font-outfit;
                 font-weight: 600;
-                font-size: 16px;
+                @include toRem(font-size, 16);
                 color: $color-white;
             }
         }
@@ -101,7 +101,7 @@
         .title {
             font-family: $font-outfit;
             font-weight: 600;
-            font-size: 24px;
+            @include toRem(font-size, 24);
             line-height: 30px;
             color: $color-title;
             margin-bottom: 37px;
@@ -124,7 +124,7 @@
                     border-radius: 5px;
                     font-family: $font-outfit;
                     font-weight: 600;
-                    font-size: 16px;
+                    @include toRem(font-size, 16);
                     color: $color-white;
                     width: 100%;
                     text-align: center;
@@ -138,5 +138,15 @@
 .contact-page {
     .post-comment-form-wrapper {
         // padding: 35px 6px 40px 30px;
+    }
+}
+
+.blog-details-page {
+    .post-comment-form-wrapper {
+        .title {
+            &::before {
+                display: none;
+            }
+        }
     }
 }

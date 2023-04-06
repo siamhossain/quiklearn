@@ -3,7 +3,7 @@
         .course-details-content-wrapper {
             // padding-right: 39px;
             .course-details-info {
-                border-bottom: 1px solid #DBDBDB;
+                border-bottom: 1px solid $border-color;
                 margin-bottom: 35px;
                 .tag-rating-wrapper {
                     margin-bottom: 15px;
@@ -44,7 +44,7 @@
                             @include toRem(font-size, 16);
                             color: $color-title;
                             span {
-                                color: #9D9CAE;
+                                color: $color-gray12;
                             }
                         }
                         
@@ -58,7 +58,7 @@
                                     font-family: 'Hind';
                                     font-weight: 400;
                                     @include toRem(font-size, 16);
-                                    color: #4F536C;
+                                    color: $color-shade1;
                                 }
                             }
                         }
@@ -71,9 +71,9 @@
                 a {
                     padding: 13px 30px;
                     border-radius: 6px;
-                    background: #F8F8F8;
+                    background: $color-gray13;
                     line-height: unset;
-                    color: #4F536C;
+                    color: $color-shade1;
                     &:hover {
                         background: $color-primary;
                         color: $color-white;
@@ -140,7 +140,7 @@
                                                 font-weight: 400;
                                                 @include toRem(font-size, 16);
                                                 line-height: 20px;
-                                                color: #4F536C;
+                                                color: $color-shade1;
                                             }
                                         }
                                     }
@@ -149,9 +149,9 @@
                                         span {
                                             font-family: 'Hind';
                                             font-weight: 400;
-                                            font-size: 16px;
+                                            @include toRem(font-size, 16);
                                             line-height: 26px;
-                                            color: #4F536C;
+                                            color: $color-shade1;
                                         }
                                     }
                                 }
@@ -165,7 +165,7 @@
                 .title {
                     font-family: $font-outfit;
                     font-weight: 600;
-                    font-size: 26px;
+                    @include toRem(font-size, 26);
                     color: $color-title;
                     margin-bottom: 12px;
                 }
@@ -186,7 +186,7 @@
                             a {
                                 font-family: $font-outfit;
                                 font-weight: 500;
-                                font-size: 20px;
+                                @include toRem(font-size, 20);
                                 line-height: 0px;
                                 color: $color-title;
                             }
@@ -195,7 +195,7 @@
                         .designation {
                             font-family: $font-outfit;
                             font-weight: 400;
-                            font-size: 15px;
+                            @include toRem(font-size, 15);
                             color: $color-shade1;
                             margin-bottom: 8px;
                         }
@@ -217,8 +217,8 @@
                                     gap: 8px;
                                     font-family: 'Hind';
                                     font-weight: 400;
-                                    font-size: 16px;
-                                    color: #4F536C;
+                                    @include toRem(font-size, 16);
+                                    color: $color-shade1;
                                 }
                             }
                         }
@@ -233,7 +233,7 @@
                 .title {
                     font-family: $font-outfit;
                     font-weight: 600;
-                    font-size: 26px;
+                    @include toRem(font-size, 26);
                     color: $color-title;
                     margin-bottom: 25px;
                 }
@@ -253,7 +253,7 @@
                         P { 
                             font-family: $font-outfit;
                             font-weight: 500;
-                            font-size: 18px;
+                            @include toRem(font-size, 18);
                             line-height: 26px;
                             color: $color-title;
                         }
@@ -292,7 +292,7 @@
                             span {
                                 font-family: $font-outfit;
                                 font-weight: 600;
-                                font-size: 14px;
+                                @include toRem(font-size, 14);
                                 line-height: 20px;
                                 color: $color-title;
                             }
@@ -308,14 +308,14 @@
                 .title {
                     font-family: $font-outfit;
                     font-weight: 600;
-                    font-size: 26px;
+                    @include toRem(font-size, 26);
                     color: $color-title;
                     margin-bottom: 25px;
                 }
                 .sub-text {
                     font-family: $font-outfit;
                     font-weight: 400;
-                    font-size: 18px;
+                    @include toRem(font-size, 18);
                     color: $color-title;
                     margin-bottom: 17px;
                 }
@@ -328,13 +328,13 @@
                             label {
                                 font-family: $font-outfit;
                                 font-weight: 500;
-                                font-size: 16px;
+                                @include toRem(font-size, 16);
                                 color: $color-title;
                                 display: block;
                                 margin-bottom: 7px;
                             }
                             input {
-                                background: #FFFFFF;
+                                background: $color-white;
                                 border: 1px solid #DCDBE5;
                                 border-radius: 5px;
                                 width: 100%;
@@ -343,7 +343,7 @@
                             }
                         }
                         textarea {
-                            background: #FFFFFF;
+                            background: $color-white;
                             border: 1px solid #DCDBE5;
                             border-radius: 5px;
                             width: 100%;
@@ -377,17 +377,17 @@
                 gap: 13px;
                 margin-bottom: 28px;
                 a {
-                    background: #FFFFFF;
+                    background: $color-white;
                     border: 1px solid #DCDBE5;
                     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
                     border-radius: 5px;
                     padding: 12px 28px;
                     font-family: $font-outfit;
                     font-weight: 400;
-                    font-size: 15px;
+                    @include toRem(font-size, 15);
                     text-align: center;
                     text-transform: capitalize;
-                    color: #4F536C;
+                    color: $color-shade1;
                     gap: 8px;
                     &:hover {
                         background: $color-primary;
@@ -406,7 +406,7 @@
                 }
             }
             .featured-course-item {
-                background: #FFFFFF;
+                background: $color-white;
                 border: 1px solid #DCDBE5;
                 box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
                 border-radius: 10px;
@@ -433,7 +433,7 @@
                             width:76px;
                             border-radius:50%;
                             position: absolute;
-                            border: 2px solid #FFFFFF;
+                            border: 2px solid $color-white;
                             opacity: 0.7;
                         }
                         svg {
@@ -449,14 +449,14 @@
                         p {
                             font-family: $font-outfit;
                             font-weight: 400;
-                            font-size: 16px;
+                            @include toRem(font-size, 16);
                             text-transform: capitalize;
-                            color: #4F536C;
+                            color: $color-shade1;
                         }
                         h3 {
                             font-family: $font-outfit;
                             font-weight: 500;
-                            font-size: 30px;
+                            @include toRem(font-size, 30);
                             text-transform: capitalize;
                             color: $color-title;
 
@@ -465,20 +465,20 @@
                     .pricing-subtext {
                         font-family: $font-outfit;
                         font-weight: 400;
-                        font-size: 14px;
+                        @include toRem(font-size, 14);
                         text-transform: capitalize;
-                        color: #4F536C;
+                        color: $color-shade1;
                         margin-bottom: 25px;
                     }
                     .purchase-area {
                         a {
-                            border: 1.5px solid #4F536C;
+                            border: 1.5px solid $color-shade1;
                             border-radius: 6px;
                             width: 100%;
                             margin-bottom: 8px;
                             font-family: $font-outfit;
                             font-weight: 500;
-                            font-size: 18px;
+                            @include toRem(font-size, 18);
                             line-height: 0px;
                             text-transform: capitalize;
                             color: #241442;
@@ -505,7 +505,7 @@
                         .title {
                             font-family: $font-outfit;
                             font-weight: 500;
-                            font-size: 17px;
+                            @include toRem(font-size, 17);
                             text-transform: capitalize;
                             color: $color-title;
                             margin-bottom: 23px;
@@ -517,9 +517,9 @@
                                 margin-bottom: 14px;
                                 font-family: $font-outfit;
                                 font-weight: 400;
-                                font-size: 15px;
+                                @include toRem(font-size, 15);
                                 text-transform: capitalize;
-                                color: #4F536C;
+                                color: $color-shade1;
                                 &:last-child {
                                     border-bottom: none;
                                     padding-bottom: 0;
@@ -549,7 +549,7 @@
             width: 100%;
             height: 440px;
             z-index: -1;
-            border-bottom: 1px solid#DBDBDB;
+            border-bottom: 1px solid $border-color;
             display: none;
             @include media-only('md', min) {
                 display: block;
