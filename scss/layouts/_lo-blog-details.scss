@@ -52,7 +52,7 @@
                 font-weight: 500;
                 @include toRem(font-size, 18);
                 line-height: 28px;
-                color: #4F536C;
+                color: $color-shade1;
             }
             ul.social-icon-list {
                 gap: 12px;

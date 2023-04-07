@@ -168,6 +168,7 @@
 }
 
 .team-section {
+    padding-bottom: 110px;
     .team-wrap {
         gap: 30px;
         flex-wrap: wrap;
@@ -191,6 +192,19 @@
         }
         .para-text {
             margin-bottom: 20px;
+        }
+    }
+    &--style-2 {
+        padding-bottom: 140px;
+        .section-text-content {
+            .section-heading {
+                &::before {
+                    left: 0;
+                    right: 0;
+                    top: 20px;
+                    margin: auto;
+                }
+            }
         }
     }
 }

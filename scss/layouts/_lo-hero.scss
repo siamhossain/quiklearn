@@ -153,5 +153,17 @@
                 }
             }
         }
+        .hero2-section-shapes {
+            ul {
+                li {
+                    position: absolute;
+                    &:nth-child(1) {
+                        right: 50px;
+                        bottom: 0;
+                        // z-index: -1;
+                    }
+                }
+            }
+        }
     }
 }

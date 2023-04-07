@@ -21,4 +21,19 @@
             }
         }
     }
+    &--style-2 {
+        .brand-wrapper {
+            .brand-link {
+                img {
+                    opacity: 0.4;
+                }
+                &:hover {
+                    filter: grayscale(0);
+                    img {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
 }

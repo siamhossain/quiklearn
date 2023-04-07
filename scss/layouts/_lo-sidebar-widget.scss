@@ -8,7 +8,7 @@
     .title {
         font-family: $font-outfit;
         font-weight: 500;
-        font-size: 20px;
+        @include toRem(font-size, 20);
         text-transform: capitalize;
         color: $color-title;
         margin-bottom: 15px;

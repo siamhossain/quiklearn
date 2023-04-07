@@ -1,4 +1,5 @@
 .featured-course-section {
+    padding-bottom: 110px;
     .section-text-content {
         margin-bottom: 0;
         @include media-only('lg', min) {
@@ -20,6 +21,9 @@
                 }
             }
         }
+    }
+    .swiper {
+        padding-bottom: 0;
     }
     .course-category-menu {
         ul.course-category-menu-list {

@@ -92,7 +92,7 @@
                         display: none;
                     }
                     a {
-                        color: #4F536C;
+                        color: $color-shade1;
                     }
                 }
             }
@@ -136,12 +136,3 @@
         }
     }
 }
-
-// .course-details-1-page, .course-details-2-page {
-//     .page-title-banner-section {
-//         padding: 30px 0;
-//         .banner-menu-list {
-//             margin-bottom: 0;
-//         }
-//     }
-// }
