@@ -55,6 +55,9 @@
                                 @include toRem(font-size, 16);
                                 line-height: 32px;
                                 color: #4F536C;
+                                &:hover {
+                                    color: $color-primary;
+                                }
                             }
                         }
                     }

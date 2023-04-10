@@ -27,4 +27,20 @@
 
         }
     }
+
+    overflow: hidden;
+    .swiper {
+        margin: 0 -225px;
+    }
+
+    .swiper-wrapper { 
+        .swiper-slide-visible {
+            &:first-child {
+                opacity: 0.6;
+            }
+            &:nth-child(5) {
+                opacity: 0.6;
+            }
+        }
+    }
 }

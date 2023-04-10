@@ -10,18 +10,18 @@
         svg {
             
         }
-        &::before {
-            content: "";
-            position: absolute;
-            left: 50%;
-            top: 0;
-            height: 100%;
-            width: 0%;
-            background: $color-primary;
-            border-radius: 23px;
-            transition: all 0.3s ease-in-out;
-            z-index: -1;
-        }
+        // &::before {
+        //     content: "";
+        //     position: absolute;
+        //     left: 50%;
+        //     top: 0;
+        //     height: 100%;
+        //     width: 0%;
+        //     background: $color-primary;
+        //     border-radius: 23px;
+        //     transition: all 0.3s ease-in-out;
+        //     z-index: -1;
+        // }
     }
     .contact-info-details {
         .title {
@@ -45,13 +45,13 @@
     &:hover {
         .icon {
             // border-color: $color-primary;
-            &::before {
-                width: 120%;
-                left: -10%;
-            }
-            svg {
-                fill: $color-white;
-            }
+            // &::before {
+            //     width: 120%;
+            //     left: -10%;
+            // }
+            // svg {
+            //     fill: $color-white;
+            // }
         }
     }
 }

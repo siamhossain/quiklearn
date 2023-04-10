@@ -58,4 +58,32 @@
     }
 }
 
+.home2-page {
+    .featured-course-section { 
+        overflow: hidden;
+        .swiper {
+            margin: 0 -110px;
+        }
+
+        .swiper-wrapper { 
+            .swiper-slide-visible {
+                &:first-child {
+                    opacity: 0.5;
+                }
+                &:nth-child(6) {
+                    opacity: 0.5;
+                }
+            }
+        }
+
+        .section-text-content {
+            .section-heading {
+                &::before {
+                    right: 0;
+                    left: 0;
+                }
+            }
+        }
+    }
+}
 

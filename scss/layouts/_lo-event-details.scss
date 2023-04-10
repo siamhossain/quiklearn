@@ -104,3 +104,13 @@
         }
     }
 }
+
+.event-details-page {
+    .course-details-section .course-details-main-wrapper .course-details-content-wrapper .instructors-details {
+        margin-bottom: 70px;
+        @include media-only('lg', min) {
+            margin-bottom: 0;
+        }
+    }
+
+}
