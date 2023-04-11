@@ -150,6 +150,7 @@ a.menu--link.second-level::after {
       z-index: 9;
       display: block;
       padding-left: 10px;
+      @include transition;
 
       #{$self}--item {
         margin: 0;
@@ -166,9 +167,9 @@ a.menu--link.second-level::after {
 
           position: absolute;
           content: "";
-          width: 3px;
-          height: 0px;
-          top: 40%;
+          width: 0px;
+          height: 3px;
+          top: 50%;
           left: 8px;
           margin: 0;
           background: $color-primary;
@@ -178,10 +179,12 @@ a.menu--link.second-level::after {
         }
 
         &:hover {
+          
           &::before {
             opacity: 1;
             visibility: visible;
-            height: 12px
+            width: 11px;
+            height: 3px
           }
         }
       }
@@ -200,6 +203,7 @@ a.menu--link.second-level::after {
 
         &:hover {
           color: $color-primary;
+          padding-left: 30px;
         }
       }
     }
@@ -367,8 +371,10 @@ a.menu--link.second-level::after {
         .login-btn {
 
         }
-        .signUp-btn {
-
+        .signUp-btn.active {
+          background: $color-secondary;
+          color: $color-white;
+          border: 1px solid $color-secondary;
         }
     }
     }

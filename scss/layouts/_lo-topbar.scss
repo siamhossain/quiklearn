@@ -27,8 +27,10 @@
                 .login-btn {
 
                 }
-                .signUp-btn {
-
+                .button.active {
+                    background: $color-secondary;
+                    border: 1px solid $color-secondary;
+                    color: $color-white;
                 }
             }
         }
