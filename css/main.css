@@ -1839,7 +1839,7 @@ p {
   background: var(--color-white);
   border: 1px solid #DBDBDB;
   gap: 21px;
-  padding: 33px 30px 46px 26px;
+  padding: 50px 30px 50px 35px;
 }
 .testimonial-item .testimonial-text-content-wrapper {
   flex: 1;
@@ -4507,7 +4507,6 @@ body.slidemenuon .sidebarBtn .bar:nth-child(4) {
   padding: 1rem 30px;
   text-transform: capitalize;
   border-radius: 0;
-  border-left: 4px solid var(--color-secondary);
   transition: all 0.4s ease-in-out;
 }
 .course-intro-section--style-1 .course-intro-text-content-wrapper .accordion-button svg {
@@ -4536,10 +4535,17 @@ body.slidemenuon .sidebarBtn .bar:nth-child(4) {
   box-shadow: none;
   border-radius: 0;
   position: relative;
-  border-left: 4px solid var(--color-primary);
 }
 .course-intro-section--style-1 .course-intro-text-content-wrapper .accordion-flush .accordion-item .accordion-button:not(.collapsed) svg {
   fill: var(--color-white);
+}
+.course-intro-section--style-1 .course-intro-text-content-wrapper .accordion-flush .accordion-item .accordion-button:not(.collapsed)::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 100%;
+  background: var(--color-primary);
+  left: 0;
 }
 .course-intro-section--style-2 .section-text-content {
   margin-bottom: 30px;

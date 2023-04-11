@@ -214,7 +214,10 @@
             $('.rt-mouse-parallax').each(function(index, element) {
                 var $this = $(this);
                 $this.attr('id', "rt-parallax-instance-" + index);
-                parallaxInstances[index] = new Parallax($("#rt-parallax-instance-" + index).get(0));
+                parallaxInstances[index] = new Parallax($("#rt-parallax-instance-" + index).get(0), {
+                    // hoverOnly: true,
+                    // relativeInput: true,
+                });
             })
         },
 
@@ -447,6 +450,7 @@
     wow.init();
   
 
+    
     
 
 })(jQuery);

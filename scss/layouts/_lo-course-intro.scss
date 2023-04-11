@@ -160,7 +160,7 @@
                 svg {
                     margin-right: 25px;
                 }
-                border-left: 4px solid $color-secondary;
+                // border-left: 4px solid $color-secondary;
                 @include transition;
             }
             .accordion-body {
@@ -189,7 +189,15 @@
                 svg {
                     fill: $color-white;
                 }
-                border-left: 4px solid $color-primary;
+                // border-left: 4px solid $color-primary;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 4px;
+                    height: 100%;
+                    background: $color-primary;
+                    left: 0;
+                }
             }
         }
     }
