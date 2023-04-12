@@ -240,11 +240,15 @@
                 &:last-child {
                     margin-bottom: 0;
                 }
-                &:hover {
-                    // margin-left: 30px;
-                    transform: translateX(30px);
-                }
+                // &:hover {
+                //     // margin-left: 30px;
+                //     transform: translateX(30px);
+                // }
            }
+           .course-intro-item.active { 
+                transform: translateX(30px);
+           }
+
             &::before {
                 display: none;
             }

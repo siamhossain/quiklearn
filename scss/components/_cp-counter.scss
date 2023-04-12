@@ -31,6 +31,7 @@
             height: 79px;
             position: relative;
             overflow: hidden;
+            @include transition;
             &::before {
                 content: "";
                 border-radius: 10px;
@@ -48,6 +49,7 @@
                     width: 120%;
                     height: 120%;
                 }
+                border: 1px solid transparent;
             }
         }
         .item-title { 

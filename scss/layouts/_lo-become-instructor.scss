@@ -1,4 +1,5 @@
 .become-instructor-section {
+    padding-top: 180px;
     .become-instructor-img {
         position: relative;
         padding-left: 0;
@@ -50,16 +51,16 @@
                 &:nth-child(1) {
                     right: 0;
                     top: -50px;
-                    @include media-only('xl', min) {
-                        right: 50px;
-                    }
+                    // @include media-only('xl', min) {
+                    //     right: 50px;
+                    // }
                 }
                 &:nth-child(2) {
                     left: 115px;
                     top: 45px;
                 }
                 &:nth-child(3) {
-                    right: 220px;
+                    right: 160px;
                     top: 90px;
                 }
             }

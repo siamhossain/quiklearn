@@ -251,6 +251,7 @@
     
                     // Fetching from data attributes
                     var visibleSlides       = $this.attr("data-visible-slide") ? parseInt($this.attr("data-visible-slide"), 10) : 4;
+                    var visibleSlides_xxxl   = $this.attr("data-visible-xxxl-slide") ? parseInt($this.attr("data-visible-xxxl-slide"), 10) : 4;
                     var visibleSlides_xxl   = $this.attr("data-visible-xxl-slide") ? parseInt($this.attr("data-visible-xxl-slide"), 10) : 4;
                     var visibleSlides_xl    = $this.attr("data-visible-xl-slide") ? parseInt($this.attr("data-visible-xl-slide"), 10) : 4;
                     var visibleSlides_lg    = $this.attr("data-visible-lg-slide") ? parseInt($this.attr("data-visible-lg-slide"), 10) : 3;
@@ -325,6 +326,10 @@
                             },
                             1600: {
                                 slidesPerView: visibleSlides,
+                                spaceBetween: 30,
+                            },
+                            1950: {
+                                slidesPerView: visibleSlides_xxxl,
                                 spaceBetween: 30,
                             }
                           }
@@ -449,6 +454,24 @@
     });
     wow.init();
   
+
+    $(".course-intro-section--style-2 .course-intro-item").hover(
+        function() {
+            $(this).addClass('active');
+        }, function() {
+            $( ".course-intro-item" ).removeClass('active');
+        }
+    );
+
+    $(".course-intro-section--style-2 .course-intro-item").hover(
+        function () {
+            //toggleClass() switches the active class
+            $(this).addClass("active");
+        },
+        function () {
+            $(this).addClass("visited");
+        },
+    );
 
     
     
