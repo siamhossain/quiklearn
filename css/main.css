@@ -1227,13 +1227,13 @@ p {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 25px;
+  height: 25px;
   border-radius: 10px;
   background: var(--color-secondary);
   visibility: hidden;
   opacity: 0;
-  transition: all 0.6s ease-in-out;
+  transition: all 0.5s ease-in-out;
   z-index: -1;
 }
 .course-category-item .icon {
@@ -1272,10 +1272,14 @@ p {
   bottom: 0;
   z-index: -1;
 }
+.course-category-item:hover::before {
+  visibility: visible;
+  opacity: 1;
+}
 .course-category-item:hover .icon {
   transform: scale(1.12) translateY(-12px);
 }
-.course-category-item:hover .icon img {
+.course-category-item:hover .icon img.course-icon {
   animation: toBottomFromTop 0.5s forwards;
 }
 .course-category-item--style-2 {
@@ -1314,6 +1318,9 @@ p {
 .course-category-item:hover .para-text, .course-category-item:hover .footer-section .rt-footer-content-wrapper .rt-footer-content .rt-footer-link-list-wrapper ul.rt-footer-link-list li a, .footer-section .rt-footer-content-wrapper .rt-footer-content .rt-footer-link-list-wrapper ul.rt-footer-link-list li .course-category-item:hover a, .course-category-item:hover .footer-section .rt-footer-content-wrapper .rt-footer-content .footer-info .info-list li, .footer-section .rt-footer-content-wrapper .rt-footer-content .footer-info .info-list .course-category-item:hover li {
   color: var(--color-white);
 }
+.course-category-item:hover .shapes ul li:last-child {
+  opacity: 0.4;
+}
 
 .more-categories {
   position: relative;
@@ -1326,8 +1333,8 @@ p {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 25px;
+  height: 25px;
   border-radius: 10px;
   background: var(--color-secondary);
   visibility: hidden;
@@ -1345,7 +1352,7 @@ p {
   line-height: 24px;
   text-transform: capitalize;
   color: var(--color-primary);
-  margin-bottom: 5px;
+  margin-bottom: 13px;
   transition: all 0.4s ease-in-out;
 }
 .more-categories .course-text-content .title-link {
@@ -3941,7 +3948,7 @@ body.slidemenuon .sidebarBtn .bar:nth-child(4) {
   right: 0;
 }
 .rt-hero-section--style-2 {
-  padding: 105px 0;
+  padding: 160px 0;
 }
 .rt-hero-section--style-2 .section-text-content {
   position: relative;
@@ -4825,6 +4832,7 @@ body.slidemenuon .sidebarBtn .bar:nth-child(4) {
 }
 .brand-section--style-2 .brand-wrapper .brand-link img {
   opacity: 0.4;
+  transition: all 0.4s ease-in-out;
 }
 .brand-section--style-2 .brand-wrapper .brand-link:hover {
   filter: grayscale(0);

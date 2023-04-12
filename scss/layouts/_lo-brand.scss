@@ -26,6 +26,7 @@
             .brand-link {
                 img {
                     opacity: 0.4;
+                    @include transition;
                 }
                 &:hover {
                     filter: grayscale(0);
