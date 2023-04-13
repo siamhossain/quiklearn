@@ -37,4 +37,24 @@
             }
         }
     }
+    &--style-3 {
+        padding: 94px 0 0 0;
+        .brand-wrapper {
+            border-bottom: 1px solid #E4E4E4;
+            gap: 85px;
+            padding-bottom: 61px;
+        }
+        .section-text-content {
+            .para-text {
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 30px;
+            letter-spacing: 0.01em;
+                span {
+                    font-weight: 600;
+                    color: $color-title;
+                }
+            }
+        }
+    }
 }

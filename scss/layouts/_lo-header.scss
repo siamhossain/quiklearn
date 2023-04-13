@@ -392,6 +392,7 @@ a.menu--link.second-level::after {
           padding-left: 22px;
           .nice-select {
             padding-right: 76px;
+            color: $color-title;
             &::after {
               border-color: $color-primary;
             }
