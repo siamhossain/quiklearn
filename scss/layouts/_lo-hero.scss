@@ -166,4 +166,110 @@
             }
         }
     }
+    &--style-3 { 
+        background: #F2F2F2;
+        .rt-hero-section-content-wrapper {
+            padding-right: 15px;
+            .section-heading {
+                font-size: 50px;
+                line-height: 63px;
+                span {
+                    color: $color-title;
+                    position: relative;
+                    margin-left: 10px;
+                    @include media-only('md', min) {
+                        color: $color-white;
+                    }
+                    &::before {
+                        content: url("../images/hero-section/shapes/hero-shape-7.svg");
+                        position: absolute;
+                        left: -10px;
+                        z-index: -1;
+                        top: -7px;
+                        display: none;
+                        @include media-only('md', min) {
+                            display: block;
+                        }
+                    }
+                }
+                &::before {
+                    left: -82px;
+                    right: 0;
+                    top: 15px;
+                    text-align: center;
+                }
+            }
+            .para-text {
+                font-size: 20px;
+            }
+        }
+        .rt-hero-section-banner-img {
+            position: relative;
+            padding: 58px 0 0 0px;
+            .hero-img-wrapper {
+                position: relative;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 435px;
+                    height: 360px;
+                    background: linear-gradient(131.21deg, #89A2FF -15.54%, #FFC6C6 115.33%);
+                    filter: blur(200px);
+                    top: 40%;
+                    right: -25px;
+                    z-index: -1;
+                }
+            }
+            .shapes {
+                ul {
+                    li {
+                        position: absolute;
+                        &:nth-child(1) {
+                            left: -155px;
+                            bottom: 0;
+                            top: unset;
+                            z-index: -1;
+                        }
+                        &:nth-child(2) {
+                            left: 90px;
+                            bottom: 22%;
+                            top: unset;
+                            z-index: -1;
+                        }
+                        &:nth-child(3) {
+                            top: 21%;
+                            left: 30px;
+                            right: unset;
+                            z-index: -1;
+                        }
+                        &:nth-child(4) {
+                            left: 47%;
+                            right: unset;
+                            bottom: unset;
+                            top: 16%;
+                            z-index: -1;
+                        }
+                        &:nth-child(5) {
+                            left: unset;
+                            right: 125px;
+                            margin: auto;
+                            bottom: unset;
+                            top: 5%;
+                            z-index: -1;
+                        }
+                        &:nth-child(6) {
+                            left: unset;
+                            right: -115px;
+                            bottom: 15%;
+                        }
+                        &:nth-child(7) {
+                            bottom: 0;
+                            right: -10px;
+                            z-index: -1;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

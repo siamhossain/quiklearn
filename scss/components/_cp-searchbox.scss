@@ -147,4 +147,10 @@
             }
         }
     }
+    &--style-5 {
+        @include media-only('md', min) {
+            width: 997px;
+            margin-left: 33px;
+        }
+    }
 }
