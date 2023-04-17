@@ -120,3 +120,15 @@
     }
 }
 
+.home3-page {
+    .wrapper {
+        position: relative;
+    }
+    .slider-navigation-btn-wrapper .prev {
+        left: -30px;
+    }
+    .slider-navigation-btn-wrapper .next {
+        right: -30px;
+    }
+} 
+

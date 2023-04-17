@@ -165,6 +165,72 @@
             }
         }
     }
+    &--style-3 {
+        border: none;
+        padding: 0;
+        
+        .rt-team-card-img-container {
+            border-radius: 10px 10px 0px 0px;
+            overflow: hidden;
+            a {
+                width: 100%;
+                .rt-team-card-img {
+                    width: 100%;
+                    height: 280px;
+                    @include transition;
+                }
+            }
+        }
+        .rt-team-card-content {
+            text-align: center;
+            background: #F8F8F8;
+            border-radius: 0px 0px 10px 10px;
+            padding: 30px 35px;
+            .title {
+                a {
+                    color: $color-primary;
+                    &:hover {
+                        color: $color-secondary;
+                    }
+                }
+            }
+            .designation {
+                color: #4F536C;
+                position: relative;
+                font-weight: 500;
+                margin-bottom: 34px;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    position: absolute;
+                    width: 50px;
+                    height: 3px;
+                    background: #D9D9D9;
+                    left: 0;
+                    right: 0;
+                    bottom: -18px;
+                    margin: auto;
+                }
+            }
+            ul.meta-list {
+                display: flex;
+                justify-content: space-between;
+                .meta-data { 
+                    gap: 5px;
+                    color: #4F536C;
+                }
+            }
+        }
+        &:hover {
+            .rt-team-card-img-container {
+                a {
+                    .rt-team-card-img {
+                        transform: scale(1.15);
+                    }
+                }
+            }
+        }
+    }
 }
 
 .team-section {
@@ -203,6 +269,17 @@
                     right: 0;
                     top: 20px;
                     margin: auto;
+                }
+            }
+        }
+    }
+    &--style-3 {
+        padding-bottom: 140px;
+        .section-text-content {
+            .section-heading {
+                &::before {
+                    left: 0;
+                    right: 0;
                 }
             }
         }

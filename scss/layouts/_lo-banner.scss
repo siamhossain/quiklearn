@@ -59,4 +59,59 @@
 
         }
     }
+    &--style-2 {
+        background: none;
+        &::before { 
+            display: none;
+        }
+        .banner-card {
+            background: $color-white;
+            border: 1px solid #E0E0E0;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            padding: 35px 70px 35px 35px ;
+            gap: 50px;
+            position: relative;
+            .banner-img {
+                position: relative;
+                .play-btn {
+                    position: absolute;
+                    width: 60px;
+                    height: 60px;
+                    background: #F0261E;
+                    box-shadow: -8px -1px 10px rgba(0, 0, 0, 0.1);
+                    svg {
+                        margin-left: 4px;
+                    }
+                }
+            }
+            .banner-text-content {
+                flex: 1;
+                .title {
+                    margin-bottom: 8px;
+                    a {
+                        font-family: $font-outfit;
+                        font-weight: 600;
+                        font-size: 28px;
+                        line-height: 30px;
+                        text-transform: capitalize;
+                        color: $color-title;
+                    }
+                }
+                .para-text {
+                    margin-bottom: 20px;
+                }
+            }
+            .shape1 {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            .shape2 {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+            }
+        }
+    }
 }
