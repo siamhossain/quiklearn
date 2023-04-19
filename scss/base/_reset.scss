@@ -159,3 +159,14 @@
 
 
    
+.header-hero-wrapper {
+    background: linear-gradient(92.92deg, #2405F3 9.1%, #5C1CE2 99.72%);
+    position: relative;
+    &::before {
+        content: url("../images/hero-section/opacity-bg.png");
+        position: absolute;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+    }
+}

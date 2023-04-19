@@ -441,6 +441,22 @@ a.menu--link.second-level::after {
       }
     }
   }
+  &--style-4 {
+    .header-logo {
+      margin-top: -30px;
+    }     
+    
+    .menu--link {
+      color: $color-white;
+      padding: 67px 0;
+      svg {
+        stroke: unset;
+      }
+    }
+    .navbar-action-area span.amount {
+        color: $color-white;
+    }
+  }
 }
 
 /* ------- Start Main Header -------- */

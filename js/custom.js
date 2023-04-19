@@ -291,7 +291,7 @@
                             nextEl: '.swiper-arrow.next',
                             prevEl: '.swiper-arrow.prev'
                         },
-    
+                    
                         pagination: {
                             // el: '.pagination-' + index,
                             el: '.swiper-pagination',

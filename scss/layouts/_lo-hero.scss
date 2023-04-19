@@ -273,4 +273,36 @@
             }
         }
     }
+    &--style-4 {
+        z-index: 0;
+        .rt-hero-section-banner-img {
+            padding: 0;
+        }
+        .section-text-content {
+            .section-name {
+                color: $color-white;
+            }
+            .section-heading {
+                color: $color-white;
+            }
+        }
+
+        .shapes {
+            ul {
+                li {
+                    position: absolute;
+                    &:nth-child(1) {
+                        left: 0;
+                        bottom: 0;
+                        z-index: -1;
+                    }
+                    &:nth-child(2) {
+                        right: 0;
+                        bottom: 0;
+                        z-index: -1;
+                    }
+                }
+            }
+        }
+    }
 }

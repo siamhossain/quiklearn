@@ -36,11 +36,128 @@
     .swiper-wrapper { 
         .swiper-slide-visible {
             &:first-child {
-                opacity: 0.6;
+                // opacity: 0.6;
             }
             &:nth-child(5) {
-                opacity: 0.6;
+                // opacity: 0.6;
             }
         }
+    }
+
+    &--style-3 {
+        .swiper {
+            margin: 0 0;
+            padding-bottom: 0;
+        }
+        .testimonial-item {
+            padding: 0;
+            border: none;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            overflow: hidden;
+            gap: 0;
+            // background: $color-secondary;
+            .testimonial-img-area {
+                background: #F0E1C9;
+                border-radius: 15px 0px 0px 15px;
+                padding: 45px 53px 0 16px;
+                position: relative;
+                z-index: 0;
+                .shapes {
+                    ul {
+                        li {
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            z-index: -1;
+                        }
+                    }
+                }
+            }
+            .testimonial-text-content {
+                flex: 1;
+                background: $color-secondary;
+                padding: 74px 0 64px 95px;
+                .section-text-content {
+                    .section-heading {
+                        color: $color-white;
+                        width: 496px;
+                        line-height: 48px;
+                        margin-bottom: 29px;
+                        &::before {
+                            right: 5px;
+                            top: 19px;
+                            left: unset;
+                        }
+                        &::after {
+                            content: url(../images/testimonial/red-star.svg);
+                            position: absolute;
+                            right: -240px;
+                            top: -15px;
+                            z-index: -1;
+                            width: 111.73px;
+                            height: 105.45px;
+                        }
+                    }
+                    .ratings {
+                        margin-bottom: 17px;
+                        ul {
+                            gap: 5.44px;
+                        }
+                    }
+                    .para-text {
+                        width: 565px;
+                        color: #9D9CAE;
+                        margin-bottom: 25px;
+                    }
+                }
+                .comment-author-details {
+                    .author-name {
+                        font-family: $font-outfit;
+                        font-weight: 500;
+                        font-size: 24px;
+                        line-height: 28px;
+                        text-transform: capitalize;
+                        color: $color-white;
+                    }
+                    .designation {
+                        font-family: $font-outfit;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 28px;
+                        text-transform: capitalize;
+                        color: #9D9CAE;
+
+                    }
+                }
+            }
+        }
+        //swiper-bullets
+        .swiper-horizontal>.swiper-pagination-bullets,.swiper-pagination-bullets.swiper-pagination-horizontal,.swiper-pagination-custom,.swiper-pagination-fraction {
+            bottom: unset;
+            width: unset;
+            right: 97px;
+            left: unset;
+            top: 60%;
+            // display: flex;
+            // flex-direction: column;
+            // gap: 10px;
+        }
+        .swiper-vertical>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+            margin: 10px 0;
+        }
+    }
+}
+
+.test-wrapper {
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 489px;
+        left: 0px;
+        top: 155px;
+        background: #FAF9F6;
     }
 }
