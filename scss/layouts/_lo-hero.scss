@@ -276,7 +276,32 @@
     &--style-4 {
         z-index: 0;
         .rt-hero-section-banner-img {
+            position: relative;
             padding: 0;
+            .hero-img-wrapper {
+                .shapes-img {
+                    ul {
+                        li {
+                            position: absolute;
+                            &:nth-child(1) {
+                                left: -150px;
+                                bottom: 5px;
+                                z-index: -1;
+                            }
+                            &:nth-child(2) {
+                                left: 90px;
+                                top: -27px;
+                                z-index: -1;
+                            }
+                            &:nth-child(3) {
+                                right: 100px;
+                                top: -35px;
+                                z-index: -1;
+                            }
+                        }
+                    }
+                }
+            }
         }
         .section-text-content {
             .section-name {
@@ -284,6 +309,9 @@
             }
             .section-heading {
                 color: $color-white;
+                ::before {
+                    right: 0;
+                }
             }
         }
 

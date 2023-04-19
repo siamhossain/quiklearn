@@ -4308,13 +4308,35 @@ body.slidemenuon .sidebarBtn .bar:nth-child(4) {
   z-index: 0;
 }
 .rt-hero-section--style-4 .rt-hero-section-banner-img {
+  position: relative;
   padding: 0;
+}
+.rt-hero-section--style-4 .rt-hero-section-banner-img .hero-img-wrapper .shapes-img ul li {
+  position: absolute;
+}
+.rt-hero-section--style-4 .rt-hero-section-banner-img .hero-img-wrapper .shapes-img ul li:nth-child(1) {
+  left: -150px;
+  bottom: 5px;
+  z-index: -1;
+}
+.rt-hero-section--style-4 .rt-hero-section-banner-img .hero-img-wrapper .shapes-img ul li:nth-child(2) {
+  left: 90px;
+  top: -27px;
+  z-index: -1;
+}
+.rt-hero-section--style-4 .rt-hero-section-banner-img .hero-img-wrapper .shapes-img ul li:nth-child(3) {
+  right: 100px;
+  top: -35px;
+  z-index: -1;
 }
 .rt-hero-section--style-4 .section-text-content .section-name {
   color: var(--color-white);
 }
 .rt-hero-section--style-4 .section-text-content .section-heading {
   color: var(--color-white);
+}
+.rt-hero-section--style-4 .section-text-content .section-heading ::before {
+  right: 0;
 }
 .rt-hero-section--style-4 .shapes ul li {
   position: absolute;
