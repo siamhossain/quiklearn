@@ -28,4 +28,19 @@
             margin-top: 20px;
         }
     }
+    &--style-4 {
+        padding-bottom: 0; 
+        .container {
+            padding-right: 0;
+            padding-left: 0;
+        }
+        .course-category-item-wrapper {
+            background: white;
+            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            padding: 20px;
+            gap: 20px;
+            transform: translateY(-70px);
+        }
+    }
 }

@@ -275,6 +275,7 @@
     }
     &--style-4 {
         z-index: 0;
+        padding-top: 20px;
         .rt-hero-section-banner-img {
             position: relative;
             padding: 0;
@@ -304,13 +305,16 @@
             }
         }
         .section-text-content {
+            padding-top: 25px;
             .section-name {
                 color: $color-white;
             }
             .section-heading {
                 color: $color-white;
-                ::before {
-                    right: 0;
+                &::before {
+                    content: url("../images/hero-section/shapes/underline-4.svg");
+                    right: 98px;
+                    top: 23px;
                 }
             }
         }

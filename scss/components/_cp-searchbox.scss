@@ -153,4 +153,14 @@
             margin-left: 33px;
         }
     }
+    &--style-6 {
+        width: 690px;
+        height: 60px;
+        padding: 5px;
+        margin-bottom: 55px;
+        .searchbox-submit .rt-searchbox-btn {
+            background: #FFCD1F;
+            color: $color-secondary;
+        }
+    }
 }

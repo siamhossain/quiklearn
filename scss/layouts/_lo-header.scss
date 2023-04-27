@@ -270,15 +270,6 @@ a.menu--link.second-level::after {
     text-transform: capitalize;
     color: #100E19;
   }
-
-  // .rt-header-action-btn {
-  //   padding: 13px 20px;
-  //   display: flex;
-  //   gap: 8px;
-  //   align-items: center;
-  //   z-index: 1;
-  //   @include transition;
-  // }
 }
 
 .header {
@@ -444,7 +435,37 @@ a.menu--link.second-level::after {
   &--style-4 {
     .header-logo {
       margin-top: -30px;
-    }     
+      .logo-1 {
+        display: none;
+      }
+    }   
+    .affix {
+      .header-logo {
+        margin-top: -20px;
+        .logo-1 {
+          display: block;
+        }
+        .logo-2 {
+          display: none;
+        }
+      }   
+      .wishlist {
+        a {
+          svg {
+            fill: #4F536C;
+          }
+        }
+      }
+      .cart {
+        a {
+          svg {
+            path {
+              stroke: #4F536C;
+            }
+          }
+        }
+      }
+    }  
     
     .menu--link {
       color: $color-white;
@@ -455,6 +476,21 @@ a.menu--link.second-level::after {
     }
     .navbar-action-area span.amount {
         color: $color-white;
+    }
+    .navbar-action-area {
+        color: $color-white;
+        .login-btn {
+          background: linear-gradient(180deg, #FFFFFF 0%, #EFEFEF 100%);
+          box-shadow: 0px 6px 9px rgba(0, 0, 0, 0.2);
+          border-radius: 30px;
+          padding: 8px 25px;
+          font-family: $font-outfit;
+          font-weight: 500;
+          font-size: 16px;
+          letter-spacing: 0.01em;
+          text-transform: capitalize;
+          color: #100E19;
+        }
     }
   }
 }

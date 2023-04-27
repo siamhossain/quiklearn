@@ -304,3 +304,16 @@
         }
     }
 }
+
+.home4-page {
+    .course-intro-section { 
+        .section-text-content {
+            margin-bottom: 45px;
+            .section-heading {
+                &::before {
+                    display: none;
+                }
+            }   
+        }
+    }
+}
