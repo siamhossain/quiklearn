@@ -1,4 +1,5 @@
 .testimonial-section {
+    overflow: hidden;
     .section-text-content {
         .section-heading {
             margin-bottom: 40px;
@@ -28,26 +29,33 @@
         }
     }
 
-    overflow: hidden;
+    
+    
     .swiper {
-        margin: 0 -225px;
-    }
-
-    .swiper-wrapper { 
-        .swiper-slide-visible {
-            &:first-child {
-                // opacity: 0.6;
+        margin: 0 0;
+        @include media-only('lg', min) {
+            margin: 0 -225px;
+            .visible-first {
+                opacity: 0.5;
             }
-            &:nth-child(5) {
-                // opacity: 0.6;
+            .visible-last {
+                opacity: 0.5;
             }
         }
     }
+
 
     &--style-3 {
         .swiper {
             margin: 0 0;
             padding-bottom: 0;
+
+            .visible-first {
+                opacity: unset;
+            }
+            .visible-last {
+                opacity: unset;
+            }
         }
         .testimonial-item {
             padding: 0;

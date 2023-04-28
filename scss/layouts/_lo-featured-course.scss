@@ -58,31 +58,14 @@
     }
     &--style-2 {
         .swiper {
-
-            .swiper-container-initialized {
-                &::before {
-                    content: "";
-                    position: absolute;
-                    left: 0;
-                    background: rgb(207, 206, 206);
-                    width: 329px;
-                    height: 94%;
-                    border-radius: 10px;
-                    z-index: 2;
-                    opacity: 0.7;
+            @include media-only('md', min) {
+                .visible-first {
+                    opacity: 0.5;
+                }
+                .visible-last {
+                    opacity: 0.5;
                 }
             }
-            // .swiper-wrapper {
-                
-                // .swiper-slide-visible {
-                //     &:first-child {
-                //         opacity: 0.2;
-                //     }
-                //     &:last-child {
-                //         opacity: 0.2;
-                //     }
-                // }
-            // }
         }
     }
     &--style-4 {
@@ -106,7 +89,10 @@
     .featured-course-section { 
         overflow: hidden;
         .swiper {
-            margin: 0 -110px;
+            margin: 0 0;
+            @include media-only('md', min) {
+                margin: 0 -110px;
+            }
         }
 
         // .swiper-wrapper { 

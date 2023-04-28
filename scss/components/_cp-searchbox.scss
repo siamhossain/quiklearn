@@ -154,13 +154,18 @@
         }
     }
     &--style-6 {
-        width: 690px;
         height: 60px;
         padding: 5px;
         margin-bottom: 55px;
+        position: relative;
+        z-index: 1;
+        width: 100%;
         .searchbox-submit .rt-searchbox-btn {
             background: #FFCD1F;
             color: $color-secondary;
+        }
+        @include media-only('sm', min) {
+            width: 690px;
         }
     }
 }

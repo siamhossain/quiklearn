@@ -33,6 +33,13 @@
         }
         .app-download-buttons {
             gap: 12px;
+            a {
+                // border: 1px solid transparent;
+                border-radius: 9px;
+                &:hover {
+                    box-shadow: rgb(0 122 232 / 48%) 6px 2px 16px 0px, rgb(0 210 202 / 80%) -6px -2px 16px 0px;
+                }
+            }
         }
     }
 

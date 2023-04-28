@@ -217,7 +217,12 @@
                 justify-content: space-between;
                 .meta-data { 
                     gap: 5px;
-                    color: #4F536C;
+                    a {
+                        color: #4F536C;
+                        &:hover {
+                            color: $color-primary;
+                        }
+                    }
                 }
             }
         }

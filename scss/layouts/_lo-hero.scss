@@ -39,6 +39,10 @@
                     font-size: 60px;
                     line-height: 76px;
                 }
+
+                @include media-from-to(1200px, min, 1500px, max) {
+                    font-size: 56px;
+                }
             }
             .para-text {
                 margin-bottom: 30px;
@@ -280,6 +284,7 @@
             position: relative;
             padding: 0;
             .hero-img-wrapper {
+                padding-top: 20px;
                 .shapes-img {
                     ul {
                         li {
@@ -291,12 +296,12 @@
                             }
                             &:nth-child(2) {
                                 left: 90px;
-                                top: -27px;
+                                top: -7px;
                                 z-index: -1;
                             }
                             &:nth-child(3) {
                                 right: 100px;
-                                top: -35px;
+                                top: -15px;
                                 z-index: -1;
                             }
                         }

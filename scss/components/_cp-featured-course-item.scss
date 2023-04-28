@@ -3,6 +3,13 @@
     border: 1px solid $color-gray14;
     padding: 21px 24px 28px 24px;
     // width: 330px;
+    &:hover {
+        .featured-course-img {
+            .icon {
+                transform: scale(1.15);
+            }
+        }
+    }
     .featured-course-img {
         position: relative;
         padding: 28px 0 4px 0;
@@ -15,6 +22,7 @@
             height: 178px;
             position: relative;
             z-index: 0;
+            @include transition;
         }
         margin-bottom: 18px;
     }

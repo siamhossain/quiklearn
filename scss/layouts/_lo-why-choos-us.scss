@@ -1,7 +1,10 @@
 .why-choos-us-section {
     .why-choose-us-text-content-wrapper {
         .section-text-content {
-            width: 494px;
+            width: 100%;
+            @include media-only('sm', min) {
+                width: 494px;
+            }
             .section-heading {
                 color: $color-white;
                 line-height: 48px;
@@ -23,9 +26,14 @@
         }
     }
     ul.why-choose-us-feature-list {
-        columns: 2;
-        -webkit-columns: 2;
-        -moz-columns: 2;
+        columns: 1;
+        -webkit-columns: 1;
+        -moz-columns: 1;
+        @include media-only('sm', min) {
+            columns: 2;
+            -webkit-columns: 2;
+            -moz-columns: 2;
+        }
         margin-bottom: 35px;
         li {
             font-family: $font-outfit;

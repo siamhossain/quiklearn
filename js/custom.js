@@ -227,49 +227,46 @@
         },
 
         //Elements Carousel
-        elementsCarousel: function() {
+        elementsCarousel: function () {
 
-            var visibleSlides       = null;
-            var visibleSlides_xl    = null;
-            var visibleSlides_lg    = null;
-            var visibleSlides_md    = null;
-            var visibleSlides_sm    = null;
-            var visibleSlides_xs    = null;
-            var slideLoop           = null;
-            var slideSpeed          = null;
-            var slideSpace          = null;
-            var slideAutoPlayDelay  = null;
-            var slideEffect         = null;
-    
+            var visibleSlides = null;
+            var visibleSlides_xl = null;
+            var visibleSlides_lg = null;
+            var visibleSlides_md = null;
+            var visibleSlides_sm = null;
+            var visibleSlides_xs = null;
+            var slideLoop = null;
+            var slideSpeed = null;
+            var slideSpace = null;
+            var slideAutoPlayDelay = null;
+            var slideEffect = null;
+
             if ($elCarousel.elExists()) {
-    
-                var swiperInstances = [];
-    
-                $elCarousel.each(function(index, element) {
-    
+
+                $elCarousel.each(function (index, element) {
+
                     var $this = $(this);
-    
+
                     // Fetching from data attributes
-                    var visibleSlides       = $this.attr("data-visible-slide") ? parseInt($this.attr("data-visible-slide"), 10) : 4;
-                    var visibleSlides_xxxl   = $this.attr("data-visible-xxxl-slide") ? parseInt($this.attr("data-visible-xxxl-slide"), 10) : 4;
-                    var visibleSlides_xxl   = $this.attr("data-visible-xxl-slide") ? parseInt($this.attr("data-visible-xxl-slide"), 10) : 4;
-                    var visibleSlides_xl    = $this.attr("data-visible-xl-slide") ? parseInt($this.attr("data-visible-xl-slide"), 10) : 4;
-                    var visibleSlides_lg    = $this.attr("data-visible-lg-slide") ? parseInt($this.attr("data-visible-lg-slide"), 10) : 3;
-                    var visibleSlides_md    = $this.attr("data-visible-md-slide") ? parseInt($this.attr("data-visible-md-slide"), 10) : 2;
-                    var visibleSlides_sm    = $this.attr("data-visible-sm-slide") ? parseInt($this.attr("data-visible-sm-slide"), 10) : 1;
-                    var visibleSlides_xs    = $this.attr("data-visible-xs-slide") ? parseInt($this.attr("data-visible-xs-slide"), 10) : 1;
-                    var slideSpeed          = $this.attr("data-speed") ? parseInt($this.attr("data-speed"), 10) : 1000;
-                    var slideLoop           = $this.attr("data-loop") === 'true' ? 1 : 0;
-                    var slideSpace          = $this.attr("data-space-between") ? parseInt($this.attr("data-space-between"), 10) : 30;
-                    var slideAutoPlayDelay  = $this.attr("data-autoplay-delay") ? parseInt($this.attr("data-autoplay-delay"), 10) : 100000000;
-                    var slideEffect         = $this.attr("data-effect") ? $this.attr("data-effect") : 'slide';
-    
+                    var visibleSlides = $this.attr("data-visible-slide") ? parseInt($this.attr("data-visible-slide"), 10) : 4;
+                    var visibleSlides_xxxl = $this.attr("data-visible-xxxl-slide") ? parseInt($this.attr("data-visible-xxxl-slide"), 10) : 4;
+                    var visibleSlides_xxl = $this.attr("data-visible-xxl-slide") ? parseInt($this.attr("data-visible-xxl-slide"), 10) : 4;
+                    var visibleSlides_xl = $this.attr("data-visible-xl-slide") ? parseInt($this.attr("data-visible-xl-slide"), 10) : 4;
+                    var visibleSlides_lg = $this.attr("data-visible-lg-slide") ? parseInt($this.attr("data-visible-lg-slide"), 10) : 3;
+                    var visibleSlides_md = $this.attr("data-visible-md-slide") ? parseInt($this.attr("data-visible-md-slide"), 10) : 2;
+                    var visibleSlides_sm = $this.attr("data-visible-sm-slide") ? parseInt($this.attr("data-visible-sm-slide"), 10) : 1;
+                    var visibleSlides_xs = $this.attr("data-visible-xs-slide") ? parseInt($this.attr("data-visible-xs-slide"), 10) : 1;
+                    var slideSpeed = $this.attr("data-speed") ? parseInt($this.attr("data-speed"), 10) : 1000;
+                    var slideLoop = $this.attr("data-loop") === 'true' ? 1 : 0;
+                    var slideSpace = $this.attr("data-space-between") ? parseInt($this.attr("data-space-between"), 10) : 30;
+                    var slideAutoPlayDelay = $this.attr("data-autoplay-delay") ? parseInt($this.attr("data-autoplay-delay"), 10) : 100000000;
+                    var slideEffect = $this.attr("data-effect") ? $this.attr("data-effect") : 'slide';
+
                     // Adding slider and slider-nav instances to use multiple times in a page
-                    $this.addClass("instance-" + index);
                     $this.parent().find(".prev").addClass("prev-" + index);
                     $this.parent().find(".next").addClass("next-" + index);
-    
-                    swiperInstances[index] = new Swiper(".instance-" + index, {
+
+                    var rtSlider = new Swiper(element, {
                         slidesPerView: visibleSlides,
                         spaceBetween: slideSpace,
                         speed: slideSpeed,
@@ -281,44 +278,43 @@
                         watchSlidesVisibility: true,
                         loopAdditionalSlides: 10,
 
-                        
 
                         autoplay: {
                             delay: slideAutoPlayDelay
                         },
-    
+
                         navigation: {
                             nextEl: '.swiper-arrow.next',
                             prevEl: '.swiper-arrow.prev'
                         },
-                    
+
                         pagination: {
                             // el: '.pagination-' + index,
                             el: '.swiper-pagination',
                             type: 'bullets',
                             clickable: true,
                         },
-    
+
                         // Responsive breakpoints
                         breakpoints: {
                             0: {
                                 slidesPerView: visibleSlides_xs,
                             },
                             576: {
-                              slidesPerView: visibleSlides_sm,
-                              spaceBetween: 30,
+                                slidesPerView: visibleSlides_sm,
+                                spaceBetween: 30,
                             },
                             768: {
-                              slidesPerView: visibleSlides_md,
-                              spaceBetween: 30,
+                                slidesPerView: visibleSlides_md,
+                                spaceBetween: 30,
                             },
                             992: {
-                              slidesPerView: visibleSlides_lg,
-                              spaceBetween: 30,
+                                slidesPerView: visibleSlides_lg,
+                                spaceBetween: 30,
                             },
                             1200: {
-                              slidesPerView: visibleSlides_xl,
-                              spaceBetween: 30,
+                                slidesPerView: visibleSlides_xl,
+                                spaceBetween: 30,
                             },
                             1400: {
                                 slidesPerView: visibleSlides_xxl,
@@ -332,25 +328,31 @@
                                 slidesPerView: visibleSlides_xxxl,
                                 spaceBetween: 30,
                             }
-                          }
+                        },
+                        on: {
+                            afterInit: function (slider) {
+                                $(slider.$wrapperEl).find('.swiper-slide').removeClass('visible-first visible-last');
+                                $(slider.$wrapperEl).find('.swiper-slide.swiper-slide-visible').first().addClass('visible-first');
+                                $(slider.$wrapperEl).find('.swiper-slide.swiper-slide-visible').last().addClass('visible-last');
+                            },
+                            slideChange: function (slider) {
+                                $(slider.$wrapperEl).find('.swiper-slide').removeClass('visible-first visible-last');
+                                $(slider.$wrapperEl).find('.swiper-slide.swiper-slide-visible').first().addClass('visible-first');
+                                $(slider.$wrapperEl).find('.swiper-slide.swiper-slide-visible').last().addClass('visible-last');
+                            },
+                            sliderMove: function (slider) {
+                                $(slider.$wrapperEl).find('.swiper-slide').removeClass('visible-first visible-last');
+                                $(slider.$wrapperEl).find('.swiper-slide.swiper-slide-visible').first().addClass('visible-first');
+                                $(slider.$wrapperEl).find('.swiper-slide.swiper-slide-visible').last().addClass('visible-last');
+                            },
+                        }
                     });
                 });
-                
-                // Updating the sliders
-                setTimeout(function () {
-                    swiperInstances.forEach(function(slider) {
-                        slider.update();
-                    })
-                }, 50);
-    
-                // Updating the sliders in tab
-                $('body').on('shown.bs.tab', 'a[data-bs-toggle="tab"], a[data-bs-toggle="pill"]', function (e) {
-                    swiperInstances.forEach(function(slider) {
-                        slider.update();
-                    })
-                });
+
+
             }
         },
+
 
         activeMenu: function () {
             $("#main-menu ul a")    
