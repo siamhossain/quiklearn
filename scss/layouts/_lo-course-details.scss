@@ -543,7 +543,8 @@
     &--style-2 {
         &::before {
             content: "";
-            background: #FAF9F6;
+            // background: #FAF9F6;
+            background-image: url("../images/banner/bg-noise.png");
             position: absolute;
             top: 0;
             width: 100%;

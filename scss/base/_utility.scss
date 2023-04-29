@@ -377,6 +377,19 @@
   
 
 
+  .sticky-tab-style {
+    position: sticky;
+    top: 77px;
+    z-index: 1;
+    background: white;
+    padding: 15px 25px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 0px 0px 8px 8px;
+    @include transition;
+  }
+
+
+
 /*======================================
 // pre-loader
 =====================================*/

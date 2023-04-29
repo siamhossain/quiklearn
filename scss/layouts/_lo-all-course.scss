@@ -40,24 +40,29 @@
             }
             ul {
                 li {
-                    .check-box-area {
-                        gap: 11px;
-                        input.widget-checkbox {
+                    .form-check {
+                        .form-check-input {
                             width: 15px;
                             height: 15px;
-                            border: 1px solid red !important;
+                            border: 1px solid #9D9CAE;
                             border-radius: 3px;
+                            &:focus {
+                                border-color: #9D9CAE;
+                                outline: 0;
+                                box-shadow: unset;
+                            }
+                            &:checked {
+                                background-color: $color-primary;
+                                border-color: $color-primary;
+                            }
                         }
-                        .checkbox-label {
-                            a {
-                                font-family: $font-outfit;
-                                font-weight: 400;
-                                @include toRem(font-size, 16);
-                                line-height: 32px;
-                                color: #4F536C;
-                                &:hover {
-                                    color: $color-primary;
-                                }
+                        .form-check-label {
+                            font-family: $font-outfit;
+                            font-weight: 400;
+                            @include toRem(font-size, 16);
+                            color: #4F536C;
+                            &:hover {
+                                color: $color-primary;
                             }
                         }
                     }
@@ -70,7 +75,7 @@
                     }
                 }
                 .ratings {
-                    margin-top: -6px;
+                    transform: translateY(-3px);
                     gap: 4px;
                 }
             }

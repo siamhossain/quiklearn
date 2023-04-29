@@ -63,6 +63,18 @@
             border-bottom: none;
             gap: 85px;
             padding-bottom: 0;
+            .brand-link {
+                img {
+                    opacity: 0.5;
+                    @include transition;
+                }
+                &:hover {
+                    filter: grayscale(0);
+                    img {
+                        opacity: 1;
+                    }
+                }
+            }
         }
         .section-text-content {
             .para-text {

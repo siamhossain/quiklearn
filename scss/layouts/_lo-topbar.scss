@@ -23,6 +23,7 @@
     }
 
     &--style-1 {
+        position: relative;
         .header-topbar-wrapper {
             flex-wrap: wrap;
             gap: 20px;

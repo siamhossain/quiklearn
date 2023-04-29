@@ -204,3 +204,17 @@
     }
     
 }
+
+.noise {
+    position: relative;
+    &::before {
+        content: "";
+        background-image: url("../images/banner/bg-noise.png");
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        // background-color: red;
+    }
+}

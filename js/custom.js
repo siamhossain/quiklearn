@@ -475,6 +475,15 @@
         },
     );
 
+    //sticky tab
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 550) {
+           $('.course-details-tabs').addClass('sticky-tab-style');
+        } else {
+           $('.course-details-tabs').removeClass('sticky-tab-style');
+        }
+     });
+
     
     
 

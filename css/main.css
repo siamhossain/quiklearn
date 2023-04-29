@@ -647,6 +647,17 @@ section,
   border-radius: 50%;
 }
 
+.sticky-tab-style {
+  position: sticky;
+  top: 77px;
+  z-index: 1;
+  background: white;
+  padding: 15px 25px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 0px 0px 8px 8px;
+  transition: all 0.4s ease-in-out;
+}
+
 /*======================================
 // pre-loader
 =====================================*/
@@ -3501,6 +3512,9 @@ p {
   border: 1px solid var(--color-secondary);
   color: var(--color-white);
 }
+.header-topbar--style-1 {
+  position: relative;
+}
 .header-topbar--style-1 .header-topbar-wrapper {
   flex-wrap: wrap;
   gap: 20px;
@@ -5409,6 +5423,19 @@ body.slidemenuon .sidebarBtn .bar:nth-child(4) {
   color: var(--color-white);
 }
 
+.noise {
+  position: relative;
+}
+.noise::before {
+  content: "";
+  background-image: url("../images/banner/bg-noise.png");
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
 .become-instructor-section {
   padding-top: 180px;
 }
@@ -5528,6 +5555,16 @@ body.slidemenuon .sidebarBtn .bar:nth-child(4) {
   border-bottom: none;
   gap: 85px;
   padding-bottom: 0;
+}
+.brand-section--style-4 .brand-wrapper .brand-link img {
+  opacity: 0.5;
+  transition: all 0.4s ease-in-out;
+}
+.brand-section--style-4 .brand-wrapper .brand-link:hover {
+  filter: grayscale(0);
+}
+.brand-section--style-4 .brand-wrapper .brand-link:hover img {
+  opacity: 1;
 }
 .brand-section--style-4 .section-text-content .para-text, .brand-section--style-4 .section-text-content .footer-section .rt-footer-content-wrapper .rt-footer-content .rt-footer-link-list-wrapper ul.rt-footer-link-list li a, .footer-section .rt-footer-content-wrapper .rt-footer-content .rt-footer-link-list-wrapper ul.rt-footer-link-list li .brand-section--style-4 .section-text-content a, .brand-section--style-4 .section-text-content .footer-section .rt-footer-content-wrapper .rt-footer-content .footer-info .info-list li, .footer-section .rt-footer-content-wrapper .rt-footer-content .footer-info .info-list .brand-section--style-4 .section-text-content li {
   font-weight: 400;
@@ -6252,23 +6289,28 @@ body.slidemenuon .sidebarBtn .bar:nth-child(4) {
   margin: 0;
   padding: 0;
 }
-.all-course-section .sidebar-widget-wrapper .widget ul li .check-box-area {
-  gap: 11px;
-}
-.all-course-section .sidebar-widget-wrapper .widget ul li .check-box-area input.widget-checkbox {
+.all-course-section .sidebar-widget-wrapper .widget ul li .form-check .form-check-input {
   width: 15px;
   height: 15px;
-  border: 1px solid red !important;
+  border: 1px solid #9D9CAE;
   border-radius: 3px;
 }
-.all-course-section .sidebar-widget-wrapper .widget ul li .check-box-area .checkbox-label a {
+.all-course-section .sidebar-widget-wrapper .widget ul li .form-check .form-check-input:focus {
+  border-color: #9D9CAE;
+  outline: 0;
+  box-shadow: unset;
+}
+.all-course-section .sidebar-widget-wrapper .widget ul li .form-check .form-check-input:checked {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+.all-course-section .sidebar-widget-wrapper .widget ul li .form-check .form-check-label {
   font-family: var(--font-outfit);
   font-weight: 400;
   font-size: 1rem;
-  line-height: 32px;
   color: #4F536C;
 }
-.all-course-section .sidebar-widget-wrapper .widget ul li .check-box-area .checkbox-label a:hover {
+.all-course-section .sidebar-widget-wrapper .widget ul li .form-check .form-check-label:hover {
   color: var(--color-primary);
 }
 .all-course-section .sidebar-widget-wrapper .widget ul li .number-of-products {
@@ -6279,7 +6321,7 @@ body.slidemenuon .sidebarBtn .bar:nth-child(4) {
   color: var(--color-gray12);
 }
 .all-course-section .sidebar-widget-wrapper .widget ul .ratings {
-  margin-top: -6px;
+  transform: translateY(-3px);
   gap: 4px;
 }
 .all-course-section .sidebar-widget-wrapper .widget button.show-more-btn {
@@ -6799,7 +6841,7 @@ body.slidemenuon .sidebarBtn .bar:nth-child(4) {
 }
 .course-details-section--style-2::before {
   content: "";
-  background: #FAF9F6;
+  background-image: url("../images/banner/bg-noise.png");
   position: absolute;
   top: 0;
   width: 100%;
