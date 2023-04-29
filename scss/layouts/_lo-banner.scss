@@ -142,7 +142,7 @@
                 margin-bottom: 0;
             }
             @include media-from-to(1400px, min, 1500px, max) {
-                flex-direction: column;
+                // flex-direction: column;
             }
             
             .banner-img {

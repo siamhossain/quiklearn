@@ -437,7 +437,7 @@ a.menu--link.second-level::after {
       z-index: 9;
     }
     .header-logo {
-      margin-top: -30px;
+      margin-top: -35px;
       .logo-1 {
         display: none;
       }
@@ -475,6 +475,17 @@ a.menu--link.second-level::after {
         }
       }
     }  
+
+    .main-menu {
+      flex: 1;
+      margin-left: 70px;
+      .menu {
+        justify-content: start;
+        &--sub {
+          margin-top: -25px;
+        }
+      }
+    }
     
     .menu--link {
       color: $color-white;
