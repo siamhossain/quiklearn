@@ -10,7 +10,7 @@
             position: absolute;
             right: 31px;
             bottom: -25px;
-            .event-counter-item {
+            div {
                 width: 60px;
                 height: 60px;
                 background: $color-white;
@@ -18,22 +18,38 @@
                 border-radius: 8px;
                 position: relative;
                 overflow: hidden;
+                text-align: center;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                h3 {
+                    font-family: $font-outfit;
+                    font-weight: 700;
+                    @include toRem(font-size, 20);
+                    line-height: 20px;
+                    color: $color-title;
+                }
+
+                p {
+                    font-family: $font-outfit;
+                    font-weight: 400;
+                    @include toRem(font-size, 14);
+                    color: #9D9CAE;
+                }
+
 
                 .counter-content-wrapper {
                     .count-numbers {
-                        font-family: $font-outfit;
-                        font-weight: 700;
-                        @include toRem(font-size, 20);
-                        // line-height: 0px;
-                        color: $color-title;
+                        
                     }
                     .count-title {
-                        font-family: $font-outfit;
-                        font-weight: 400;
-                        @include toRem(font-size, 14);
-                        color: #9D9CAE;
+                        
                     }
                 }
+
                 &::after {
                     content: "";
                     position: absolute;
@@ -42,6 +58,9 @@
                     background: $color-primary;
                     border-radius: 100px;
                     bottom: -3.5px;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
                 }
 
             }

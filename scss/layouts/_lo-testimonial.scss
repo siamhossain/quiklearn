@@ -50,6 +50,8 @@
             margin: 0 0;
             padding-bottom: 0;
 
+            .swiper-slide { width: 100% !important; }
+
             .visible-first {
                 opacity: unset;
             }
@@ -71,6 +73,10 @@
                 padding: 45px 53px 0 16px;
                 position: relative;
                 z-index: 0;
+                img {
+                    width: 413px;
+                    height: 458px;
+                }
                 .shapes {
                     ul {
                         li {

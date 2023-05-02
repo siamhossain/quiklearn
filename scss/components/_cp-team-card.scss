@@ -78,6 +78,95 @@
             .rt-team-card-img {
                 height: unset;
             }
+            .rt-team-social {
+                position: absolute;
+                right: 12px;
+                top: -5px;
+                ul {
+                    li {
+                        padding-bottom: 5px;
+                        padding-top: 0;
+                        margin-top: 0;
+                        margin-bottom: 5px;
+                        position: relative;
+                        &:last-child {
+                            margin-top: 0;
+                        }
+                        &:hover {
+                            .sub-social {
+                            padding-top: 10px;
+                            visibility: visible;
+                            opacity: 1;
+                            -webkit-transform: scaleY(1);
+                            transform: scaleY(1);
+                            li {
+                                transform: translateY(0);
+                                visibility: visible;
+                                opacity: 1;
+                            }
+                            @for $i from 1 through 4 {
+                                li:nth-child(#{$i}){
+                                transition-delay: #{$i*0.12}s;
+                                }
+                            }
+                            }
+                        }
+                        a {
+                            color: $color-primary;
+                            transition: all .3s ease-in-out;
+                            font-size: 16px;
+                            display: inline-block;
+                            width: 45px;
+                            height: 45px;
+                            text-align: center;
+                            line-height: 45px;
+                            border-radius: 50px;
+                            border: 1px solid transparent;
+                            transition: background-color .4s ease-in-out;
+                            background: $color-white;
+                            box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+                            
+                        }
+                        .sub-social {
+                            position: absolute;
+                            left: 0;
+                            transition: all .4s cubic-bezier(.3,.02,0,.6);
+                            transform: scale3d(0,0,1);
+                            transform-origin: 0 0 0;
+                            visibility: hidden;
+                            opacity: 0;
+                            display: flex;
+                            flex-direction: column;
+                            transform-origin: top;
+                            li {
+                                transform: translateY(20px);
+                                transition: all .3s ease-in-out;
+                                transition-delay: 0s;
+                                visibility: hidden;
+                                opacity: 0;
+                                transform: translateY(-20px);
+                                &:hover {
+                                    a {
+                                    color: $color-white;
+                                    }
+                                    .facebook {
+                                    background-color: #3b5999;
+                                    }
+                                    .twitter {
+                                    background-color: #55acee;
+                                    }
+                                    .youtube {
+                                    background-color: #dd4b39;
+                                    }
+                                    .instagram {
+                                    background-color: #e4405f;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }  
         }
         .rt-team-card-content-wrapper {
             position: relative;
@@ -172,6 +261,7 @@
         .rt-team-card-img-container {
             border-radius: 10px 10px 0px 0px;
             overflow: hidden;
+            position: relative;
             a {
                 width: 100%;
                 .rt-team-card-img {
@@ -180,6 +270,96 @@
                     @include transition;
                 }
             }
+
+            .rt-team-social {
+                position: absolute;
+                right: 20px;
+                top: 20px;
+                ul {
+                    li {
+                        padding-bottom: 5px;
+                        padding-top: 0;
+                        margin-top: 0;
+                        margin-bottom: 5px;
+                        position: relative;
+                        &:last-child {
+                            margin-top: 0;
+                        }
+                        &:hover {
+                            .sub-social {
+                            padding-top: 10px;
+                            visibility: visible;
+                            opacity: 1;
+                            -webkit-transform: scaleY(1);
+                            transform: scaleY(1);
+                            li {
+                                transform: translateY(0);
+                                visibility: visible;
+                                opacity: 1;
+                            }
+                            @for $i from 1 through 4 {
+                                li:nth-child(#{$i}){
+                                transition-delay: #{$i*0.12}s;
+                                }
+                            }
+                            }
+                        }
+                        a {
+                            color: $color-primary;
+                            transition: all .3s ease-in-out;
+                            font-size: 16px;
+                            display: inline-block;
+                            width: 45px;
+                            height: 45px;
+                            text-align: center;
+                            line-height: 45px;
+                            border-radius: 50px;
+                            border: 1px solid transparent;
+                            transition: background-color .4s ease-in-out;
+                            background: $color-white;
+                            box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+                            
+                        }
+                        .sub-social {
+                            position: absolute;
+                            left: 0;
+                            transition: all .4s cubic-bezier(.3,.02,0,.6);
+                            transform: scale3d(0,0,1);
+                            transform-origin: 0 0 0;
+                            visibility: hidden;
+                            opacity: 0;
+                            display: flex;
+                            flex-direction: column;
+                            transform-origin: top;
+                            li {
+                                transform: translateY(20px);
+                                transition: all .3s ease-in-out;
+                                transition-delay: 0s;
+                                visibility: hidden;
+                                opacity: 0;
+                                transform: translateY(-20px);
+                                &:hover {
+                                    a {
+                                    color: $color-white;
+                                    }
+                                    .facebook {
+                                    background-color: #3b5999;
+                                    }
+                                    .twitter {
+                                    background-color: #55acee;
+                                    }
+                                    .youtube {
+                                    background-color: #dd4b39;
+                                    }
+                                    .instagram {
+                                    background-color: #e4405f;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }  
         }
         .rt-team-card-content {
             text-align: center;
@@ -233,13 +413,21 @@
                         transform: scale(1.15);
                     }
                 }
+                .rt-team-social {
+                    transform: translateY(0);
+                    visibility: visible;
+                    opacity: 1;
+                }
             }
         }
     }
 }
 
 .team-section {
-    padding-bottom: 110px;
+    padding-bottom: 70px;
+    @include media-only ('sm', min) {
+        padding-bottom: 110px;
+    }
     .team-wrap {
         gap: 30px;
         flex-wrap: wrap;
@@ -266,7 +454,10 @@
         }
     }
     &--style-2 {
-        padding-bottom: 140px;
+        padding-bottom: 70px;
+        @include media-only ('md', min) {
+            padding-bottom: 140px;
+        }
         .section-text-content {
             .section-heading {
                 &::before {
@@ -279,7 +470,10 @@
         }
     }
     &--style-3 {
-        padding-bottom: 140px;
+        padding-bottom: 70px;
+        @include media-only ('md', min) {
+            padding-bottom: 140px;
+        }
         .section-text-content {
             .section-heading {
                 &::before {

@@ -68,7 +68,9 @@
         }
     }
     .main-goal-text-content-wrapper {
-        padding-left: 45px;
+        @include media-only('lg', min) {
+            padding-left: 45px;
+        }
         .section-text-content {
             .section-heading {
                 font-weight: 700;
@@ -86,13 +88,37 @@
         .info-wrapper {
             .infobox {
                 gap: 22px;
-                margin-bottom: 38px;
+                margin-bottom: 20px;
+                @include media-only (510px, min) {
+                    margin-bottom: 38px;
+                }
                 .icon {
                     width: 90px;
                     height: 90px;
                     background: linear-gradient(137.46deg, #9A8CFE 2.9%, #543EE8 93.62%);
                     border-radius: 15px;
-                    @include transition;
+                    position: relative;
+                    z-index: 0;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        background: linear-gradient(315deg, #9A8CFE 2.9%, #543EE8 93.62%);
+                        opacity: 0;
+                        visibility: hidden;
+                        width: 100%;
+                        height: 100%;
+                        @include transition;
+                        left: 0;
+                        top: 0;
+                        border-radius: 15px;
+                        z-index: -1;
+                    }
+                    &:hover {
+                        &::before {
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                    }
                 }
                 .text-content {
                     .title {

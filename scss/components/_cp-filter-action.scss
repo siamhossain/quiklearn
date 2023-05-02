@@ -50,6 +50,7 @@
                 @include transition;
                 &:hover {
                     background: $color-primary;
+                    border: 1px solid transparent;
                     svg {
                         fill: $color-white;
                     }
@@ -57,6 +58,7 @@
             }
             button.active {
                 background: $color-primary;
+                border: 1px solid transparent;
                 svg {
                     fill: $color-white
                 }

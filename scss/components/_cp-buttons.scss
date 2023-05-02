@@ -149,6 +149,51 @@
     background-color: #00a7fc;
   }
 
+//
+.btn-28-reverse:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 50%;
+    background-color: #FFCD1F;
+    transition: all 0.5s ease-in-out;
+    z-index: -1;
+  }
+  .btn-28-reverse:after {
+    content: "";
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 0%;
+    height: 50%;
+    background-color: #FFCD1F;
+    transition: all 0.5s ease-in-out;
+    z-index: -1;
+  }
+  .btn-28-reverse:hover {
+    color: #f1f1f1;
+    border-color: $color-primary;
+    color: $color-secondary;
+    svg {
+        fill: $color-secondary;
+    }
+  }
+  .btn-28-reverse:hover:before,
+  .btn-28-reverse:hover:after {
+    width: 100%;
+  }
+  .btn-28-reverse:active {
+    color: #333;
+    border-color: #00a7fc;
+    background-color: #00a7fc;
+  }
+  .btn-28-reverse:active:before,
+  .btn-28-reverse:active:after {
+    background-color: #00a7fc;
+  }
+
 
 
 //   -------------

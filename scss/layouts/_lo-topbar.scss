@@ -42,5 +42,21 @@
         .header-logo {
             margin-top: -25px;
         }
+        .header-topbar-wrapper {
+            gap: 20px;
+            @include media-only('xl', min) {
+                flex-wrap: unset;
+                gap: unset;
+            }      
+        }
+        .searchbox-container {
+            width: 736px;
+            margin-left: 0;
+            @include media-only(1400px, min) {
+                width: 997px;
+                margin-left: 33px;
+
+            }
+        }
     }
 }

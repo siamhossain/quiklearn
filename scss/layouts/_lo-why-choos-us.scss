@@ -72,6 +72,14 @@
         }
     } 
 
+    .btn-28:before {
+        background-color: $color-primary;
+    }
+    .btn-28:after {
+        background-color: $color-primary;
+    }
+    
+
     .why-choose-us-img-area {
         position: relative;
         z-index: 0;

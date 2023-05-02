@@ -373,6 +373,7 @@ a.menu--link.second-level::after {
   &--style-3 {
     padding: 27px 0;
     .header-content-wrap {
+      gap: 25px;
       .category-menu-wrapper {
         gap: 29px;
         .category-selector {

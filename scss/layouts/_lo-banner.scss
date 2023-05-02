@@ -73,6 +73,17 @@
             padding: 35px 70px 35px 35px ;
             gap: 50px;
             position: relative;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 25px;
+
+            @include media-only('sm', min) {
+                flex-direction: row;
+            }
+            @include media-only(1400px, min) {
+                margin-bottom: 0;
+            }
+            
             .banner-img {
                 position: relative;
                 .play-btn {
@@ -200,6 +211,12 @@
                     color: $color-white;
                 }
             }
+            // .btn-28:before {
+            //     background-color: $color-primary;
+            //   }
+            // .btn-28:after {
+            //     background-color: $color-primary;
+            // }
         }
     }
     
