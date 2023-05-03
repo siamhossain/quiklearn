@@ -295,8 +295,6 @@
                         watchSlidesProgress: true,
                         watchSlidesVisibility: true,
                         loopAdditionalSlides: 10,
-                        
-
 
                         autoplay: {
                             delay: slideAutoPlayDelay

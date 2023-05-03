@@ -5946,9 +5946,14 @@ body.slidemenuon .sidebarBtn .bar:nth-child(4) {
 .testimonial-section--style-3 .testimonial-item .testimonial-img-area {
   background: #F0E1C9;
   border-radius: 15px 0px 0px 15px;
-  padding: 45px 53px 0 16px;
+  padding: 0;
   position: relative;
   z-index: 0;
+}
+@media only screen and (min-width: 1200px) {
+  .testimonial-section--style-3 .testimonial-item .testimonial-img-area {
+    padding: 45px 53px 0 16px;
+  }
 }
 .testimonial-section--style-3 .testimonial-item .testimonial-img-area img {
   width: 413px;
@@ -5963,13 +5968,23 @@ body.slidemenuon .sidebarBtn .bar:nth-child(4) {
 .testimonial-section--style-3 .testimonial-item .testimonial-text-content {
   flex: 1;
   background: var(--color-secondary);
-  padding: 74px 0 64px 95px;
+  padding: 25px;
+}
+@media only screen and (min-width: 1400px) {
+  .testimonial-section--style-3 .testimonial-item .testimonial-text-content {
+    padding: 74px 0 64px 95px;
+  }
 }
 .testimonial-section--style-3 .testimonial-item .testimonial-text-content .section-text-content .section-heading {
   color: var(--color-white);
-  width: 496px;
   line-height: 48px;
   margin-bottom: 29px;
+  width: 100%;
+}
+@media only screen and (min-width: 992px) {
+  .testimonial-section--style-3 .testimonial-item .testimonial-text-content .section-text-content .section-heading {
+    width: 496px;
+  }
 }
 .testimonial-section--style-3 .testimonial-item .testimonial-text-content .section-text-content .section-heading::before {
   right: 5px;
@@ -5979,11 +5994,16 @@ body.slidemenuon .sidebarBtn .bar:nth-child(4) {
 .testimonial-section--style-3 .testimonial-item .testimonial-text-content .section-text-content .section-heading::after {
   content: url(../images/testimonial/red-star.svg);
   position: absolute;
-  right: -240px;
+  right: -140px;
   top: -15px;
   z-index: -1;
   width: 111.73px;
   height: 105.45px;
+}
+@media only screen and (min-width: 1500px) {
+  .testimonial-section--style-3 .testimonial-item .testimonial-text-content .section-text-content .section-heading::after {
+    right: -240px;
+  }
 }
 .testimonial-section--style-3 .testimonial-item .testimonial-text-content .section-text-content .ratings {
   margin-bottom: 17px;
@@ -5992,9 +6012,14 @@ body.slidemenuon .sidebarBtn .bar:nth-child(4) {
   gap: 5.44px;
 }
 .testimonial-section--style-3 .testimonial-item .testimonial-text-content .section-text-content .para-text, .testimonial-section--style-3 .testimonial-item .testimonial-text-content .section-text-content .footer-section .rt-footer-content-wrapper .rt-footer-content .rt-footer-link-list-wrapper ul.rt-footer-link-list li a, .footer-section .rt-footer-content-wrapper .rt-footer-content .rt-footer-link-list-wrapper ul.rt-footer-link-list li .testimonial-section--style-3 .testimonial-item .testimonial-text-content .section-text-content a, .testimonial-section--style-3 .testimonial-item .testimonial-text-content .section-text-content .footer-section .rt-footer-content-wrapper .rt-footer-content .footer-info .info-list li, .footer-section .rt-footer-content-wrapper .rt-footer-content .footer-info .info-list .testimonial-section--style-3 .testimonial-item .testimonial-text-content .section-text-content li {
-  width: 565px;
+  width: 100%;
   color: #9D9CAE;
   margin-bottom: 25px;
+}
+@media only screen and (min-width: 1400px) {
+  .testimonial-section--style-3 .testimonial-item .testimonial-text-content .section-text-content .para-text, .testimonial-section--style-3 .testimonial-item .testimonial-text-content .section-text-content .footer-section .rt-footer-content-wrapper .rt-footer-content .rt-footer-link-list-wrapper ul.rt-footer-link-list li a, .footer-section .rt-footer-content-wrapper .rt-footer-content .rt-footer-link-list-wrapper ul.rt-footer-link-list li .testimonial-section--style-3 .testimonial-item .testimonial-text-content .section-text-content a, .testimonial-section--style-3 .testimonial-item .testimonial-text-content .section-text-content .footer-section .rt-footer-content-wrapper .rt-footer-content .footer-info .info-list li, .footer-section .rt-footer-content-wrapper .rt-footer-content .footer-info .info-list .testimonial-section--style-3 .testimonial-item .testimonial-text-content .section-text-content li {
+    width: 565px;
+  }
 }
 .testimonial-section--style-3 .testimonial-item .testimonial-text-content .comment-author-details .author-name {
   font-family: var(--font-outfit);
@@ -6015,9 +6040,14 @@ body.slidemenuon .sidebarBtn .bar:nth-child(4) {
 .testimonial-section--style-3 .swiper-horizontal > .swiper-pagination-bullets, .testimonial-section--style-3 .swiper-pagination-bullets.swiper-pagination-horizontal, .testimonial-section--style-3 .swiper-pagination-custom, .testimonial-section--style-3 .swiper-pagination-fraction {
   bottom: unset;
   width: unset;
-  right: 97px;
   left: unset;
   top: 60%;
+  right: 20px;
+}
+@media only screen and (min-width: 1200px) {
+  .testimonial-section--style-3 .swiper-horizontal > .swiper-pagination-bullets, .testimonial-section--style-3 .swiper-pagination-bullets.swiper-pagination-horizontal, .testimonial-section--style-3 .swiper-pagination-custom, .testimonial-section--style-3 .swiper-pagination-fraction {
+    right: 97px;
+  }
 }
 .testimonial-section--style-3 .swiper-vertical > .swiper-pagination-bullets .swiper-pagination-bullet, .testimonial-section--style-3 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
   margin: 10px 0;
