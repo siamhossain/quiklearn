@@ -1,5 +1,7 @@
 .become-instructor-section {
-    padding-top: 180px;
+    @include media-only ('lg', min) {
+        padding-top: 180px;
+    }
     .become-instructor-img {
         position: relative;
         padding-left: 0;

@@ -279,6 +279,7 @@
                     var slideSpace = $this.attr("data-space-between") ? parseInt($this.attr("data-space-between"), 10) : 30;
                     var slideAutoPlayDelay = $this.attr("data-autoplay-delay") ? parseInt($this.attr("data-autoplay-delay"), 10) : 100000000;
                     var slideEffect = $this.attr("data-effect") ? $this.attr("data-effect") : 'slide';
+                    var direction = $this.attr("data-direction") ? $this.attr("data-direction") : 'horizontal';
 
                     // Adding slider and slider-nav instances to use multiple times in a page
                     $this.parent().find(".prev").addClass("prev-" + index);
@@ -295,6 +296,8 @@
                         watchSlidesProgress: true,
                         watchSlidesVisibility: true,
                         loopAdditionalSlides: 10,
+                        direction: direction,
+                        
 
                         autoplay: {
                             delay: slideAutoPlayDelay
