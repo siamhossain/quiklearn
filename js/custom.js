@@ -308,7 +308,7 @@
                         pagination: {
                             // el: '.pagination-' + index,
                             el: '.swiper-pagination',
-                            type: 'bullets',
+                            // type: 'bullets',
                             clickable: true,
                         },
 

@@ -71,7 +71,7 @@
             box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
             border-radius: 20px;
             padding: 35px 70px 35px 35px ;
-            gap: 50px;
+            gap: 25px;
             position: relative;
             display: flex;
             flex-direction: column;
@@ -79,6 +79,7 @@
 
             @include media-only('sm', min) {
                 flex-direction: row;
+                gap: 50px;
             }
             @include media-only(1400px, min) {
                 margin-bottom: 0;

@@ -5565,7 +5565,7 @@ body.slidemenuon .sidebarBtn .bar:nth-child(4) {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   padding: 35px 70px 35px 35px;
-  gap: 50px;
+  gap: 25px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -5574,6 +5574,7 @@ body.slidemenuon .sidebarBtn .bar:nth-child(4) {
 @media only screen and (min-width: 768px) {
   .banner-section--style-2 .banner-card {
     flex-direction: row;
+    gap: 50px;
   }
 }
 @media only screen and (min-width: 1400px) {
