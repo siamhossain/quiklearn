@@ -662,7 +662,7 @@ section,
 // pre-loader
 =====================================*/
 #preloader {
-  background: url("../preloader.gif") rgba(255, 255, 255, 0.99) no-repeat scroll center center;
+  background: url("../preloader.gif") rgb(255, 255, 255) no-repeat scroll center center;
   height: 100%;
   left: 0;
   overflow: visible;
@@ -679,6 +679,11 @@ section,
 
 .swiper-vertical {
   max-height: 205px;
+}
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
 }
 
 /* ========================== */
@@ -6059,6 +6064,13 @@ body.slidemenuon .sidebarBtn .bar:nth-child(4) {
 }
 .testimonial-section--style-3 .swiper-vertical > .swiper-pagination-bullets .swiper-pagination-bullet, .testimonial-section--style-3 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
   margin: 10px 0;
+}
+.testimonial-section--style-4 .testimonial-item-wrapper {
+  gap: 24px;
+  margin-bottom: 30px;
+}
+.testimonial-section--style-4 .testimonial-item-wrapper .testimonial-item {
+  width: 449px;
 }
 
 .test-wrapper {

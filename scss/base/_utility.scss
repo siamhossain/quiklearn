@@ -395,7 +395,7 @@
 =====================================*/
 
 #preloader {
-    background: url("../preloader.gif") rgba(255, 255, 255, 0.99) no-repeat scroll center center;
+    background: url("../preloader.gif") rgba(255, 255, 255, 1) no-repeat scroll center center;
     height: 100%;
     left: 0;
     overflow: visible;
@@ -406,11 +406,20 @@
   }
 
 
+//   wow-animation
 .animate__animated {
     opacity: 0;
     visibility: hidden;
 }
 
+
+// swiper
 .swiper-vertical {
     max-height: 205px;
+}
+
+
+.marquee {
+    width: 100%;
+    overflow: hidden;
 }

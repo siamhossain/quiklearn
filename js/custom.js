@@ -227,6 +227,11 @@
         },
 
         dateCountdown: function () {
+
+            if(!$('#date-countdown').elExists()) {
+                return;
+            }
+
             var countDownDate = new Date("May 16, 2023 23:50:25").getTime();
             var x = setInterval(function() {
             var now = new Date().getTime();
@@ -236,12 +241,40 @@
             var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
             var seconds = Math.floor((distance % (1000 * 60)) / 1000);
             
-            document.getElementById("demo").innerHTML = 
+            document.getElementById("date-countdown").innerHTML = 
             '<div>' + '<h3>' + days + '</h3>' +'<p>Days</p></div>' +
             '<div>' + '<h3>' + hours + '</h3>' +'<p>Hours</p></div>' +
             '<div>' + '<h3>' + minutes + '</h3>' +'<p>Mins</p></div>' +
             '<div>' + '<h3>' + seconds + '</h3>' +'<p>Secs</p></div>';
             }, 1000);
+        },
+
+        marqueeElement: function () {
+
+            var marqueeDirection = $('.marquee').attr("direction");
+            var marqueeDirection2 = $('.marquee2').attr("direction");
+
+            $('.marquee').marquee({
+                direction: marqueeDirection,
+                duration: 50000,
+                gap: 24,
+                delayBeforeStart: 0,
+                duplicated: true,
+                startVisible: true,
+                pauseOnCycle:true,
+                pauseOnHover: true
+            });
+
+            $('.marquee2').marquee({
+                direction: marqueeDirection2,
+                duration: 50000,
+                gap: 24,
+                delayBeforeStart: 0,
+                duplicated: true,
+                startVisible: true,
+                pauseOnCycle:true,
+                pauseOnHover: true
+            });
         },
 
         //Elements Carousel
@@ -447,6 +480,7 @@
         rtQuiklearn.functions.activeMenu();
         rtQuiklearn.functions.isotope();
         rtQuiklearn.functions.dateCountdown();
+        rtQuiklearn.functions.marqueeElement();
 	});
 
 	/**
@@ -506,22 +540,24 @@
      });
 
 
-     //Date Coundown
-    // var countDownDate = new Date("May 16, 2023 23:50:25").getTime();
-    // var x = setInterval(function() {
-    // var now = new Date().getTime();
-    // var distance = countDownDate - now;
-    // var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    // var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    // var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    // var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-    // document.getElementById("demo").innerHTML = 
-    // '<div>' + '<h3>' + days + '</h3>' +'<p>Days</p></div>' +
-    // '<div>' + '<h3>' + hours + '</h3>' +'<p>Hours</p></div>' +
-    // '<div>' + '<h3>' + minutes + '</h3>' +'<p>Mins</p></div>' +
-    // '<div>' + '<h3>' + seconds + '</h3>' +'<p>Secs</p></div>';
-    // }, 1000);
-    
+     
+    //  $('.marquee').marquee({
+    //     // duration: 10000,
+    //     // direction: 'right',
+    //     // duplicated: true,
+    //     // pauseOnHover: true,
+    //     // gap: 25,
+    //     // delayBeforeStart: 0,
+    //     // startVisible: true,
+    //     // loop: -1,
+
+    //     direction: 'left',
+    //     duration: 5000,
+    //     gap: 24,
+    //     delayBeforeStart: 0,
+    //     duplicated: true,
+    //     startVisible: true,
+    //     pauseOnCycle:true
+    // });
 
 })(jQuery);
