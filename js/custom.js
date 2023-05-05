@@ -252,46 +252,40 @@
 
         marqueeElement: function () {
 
-            var marqueeDirection = $('.marquee').attr("direction");
-            var marqueeDirection2 = $('.marquee2').attr("direction");
-
-            $('.marquee').marquee({
-                direction: marqueeDirection,
-                duration: 50000,
-                gap: 24,
-                delayBeforeStart: 0,
-                duplicated: true,
-                startVisible: true,
-                pauseOnCycle:true,
-                pauseOnHover: true
-            });
-
-            $('.marquee2').marquee({
-                direction: marqueeDirection2,
-                duration: 50000,
-                gap: 24,
-                delayBeforeStart: 0,
-                duplicated: true,
-                startVisible: true,
-                pauseOnCycle:true,
-                pauseOnHover: true
+            var i = 1;
+            $('.marquee').each(function() {
+                var marqueeID = 'marquee-' + String(i)
+                // $(this).attr('id', customID)
+                var marqueeDirection = $(this).attr('id', marqueeID).attr("direction");
+                i++;
+                // console.log(marqueeDirection)
+                $(this).marquee({
+                    direction: marqueeDirection,
+                    duration: 50000,
+                    gap: 24,
+                    delayBeforeStart: 0,
+                    duplicated: true,
+                    startVisible: true,
+                    pauseOnCycle:true,
+                    pauseOnHover: true
+                });
             });
         },
 
         //Elements Carousel
         elementsCarousel: function () {
 
-            var visibleSlides = null;
-            var visibleSlides_xl = null;
-            var visibleSlides_lg = null;
-            var visibleSlides_md = null;
-            var visibleSlides_sm = null;
-            var visibleSlides_xs = null;
-            var slideLoop = null;
-            var slideSpeed = null;
-            var slideSpace = null;
-            var slideAutoPlayDelay = null;
-            var slideEffect = null;
+            // var visibleSlides = null;
+            // var visibleSlides_xl = null;
+            // var visibleSlides_lg = null;
+            // var visibleSlides_md = null;
+            // var visibleSlides_sm = null;
+            // var visibleSlides_xs = null;
+            // var slideLoop = null;
+            // var slideSpeed = null;
+            // var slideSpace = null;
+            // var slideAutoPlayDelay = null;
+            // var slideEffect = null;
 
             if ($elCarousel.elExists()) {
 
