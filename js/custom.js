@@ -29,12 +29,6 @@
 		return this.length > 0;
 	};
 
-    //preloader
-    $window.on('load', function () {
-        $preLoader.delay(300).fadeOut('fast', function () {
-            // $(this).remove();
-        });
-    });
 
 	/**
 	 * Functions.
@@ -44,6 +38,8 @@
 			if (!$preLoader.elExists()) {
 				return false;
 			}
+
+            $preLoader.delay(300).fadeOut('fast');
 		},
 
         //sticky header
@@ -274,21 +270,7 @@
 
         //Elements Carousel
         elementsCarousel: function () {
-
-            // var visibleSlides = null;
-            // var visibleSlides_xl = null;
-            // var visibleSlides_lg = null;
-            // var visibleSlides_md = null;
-            // var visibleSlides_sm = null;
-            // var visibleSlides_xs = null;
-            // var slideLoop = null;
-            // var slideSpeed = null;
-            // var slideSpace = null;
-            // var slideAutoPlayDelay = null;
-            // var slideEffect = null;
-
             if ($elCarousel.elExists()) {
-
                 $elCarousel.each(function (index, element) {
 
                     var $this = $(this);
@@ -462,7 +444,6 @@
 	 * Scripts to run on document ready event.
 	 */
 	$document.ready(function () {
-		rtQuiklearn.functions.preLoaderInit();
 		rtQuiklearn.functions.scrollToTop();
         rtQuiklearn.functions.counterUp();
         rtQuiklearn.functions.mobileMenuDropdown();
@@ -482,6 +463,7 @@
 	 * Scripts to run on window load event.
 	 */
 	$window.on('load', function() {
+        rtQuiklearn.functions.preLoaderInit();
 		rtQuiklearn.functions.bodyClass();
 	});
 

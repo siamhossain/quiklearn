@@ -93,6 +93,12 @@
         }
     }
     .all-course-content-wrapper {
+        .nav-tabs {
+            border-bottom: none;
+        }
+        .nav-link {
+            padding: 0;
+        }
         @include media-only(1500px, min) {
             padding-left: 10px;
         }

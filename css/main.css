@@ -6676,6 +6676,12 @@ body.slidemenuon .sidebarBtn .bar:nth-child(4) {
   font-size: 1rem;
   color: var(--color-primary);
 }
+.all-course-section .all-course-content-wrapper .nav-tabs {
+  border-bottom: none;
+}
+.all-course-section .all-course-content-wrapper .nav-link {
+  padding: 0;
+}
 @media only screen and (min-width: 1500px) {
   .all-course-section .all-course-content-wrapper {
     padding-left: 10px;
