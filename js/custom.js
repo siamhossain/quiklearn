@@ -29,6 +29,13 @@
 		return this.length > 0;
 	};
 
+    //preloader
+    $window.on('load', function () {
+        $preLoader.delay(300).fadeOut('fast', function () {
+            // $(this).remove();
+        });
+    });
+
 	/**
 	 * Functions.
 	 */
@@ -37,12 +44,6 @@
 			if (!$preLoader.elExists()) {
 				return false;
 			}
-
-            $window.on('load', function () {
-                $preLoader.delay(300).fadeOut('fast', function () {
-                    // $(this).remove();
-                });
-            });
 		},
 
         //sticky header
