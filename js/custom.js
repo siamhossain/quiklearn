@@ -47,7 +47,7 @@
 
             $window.on("scroll", function () {
                 var scroll = $(window).scrollTop();
-                if (scroll < 200) {
+                if (scroll < 202) {
                     $("nav.sticky-header").removeClass("affix");
                     $(".place-holder").css("padding-top", "0");
                     $("#header-content-wrap").addClass(".header-content-wrap");
